@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-email/render": "^1.2.1",
     "ionicons": "^8.0.13",
     "next": "15.5.2",
     "react": "19.1.0",

@@ -1,6 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![Static Badge](https://img.shields.io/badge/NextJS-white?style=flat&logo=nextdotjs&logoColor=%23000)
 
-## Getting Started
+## Portfolio
 
 First, run the development server:
 
