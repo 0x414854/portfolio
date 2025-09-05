@@ -264,8 +264,8 @@
 }
 
 .contactItem:nth-of-type(2) .contactInfo {
-  max-width: calc(34% - 54px);
-  width: calc(34% - 54px);
+  max-width: calc(50% - 137px);
+  width: calc(50% - 137px);
 }
 
 .contactInfo :is(.contactLink, time, address) {
@@ -307,17 +307,21 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding-bottom: 4px;
-  padding-left: 7px;
 }
 
-.socialItem .sociallink {
+/* .socialItem .sociallink {
   color: var(--light-gray70);
   font-size: 24px;
 }
 
 .socialItem .sociallink:hover {
   color: var(--light-gray);
+} */
+
+.sociallink:hover .socialIcon,
+.sociallink:focus .socialIcon {
+  filter: brightness(0) saturate(100%) invert(93%) sepia(63%) saturate(7090%)
+    hue-rotate(309deg) brightness(110%) contrast(108%);
 }
 
 /*NAVBAR*/
@@ -391,6 +395,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  /* cursor: none; */
 }
 
 .serviceItem {
@@ -400,6 +405,7 @@
   border-radius: 14px;
   box-shadow: var(--shadow2);
   z-index: 1;
+  overflow: hidden;
 }
 
 .serviceItem::before {
@@ -409,6 +415,22 @@
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+}
+.serviceOverlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: var(--opacity, 0);
+  background: hsla(45, 100%, 72%, 0.5);
+  mask: radial-gradient(
+    25rem 25rem at var(--x) var(--y),
+    #000 1%,
+    transparent 50%
+  );
+  transition:
+    opacity 0.3s ease,
+    mask 0.3s ease;
+  /* mix-blend-mode: overlay; */
 }
 
 .serviceIconBox {
@@ -637,10 +659,15 @@
   width: 100%;
   filter: grayscale(1);
   transition: var(--transition1);
+  border: 1px solid transparent;
+  border-radius: 20px;
 }
 
-.clientsItem img:hover {
+.clientsItem img:hover,
+.clientsItem img:focus {
   filter: grayscale(0);
+  /* border: 1px solid var(--orange-yellow-crayola); */
+  transform: scale(1.1);
 }
 
 /*RESUME*/
@@ -921,17 +948,8 @@
   transition: var(--transition1);
 }
 
-.projectItem > a:hover img {
-  transform: scale(1.1);
-}
-
-.projectItem > a:hover .projectImg::before {
-  background: hsla(0, 0%, 0%, 0.5);
-}
-
 .projectItemIconBox {
   --scale: 0.8;
-
   background: var(--jet);
   color: var(--orange-yellow-crayola);
   position: absolute;
@@ -946,7 +964,18 @@
   transition: var(--transition1);
 }
 
-.projectItem > a:hover .projectItemIconBox {
+.projectItem > a:hover img,
+.projectItem > .projectClickable:hover img {
+  transform: scale(1.1);
+}
+
+.projectItem > a:hover .projectImg::before,
+.projectItem > .projectClickable:hover .projectImg::before {
+  background: hsla(0, 0%, 0%, 0.5);
+}
+
+.projectItem > a:hover .projectItemIconBox,
+.projectItem > .projectClickable:hover .projectItemIconBox {
   --scale: 1;
   opacity: 1;
 }
@@ -972,6 +1001,33 @@
   color: var(--light-gray70);
   font-size: var(--fs6);
   font-weight: var(--fw300);
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContentCard {
+  background: var(--eerie-black2);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  color: var(--white1);
+  box-shadow: var(--shadow5);
+}
+.modalContentCard h2 {
+  text-align: center;
 }
 
 /*CONTACT*/
@@ -1107,6 +1163,26 @@ textarea.formInput::-webkit-realizer {
   .projectImg,
   .blogbannerbox {
     height: auto;
+  }
+}
+
+@media (max-width: 579px) {
+  .contactInfo {
+    max-width: calc(50% - 15px);
+    width: calc(50% - 15px);
+  }
+  .contactItem:nth-of-type(2) .contactInfo {
+    max-width: calc(50% - 48px);
+    width: calc(50% - 10px);
+  }
+  .projectImg {
+    height: 250px;
+  }
+
+  .contactInfo :is(.contactLink, time, address) {
+    white-space: nowrap;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
   }
 }
 

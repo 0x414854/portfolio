@@ -13,8 +13,43 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Arthur - Portfolio",
-  description: "Portoflio by Arthur BARRAUD",
+  title: "Arthur Barraud - Portfolio",
+  description:
+    "Développeur web et créateur de solutions logicielles. Découvrez mes projets en développement web, bots et logiciels.",
+  keywords: [
+    "Création de sites",
+    "Développeur web",
+    "Bots",
+    "Designer web",
+    "Logiciels sur mesure",
+    "React",
+    "Next.js",
+    "Python",
+    "Portfolio",
+  ],
+  authors: [{ name: "Arthur Barraud" }],
+  openGraph: {
+    title: "Arthur Barraud - Portfolio",
+    description: "Développeur web et créateur de solutions logicielles.",
+    url: "https://www.arthurbarraud.me",
+    siteName: "Arthur Barraud - Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Aperçu portfolio",
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Arthur Barraud - Portfolio",
+    description: "Développeur web et créateur de solutions logicielles.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({ children }) {

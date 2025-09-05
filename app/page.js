@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import styles from "./page.module.css";
 
@@ -25,11 +25,85 @@ import MnemonicShield from "@/public/mnemonicShield.png";
 import Logo from "@/public/noble.png";
 import ViceVersaLogo from "@/public/viceVersaLogo.png";
 
+import GithubIcon from "@/public/githubGrey.svg";
+import LinkedinGrey from "@/public/linkedinGrey.svg";
+
+import XIcon from "@/public/XGrey.svg";
+
+import Carte3D from "./components/3dCardFlipAnimation.js";
+
 // Modifier Projects (si pas link alors pas de link mais affiche un overlay avec un zoom (carte de visite))
 // Map Clients
+// Map Service ??
 // Update style template mail
+// Ajouter description des projets du portfolio
 
 export default function Home() {
+  // SERVICES
+  const services = [
+    {
+      icon: IconDesign,
+      title: "Conception Web",
+      description:
+        "Le design le plus moderne et de haute qualité, réalisé à un niveau professionnel.",
+    },
+    {
+      icon: IconDev,
+      title: "Développement web",
+      description:
+        "Développement de sites web de haute qualité, à un niveau professionnel.",
+    },
+    {
+      icon: IconSoftware,
+      title: "Bots & Logiciels",
+      description:
+        "Automatisation intelligente et développement de solutions sur mesure.",
+    },
+    {
+      icon: IconRedesign,
+      title: "Refonte",
+      description: "Modernisation et optimisation de sites existants.",
+    },
+    {
+      icon: IconDBranding,
+      title: "Branding & Identité",
+      description:
+        "Création d’identités de marque uniques et mémorables, des logos et cartes de visite jusqu’aux chartes graphiques complètes.",
+    },
+    {
+      icon: IconPhoto,
+      title: "Photographie",
+      description:
+        "Je réalise des photos de haute qualité, dans toutes les catégories, à un niveau professionnel.",
+    },
+  ];
+
+  //    HOVER OVERLAY EFFECT
+  const overlayRefs = useRef([]);
+  const containerRef = useRef(null);
+
+  const handlePointerMove = (e, index) => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const overlay = overlayRefs.current[index];
+    if (overlay) {
+      overlay.style.setProperty("--x", `${x}px`);
+      overlay.style.setProperty("--y", `${y}px`);
+      overlay.style.setProperty("--opacity", 1);
+    }
+  };
+
+  const handlePointerLeave = (index) => {
+    const overlay = overlayRefs.current[index];
+    if (overlay) {
+      overlay.style.setProperty("--opacity", 0);
+    }
+  };
   // AVIS
   const testimonialsData = [
     {
@@ -70,6 +144,52 @@ export default function Home() {
     setSelectedTestimonial(null);
     setIsModalOpen(false);
   };
+
+  // CLIENTS
+  const clients = [
+    {
+      src: ViceVersaLogo,
+      alt: "Vice Versa Logo",
+      link: "https://viceversa-atelier.com",
+      width: 200,
+      height: 200,
+    },
+    {
+      src: Logo,
+      alt: "Logo Client 1",
+      link: "#",
+      width: 300,
+      height: 200,
+    },
+    {
+      src: Logo,
+      alt: "Logo Client 2",
+      link: "#",
+      width: 200,
+      height: 200,
+    },
+    {
+      src: Logo,
+      alt: "Logo Client 3",
+      link: "#",
+      width: 200,
+      height: 200,
+    },
+    {
+      src: Logo,
+      alt: "Logo Client 4",
+      link: "#",
+      width: 200,
+      height: 200,
+    },
+    {
+      src: Logo,
+      alt: "Logo Client 5",
+      link: "#",
+      width: 200,
+      height: 200,
+    },
+  ];
 
   // SKILLS
 
@@ -132,7 +252,8 @@ export default function Home() {
       category: "Business Card",
       image: BusinessCardAB,
       alt: "Business Card Arthur BARRAUD",
-      link: "#",
+      rectoImg: "/businessCard/AB/recto.png",
+      versoImg: "/businessCard/AB/verso.png",
     },
 
     {
@@ -179,18 +300,30 @@ export default function Home() {
     },
   ];
 
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedCard, setSelectedCard] = useState(null);
+
+  const handleOpenModal = (project) => {
+    setSelectedCard(project);
+    setModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedCard(null);
+    setModalOpen(false);
+  };
   useEffect(() => {
-    // --- Helper toggle
+    // --- HELPER TOGGLE
     const elementToggleFunc = (elem) => elem.classList.toggle(styles.active);
 
-    // Sidebar
+    // SIDEBAR
     const sidebar = document.querySelector("[data-sidebar]");
     const sidebarBtn = document.querySelector("[data-sidebar-btn]");
     if (sidebarBtn) {
       sidebarBtn.addEventListener("click", () => elementToggleFunc(sidebar));
     }
 
-    // Filter select
+    // FILTER SELECT
     const select = document.querySelector("[data-select]");
     const selectItems = document.querySelectorAll("[data-select-item]");
     const selectValue = document.querySelector("[data-select-value]");
@@ -220,7 +353,7 @@ export default function Home() {
       });
     });
 
-    // Filter buttons
+    // FILTER BUTTONS
     let lastClickedBtn = filterBtn[0];
     filterBtn.forEach((btn) => {
       btn.addEventListener("click", function () {
@@ -234,7 +367,7 @@ export default function Home() {
       });
     });
 
-    // Contact form
+    // CONTACT FORM
     const form = document.querySelector("[data-form]");
     const formInputs = document.querySelectorAll("[data-form-input]");
     const formBtn = document.querySelector("[data-form-btn]");
@@ -249,13 +382,13 @@ export default function Home() {
       });
     });
 
-    // Navigation
+    // NAVIGATION
     const navigationLinks = document.querySelectorAll("[data-nav-link]");
     const pages = document.querySelectorAll("[data-page]");
 
     navigationLinks.forEach((link) => {
       link.addEventListener("click", function () {
-        const targetPage = this.dataset.page; // le bouton cliqué
+        const targetPage = this.dataset.page;
         console.log(targetPage);
 
         pages.forEach((page) => {
@@ -266,22 +399,18 @@ export default function Home() {
           }
         });
 
-        // Reset toutes les classes actives sur les boutons
         navigationLinks.forEach((nav) => nav.classList.remove(styles.active));
-        // Active uniquement le bouton cliqué
+
         this.classList.add(styles.active);
 
         window.scrollTo(0, 0);
       });
     });
 
-    // Cleanup (important pour éviter les doublons quand React re-render)
     return () => {
       sidebarBtn?.removeEventListener("click", () =>
         elementToggleFunc(sidebar)
       );
-      // modalCloseBtn?.removeEventListener("click", testimonialsModalFunc);
-      // overlay?.removeEventListener("click", testimonialsModalFunc);
     };
   }, []);
 
@@ -305,7 +434,7 @@ export default function Home() {
 
     const result = await res.json();
     if (result.success) {
-      setMessage("✅ Réservation envoyée avec succès.");
+      setMessage("✅ Message envoyé avec succès.");
       e.target.reset(); // <-- Vider le formulaire
     } else {
       setMessage("❌ Une erreur est survenue. Veuillez réessayer.");
@@ -315,9 +444,9 @@ export default function Home() {
     if (message) {
       const timer = setTimeout(() => {
         setMessage("");
-      }, 5000); // 5 secondes
+      }, 5000);
 
-      return () => clearTimeout(timer); // nettoyage si message change avant 5 sec
+      return () => clearTimeout(timer);
     }
   }, [message]);
 
@@ -410,19 +539,23 @@ export default function Home() {
           <div className={styles.separator}></div>
 
           <ul className={styles.socialList}>
-            <li className={styles.socialItem}>
+            {/* <li className={styles.socialItem}>
               <a href="#" className={styles.sociallink}>
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
-            </li>
+            </li> */}
             <li className={styles.socialItem}>
-              <a href="#" className={styles.sociallink}>
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-            <li className={styles.socialItem}>
-              <a href="#" className={styles.sociallink}>
-                <ion-icon name="logo-instagram"></ion-icon>
+              <a
+                href="https://x.com/from0toBitcoin"
+                className={styles.sociallink}
+              >
+                <Image
+                  src={XIcon}
+                  width={28}
+                  height={28}
+                  alt="X (Twitter) Icon"
+                  className={styles.socialIcon}
+                />
               </a>
             </li>
             <li className={styles.socialItem}>
@@ -430,7 +563,24 @@ export default function Home() {
                 href="https://github.com/0x414854"
                 className={styles.sociallink}
               >
-                <ion-icon name="logo-github"></ion-icon>
+                <Image
+                  src={GithubIcon}
+                  width={28}
+                  height={28}
+                  alt="Github Icon"
+                  className={styles.socialIcon}
+                />
+              </a>
+            </li>
+            <li className={styles.socialItem}>
+              <a href="#" className={styles.sociallink}>
+                <Image
+                  src={LinkedinGrey}
+                  width={28}
+                  height={28}
+                  alt="Linkedin Icon"
+                  className={styles.socialIcon}
+                />
               </a>
             </li>
           </ul>
@@ -520,100 +670,38 @@ export default function Home() {
               Ce que je fais
             </h3>
 
-            <ul className={styles.serviceList}>
-              <li className={styles.serviceItem}>
-                <div className={styles.serviceIconBox}>
-                  <Image src={IconDesign} alt="icon" width="60" height={60} />
-                </div>
+            <ul className={styles.serviceList} ref={containerRef}>
+              {services.map((service, index) => (
+                <li
+                  key={index}
+                  className={styles.serviceItem}
+                  onPointerMove={(e) => handlePointerMove(e, index)}
+                  onPointerLeave={() => handlePointerLeave(index)}
+                >
+                  {/* Overlay div */}
+                  <div
+                    ref={(el) => (overlayRefs.current[index] = el)}
+                    className={styles.serviceOverlay}
+                  />
+                  <div className={styles.serviceIconBox}>
+                    <Image
+                      src={service.icon}
+                      alt="icon"
+                      width={60}
+                      height={60}
+                    />
+                  </div>
 
-                <div className={styles.serviceContentBox}>
-                  <h4 className={`${styles.h4} ${styles.serviceItemTitle}`}>
-                    Conception Web
-                  </h4>
-                  <p className={styles.serviceItemText}>
-                    Le design le plus moderne et de haute qualité, réalisé à un
-                    niveau professionnel.
-                  </p>
-                </div>
-              </li>
-
-              <li className={styles.serviceItem}>
-                <div className={styles.serviceIconBox}>
-                  <Image src={IconDev} alt="icon" width="60" />
-                </div>
-
-                <div className={styles.serviceContentBox}>
-                  <h4 className={`${styles.h4} {styles.service-item-title}`}>
-                    Développement web
-                  </h4>
-                  <p className={styles.serviceItemText}>
-                    Développement de sites web de haute qualité, à un niveau
-                    professionnel.
-                  </p>
-                </div>
-              </li>
-              <li className={styles.serviceItem}>
-                <div className={styles.serviceIconBox}>
-                  <Image src={IconSoftware} alt="icon" width="60" />
-                </div>
-
-                <div className={styles.serviceContentBox}>
-                  <h4 className={`${styles.h4} ${styles.serviceItemTitle}`}>
-                    Bots & Logiciels
-                  </h4>
-                  <p className={styles.serviceItemText}>
-                    Automatisation intelligente et développement de solutions
-                    sur mesure.
-                  </p>
-                </div>
-              </li>
-              <li className={styles.serviceItem}>
-                <div className={styles.serviceIconBox}>
-                  <Image src={IconRedesign} alt="icon" width="60" />
-                </div>
-
-                <div className={styles.serviceContentBox}>
-                  <h4 className={`${styles.h4} ${styles.serviceItemTitle}`}>
-                    Refonte
-                  </h4>
-                  <p className={styles.serviceItemText}>
-                    Modernisation et optimisation de sites existants.
-                  </p>
-                </div>
-              </li>
-
-              <li className={styles.serviceItem}>
-                <div className={styles.serviceIconBox}>
-                  <Image src={IconDBranding} alt="icon" width="60" />
-                </div>
-
-                <div className={styles.serviceContentBox}>
-                  <h4 className={`${styles.h4} ${styles.serviceItemTitle}`}>
-                    Branding & Identité
-                  </h4>
-                  <p className={styles.serviceItemText}>
-                    Création d’identités de marque uniques et mémorables, des
-                    logos et cartes de visite jusqu’aux chartes graphiques
-                    complètes.
-                  </p>
-                </div>
-              </li>
-
-              <li className={styles.serviceItem}>
-                <div className={styles.serviceIconBox}>
-                  <Image src={IconPhoto} alt="icon" width="60" />
-                </div>
-
-                <div className={styles.serviceContentBox}>
-                  <h4 className={`${styles.h4} ${styles.serviceItemTitle}`}>
-                    Photography
-                  </h4>
-                  <p className={styles.serviceItemText}>
-                    Je réalise des photos de haute qualité, dans toutes les
-                    catégories, à un niveau professionnel.
-                  </p>
-                </div>
-              </li>
+                  <div className={styles.serviceContentBox}>
+                    <h4 className={`${styles.h4} ${styles.serviceItemTitle}`}>
+                      {service.title}
+                    </h4>
+                    <p className={styles.serviceItemText}>
+                      {service.description}
+                    </p>
+                  </div>
+                </li>
+              ))}
             </ul>
           </section>
 
@@ -711,46 +799,18 @@ export default function Home() {
             <h3 className={`${styles.h3} ${styles.clientsTitle}`}>Clients</h3>
 
             <ul className={`${styles.clientsList} ${styles.hasScrollbar}`}>
-              <li className={styles.clientsItem}>
-                <Link href="https://viceversa-atelier.com" target="_blank">
-                  <Image
-                    src={ViceVersaLogo}
-                    alt="logo"
-                    width={200}
-                    height={200}
-                  />
-                </Link>
-              </li>
-
-              <li className={styles.clientsItem}>
-                <a href="#">
-                  <Image src={Logo} alt="logo" width={300} height={200} />
-                </a>
-              </li>
-
-              <li className={styles.clientsItem}>
-                <a href="#">
-                  <Image src={Logo} alt="logo" width={200} height={200} />
-                </a>
-              </li>
-
-              <li className={styles.clientsItem}>
-                <a href="#">
-                  <Image src={Logo} alt="logo" width={200} height={200} />
-                </a>
-              </li>
-
-              <li className={styles.clientsItem}>
-                <a href="#">
-                  <Image src={Logo} alt="logo" width={200} height={200} />
-                </a>
-              </li>
-
-              <li className={styles.clientsItem}>
-                <a href="#">
-                  <Image src={Logo} alt="logo" width={200} height={200} />
-                </a>
-              </li>
+              {clients.map((client, index) => (
+                <li key={index} className={styles.clientsItem}>
+                  <Link href={client.link} target="_blank">
+                    <Image
+                      src={client.src}
+                      alt={client.alt}
+                      width={client.width}
+                      height={client.height}
+                    />
+                  </Link>
+                </li>
+              ))}
             </ul>
           </section>
         </article>
@@ -865,23 +925,71 @@ export default function Home() {
                   data-filter-item
                   data-category={project.category.toLowerCase()}
                 >
-                  <Link href={project.link} target="_blank">
-                    <figure className={styles.projectImg}>
-                      <div className={styles.projectItemIconBox}>
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </div>
-                      <Image
-                        src={project.image}
-                        alt={project.alt}
-                        loading="lazy"
-                      />
-                    </figure>
-                    <h3 className={styles.projectTitle}>{project.title}</h3>
-                    <p className={styles.projectCategory}>{project.category}</p>
-                  </Link>
+                  {project.category === "Business Card" ? (
+                    <div
+                      className={styles.projectClickable}
+                      onClick={() => handleOpenModal(project)}
+                    >
+                      <figure className={styles.projectImg}>
+                        <div className={styles.projectItemIconBox}>
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <Image
+                          src={project.image}
+                          alt={project.alt}
+                          loading="lazy"
+                        />
+                      </figure>
+                      <h3 className={styles.projectTitle}>{project.title}</h3>
+                      <p className={styles.projectCategory}>
+                        {project.category}
+                      </p>
+                    </div>
+                  ) : (
+                    <Link href={project.link} target="_blank">
+                      <figure className={styles.projectImg}>
+                        <div className={styles.projectItemIconBox}>
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                        <Image
+                          src={project.image}
+                          alt={project.alt}
+                          loading="lazy"
+                        />
+                      </figure>
+                      <h3 className={styles.projectTitle}>{project.title}</h3>
+                      <p className={styles.projectCategory}>
+                        {project.category}
+                      </p>
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
+
+            {modalOpen && selectedCard && (
+              <div className={styles.modalOverlay} onClick={handleCloseModal}>
+                <div
+                  className={styles.modalContentCard}
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <button
+                    className={styles.modalCloseBtn}
+                    onClick={handleCloseModal}
+                  >
+                    ×
+                  </button>
+                  <h2>{selectedCard.title}</h2>
+
+                  <Carte3D
+                    rectoImg={selectedCard.rectoImg}
+                    versoImg={selectedCard.versoImg}
+                    width={3}
+                    height={2}
+                  />
+                </div>
+              </div>
+            )}
           </section>
         </article>
 
@@ -907,7 +1015,9 @@ export default function Home() {
           </section>
 
           <section className={styles.contactForm}>
-            <h3 className={`${styles.h3} ${styles.formTitle}`}>Contact Form</h3>
+            <h3 className={`${styles.h3} ${styles.formTitle}`}>
+              Contactez moi
+            </h3>
 
             <form onSubmit={handleSubmit} className={styles.form} data-form>
               <div className={styles.inputWrapper}>
@@ -951,6 +1061,15 @@ export default function Home() {
           </section>
         </article>
       </div>
+      {/* <div style={{ maxWidth: "600px", margin: "50px auto" }}>
+        <h1>Carte 3D Interactive</h1>
+        <Carte3D
+          rectoImg="/businessCard/rectoAB.png"
+          versoImg="/businessCard/versoAB.png"
+          width={3}
+          height={2}
+        />
+      </div> */}
     </main>
   );
 }
