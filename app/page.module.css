@@ -173,21 +173,21 @@
   border-radius: 20px;
 }
 
-.infocontent .name {
+.infoContent .name {
   color: var(--white2);
   font-size: var(--fs3);
   font-weight: var(--fw500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
 }
-.infocontent .tag {
+.infoContent .tag {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.infocontent .title {
+.infoContent .title {
   color: var(--white1);
   background: var(--onyx);
   font-size: var(--fs8);
@@ -283,7 +283,7 @@
   bottom: -4px;
   width: 0%;
   height: 1px;
-  background: hsl(45, 100%, 72%);
+  background: var(--orange-yellow-crayola);
   transition: all 0.3s ease-in-out;
 }
 .contactLink:hover::after,
@@ -291,9 +291,12 @@
   width: 100%;
   transition: all 0.3s ease-in-out;
 }
+/* .contactInfo time,
 .contactInfo address {
+  color: var(--white2);
+  font-size: var(--fs7);
   font-style: normal;
-}
+} */
 
 .contacttitle {
   color: var(--light-gray70);
@@ -320,8 +323,8 @@
 
 .sociallink:hover .socialIcon,
 .sociallink:focus .socialIcon {
-  filter: brightness(0) saturate(100%) invert(93%) sepia(63%) saturate(7090%)
-    hue-rotate(309deg) brightness(110%) contrast(108%);
+  filter: brightness(0) saturate(100%) invert(41%) sepia(92%) saturate(1757%)
+    hue-rotate(183deg) brightness(96%) contrast(102%);
 }
 
 /*NAVBAR*/
@@ -331,7 +334,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: var(--bg-gradient-onyx);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -421,7 +424,7 @@
   inset: 0;
   pointer-events: none;
   opacity: var(--opacity, 0);
-  background: hsla(45, 100%, 72%, 0.5);
+  background: var(--orange-yellow-crayola-50);
   mask: radial-gradient(
     25rem 25rem at var(--x) var(--y),
     #000 1%,
@@ -608,7 +611,7 @@
   /* flex-grow: 1; */
   width: 35px;
   top: 45px;
-  left: 120px;
+  left: 140px;
 }
 
 .modalTitle {
@@ -754,30 +757,19 @@
   font-size: 20px;
   margin-bottom: 10px;
 }
-/* Dégradé animé pour le texte */
+
 .skillNote {
   margin-left: 10px;
   font-weight: 600;
   font-size: 1rem;
-
-  /* Dégradé */
-  background: linear-gradient(
-    90deg,
-    var(--orange-yellow-crayola),
-    #fff,
-    var(--orange-yellow-crayola)
-  );
-  background-size: 200% 100%; /* pour l'animation du mouvement */
+  background: var(--bg-gradient-skill-note);
+  background-size: 200% 100%;
   background-clip: text;
-  /* Appliquer le dégradé au texte */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  /* Animation */
   animation: gradientMove 2s linear infinite;
 }
 
-/* Animation du dégradé */
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
@@ -964,8 +956,8 @@
   transition: var(--transition1);
 }
 
-.projectItem > a:hover img,
-.projectItem > .projectClickable:hover img {
+.projectItem > a:hover .projectImage,
+.projectItem > .projectClickable:hover .projectImage {
   transform: scale(1.1);
 }
 
@@ -984,6 +976,12 @@
   --ionicon-stroke-width: 50px;
 }
 
+.projectInfos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 .projectTitle,
 .projectCategory {
   margin-left: 10px;
@@ -1001,6 +999,14 @@
   color: var(--light-gray70);
   font-size: var(--fs6);
   font-weight: var(--fw300);
+}
+.projectLogos {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.projectLogos img:last-child {
+  margin-right: 30px;
 }
 
 .modalOverlay {
@@ -1045,12 +1051,11 @@
 .mapBox figure {
   height: 100%;
 }
-
 .mapBox iframe {
   width: 100%;
   height: 100%;
   border: none;
-  filter: grayscale(0) invert(1);
+  filter: var(--filter-map);
 }
 
 .contact-form {
@@ -1150,7 +1155,8 @@ textarea.formInput::-webkit-realizer {
   background: var(--bg-gradient-jet);
 }
 .message {
-  color: white;
+  margin-top: 10px;
+  color: var(--white1);
 }
 
 /*MEDIA QUERIES*/
@@ -1165,6 +1171,11 @@ textarea.formInput::-webkit-realizer {
     height: auto;
   }
 }
+@media (max-width: 520px) {
+  .projectImg {
+    height: 100%;
+  }
+}
 
 @media (max-width: 579px) {
   .contactInfo {
@@ -1175,10 +1186,6 @@ textarea.formInput::-webkit-realizer {
     max-width: calc(50% - 48px);
     width: calc(50% - 10px);
   }
-  .projectImg {
-    height: 250px;
-  }
-
   .contactInfo :is(.contactLink, time, address) {
     white-space: nowrap;
     /* overflow: hidden;
@@ -1246,10 +1253,10 @@ textarea.formInput::-webkit-realizer {
     width: 120px;
   }
 
-  .infocontent .name {
+  .infoContent .name {
     margin-bottom: 15px;
   }
-  .infocontent .title {
+  .infoContent .title {
     padding: 8px 20px;
   }
 
@@ -1688,12 +1695,12 @@ textarea.formInput::-webkit-realizer {
     width: 150px;
   }
 
-  .infocontent .name {
+  .infoContent .name {
     white-space: nowrap;
     text-align: center;
   }
 
-  .infocontent .title {
+  .infoContent .title {
     margin: auto;
   }
 
@@ -1718,16 +1725,11 @@ textarea.formInput::-webkit-realizer {
 
   .contactInfo :is(.contactlink, time, address) {
     --fs7: 14px;
-    font-weight: var(--fw300);
   }
 
   .separator:last-of-type {
     margin: 15px 0;
     /* opacity: 0; */
-  }
-
-  .socialList {
-    justify-content: center;
   }
 
   .timelinetext {

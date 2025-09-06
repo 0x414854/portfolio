@@ -60,7 +60,7 @@ export default function Carte3D({ rectoImg, versoImg, width = 3, height = 2 }) {
     const width = 3;
     const height = width / 1.545; // 1.944
     const depth = 0.05;
-    const radius = 0.1;
+    const radius = 0.5;
     const segments = 5;
     const geometry = new RoundedBoxGeometry(
       width,

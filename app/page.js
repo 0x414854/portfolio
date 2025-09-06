@@ -7,71 +7,123 @@ import { useState, useEffect, useRef } from "react";
 
 import styles from "./page.module.css";
 
-import MyBitmoji from "@/public/myBitmoji.png";
-import Bitmoji from "@/public/Bitmoji1.png";
-import BitmojiT from "@/public/Bitmoji2.png";
+import MyBitmoji from "@/public/bitmoji/myBitmoji.png";
+import Bitmoji from "@/public/bitmoji/bitmoji1.png";
+import BitmojiT from "@/public/bitmoji/bitmoji2.png";
 
-import IconDesign from "@/public/iconDesign.png";
-import IconDev from "@/public/iconDev.png";
-import IconSoftware from "@/public/iconSoftware.png";
-import IconRedesign from "@/public/iconRedesign.png";
-import IconDBranding from "@/public/iconBranding.png";
-import IconPhoto from "@/public/iconPhoto.png";
-import IconQuote from "@/public/iconQuote.png";
-import TestProject from "@/public/testProject.jpg";
-import BitcoinPrice from "@/public/bitcoinPrice.png";
-import BusinessCardAB from "@/public/businessCardAB.png";
-import MnemonicShield from "@/public/mnemonicShield.png";
-import Logo from "@/public/noble.png";
-import ViceVersaLogo from "@/public/viceVersaLogo.png";
+import IconDesign from "@/public/icon/iconDesign.png";
+import IconDesignBlue from "@/public/icon/iconDesignBlue.png";
+import IconDev from "@/public/icon/iconDev.png";
+import IconDevBlue from "@/public/icon/iconDevBlue.png";
+import IconSoftware from "@/public/icon/iconSoftware.png";
+import IconSoftwareBlue from "@/public/icon/iconSoftwareBlue.png";
 
-import GithubIcon from "@/public/githubGrey.svg";
-import LinkedinGrey from "@/public/linkedinGrey.svg";
+import IconRedesign from "@/public/icon/iconRedesign.png";
+import IconRedesignBlue from "@/public/icon/iconRedesignBlue.png";
+import IconBranding from "@/public/icon/iconBranding.png";
+import IconBrandingBlue from "@/public/icon/iconBrandingBlue.png";
+import IconPhoto from "@/public/icon/iconPhoto.png";
+import IconPhotoBlue from "@/public/icon/iconPhotoBlue.png";
 
-import XIcon from "@/public/XGrey.svg";
+import IconQuote from "@/public/icon/iconQuote.png";
+import IconQuoteBlue from "@/public/icon/iconQuoteBlue.png";
+import GithubIcon from "@/public/icon/githubGrey.svg";
+import GithubBlack from "@/public/icon/githubBlack.svg";
+import LinkedinGrey from "@/public/icon/linkedinGrey.svg";
+import LinkedinBlack from "@/public/icon/linkedinBlack.svg";
+import XIcon from "@/public/icon/XGrey.svg";
+import XIconBlack from "@/public/icon/XBlack.svg";
+import CanvaIcon from "@/public/icon/canvaIconGrey.png";
+import CanvaIconBlack from "@/public/icon/canvaIconBlack.png";
+
+import PythonIcon from "@/public/icon/pythonIconGrey.png";
+import PythonIconBlack from "@/public/icon/pythonIconBlack.png";
+import HTMLIcon from "@/public/icon/htmlIconGrey.png";
+import HTMLIconBlack from "@/public/icon/htmlIconBlack.png";
+import CSSIcon from "@/public/icon/cssIconGrey.png";
+import CSSIconBlack from "@/public/icon/cssIconBlack.png";
+import JSIcon from "@/public/icon/javascriptIconGrey.png";
+import JSIconBlack from "@/public/icon/javascriptIconBlack.png";
+import NextJsIcon from "@/public/icon/nextJsIconGrey.png";
+
+import TestProject from "@/public/projects/testProject.jpg";
+import BitcoinPrice from "@/public/projects/bitcoinPrice.png";
+import BusinessCardAB from "@/public/projects/businessCardAB.png";
+import BusinessCardABDev from "@/public/projects/businessCardABDev.png";
+import MnemonicShield from "@/public/projects/mnemonicShield.png";
+
+import Logo from "@/public/logo/noble.png";
+import ViceVersaLogo from "@/public/logo/viceVersaLogo.png";
 
 import Carte3D from "./components/3dCardFlipAnimation.js";
 
-// Modifier Projects (si pas link alors pas de link mais affiche un overlay avec un zoom (carte de visite))
-// Map Clients
-// Map Service ??
 // Update style template mail
 // Ajouter description des projets du portfolio
 
 export default function Home() {
+  // IS DARK ?
+  const [isDark, setIsDark] = useState(false);
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    setIsDark(mediaQuery.matches);
+
+    const handler = (e) => setIsDark(e.matches);
+    mediaQuery.addEventListener("change", handler);
+
+    return () => mediaQuery.removeEventListener("change", handler);
+  }, []);
+
   // SERVICES
   const services = [
     {
-      icon: IconDesign,
+      icon: {
+        light: IconDesign,
+        dark: IconDesignBlue,
+      },
       title: "Conception Web",
       description:
         "Le design le plus moderne et de haute qualité, réalisé à un niveau professionnel.",
     },
     {
-      icon: IconDev,
+      icon: {
+        light: IconDev,
+        dark: IconDevBlue,
+      },
       title: "Développement web",
       description:
         "Développement de sites web de haute qualité, à un niveau professionnel.",
     },
     {
-      icon: IconSoftware,
+      icon: {
+        light: IconSoftware,
+        dark: IconSoftwareBlue,
+      },
       title: "Bots & Logiciels",
       description:
         "Automatisation intelligente et développement de solutions sur mesure.",
     },
     {
-      icon: IconRedesign,
+      icon: {
+        light: IconRedesign,
+        dark: IconRedesignBlue,
+      },
       title: "Refonte",
       description: "Modernisation et optimisation de sites existants.",
     },
     {
-      icon: IconDBranding,
+      icon: {
+        light: IconBranding,
+        dark: IconBrandingBlue,
+      },
       title: "Branding & Identité",
       description:
         "Création d’identités de marque uniques et mémorables, des logos et cartes de visite jusqu’aux chartes graphiques complètes.",
     },
     {
-      icon: IconPhoto,
+      icon: {
+        light: IconPhoto,
+        dark: IconPhotoBlue,
+      },
       title: "Photographie",
       description:
         "Je réalise des photos de haute qualité, dans toutes les catégories, à un niveau professionnel.",
@@ -81,8 +133,21 @@ export default function Home() {
   //    HOVER OVERLAY EFFECT
   const overlayRefs = useRef([]);
   const containerRef = useRef(null);
+  const [canHover, setCanHover] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(hover: hover)");
+    setCanHover(mediaQuery.matches);
+
+    const handler = (e) => setCanHover(e.matches);
+    mediaQuery.addEventListener("change", handler);
+
+    return () => mediaQuery.removeEventListener("change", handler);
+  }, []);
 
   const handlePointerMove = (e, index) => {
+    if (!canHover) return;
+
     const container = containerRef.current;
     if (!container) return;
 
@@ -99,6 +164,7 @@ export default function Home() {
   };
 
   const handlePointerLeave = (index) => {
+    if (!canHover) return;
     const overlay = overlayRefs.current[index];
     if (overlay) {
       overlay.style.setProperty("--opacity", 0);
@@ -236,6 +302,10 @@ export default function Home() {
     {
       title: "Mnemonic Shield",
       category: "Software / Python",
+      logos: {
+        light: [PythonIcon],
+        dark: [PythonIconBlack],
+      },
       image: MnemonicShield,
       alt: "Mnemonic Shield -Secure mnemonic encoded as a cryptographic sigil",
       link: "https://github.com/0x414854/Mnemonic_Shield",
@@ -243,6 +313,10 @@ export default function Home() {
     {
       title: "Bitcoin Price",
       category: "Web Development",
+      logos: {
+        light: [HTMLIcon, CSSIcon, JSIcon],
+        dark: [HTMLIconBlack, CSSIconBlack, JSIconBlack],
+      },
       image: BitcoinPrice,
       alt: "finance",
       link: "https://0x414854.github.io/Bitcoin_Price/",
@@ -250,6 +324,10 @@ export default function Home() {
     {
       title: "Arthur BARRAUD",
       category: "Business Card",
+      logos: {
+        light: [CanvaIcon],
+        dark: [CanvaIconBlack],
+      },
       image: BusinessCardAB,
       alt: "Business Card Arthur BARRAUD",
       rectoImg: "/businessCard/AB/recto.png",
@@ -257,15 +335,24 @@ export default function Home() {
     },
 
     {
-      title: "Brawlhalla",
-      category: "Applications",
-      image: TestProject,
-      alt: "brawlhalla",
-      link: "#",
+      title: "Arthur BARRAUD",
+      category: "Business Card",
+      logos: {
+        light: [CanvaIcon],
+        dark: [CanvaIconBlack],
+      },
+      image: BusinessCardABDev,
+      alt: "Business Card Arthur BARRAUD",
+      rectoImg: "/businessCard/AB/rectoDev.png",
+      versoImg: "/businessCard/AB/versoDev.png",
     },
     {
       title: "DSM.",
       category: "Web Design",
+      logos: {
+        light: [CanvaIcon],
+        dark: [CanvaIconBlack],
+      },
       image: TestProject,
       alt: "dsm.",
       link: "#",
@@ -273,6 +360,10 @@ export default function Home() {
     {
       title: "Metaspark",
       category: "Web Design",
+      logos: {
+        light: [CanvaIcon],
+        dark: [CanvaIconBlack],
+      },
       image: TestProject,
       alt: "metaspark",
       link: "#",
@@ -280,6 +371,10 @@ export default function Home() {
     {
       title: "Summary",
       category: "Web Development",
+      logos: {
+        light: [CanvaIcon],
+        dark: [CanvaIconBlack],
+      },
       image: TestProject,
       alt: "summary",
       link: "#",
@@ -287,6 +382,10 @@ export default function Home() {
     {
       title: "Task Manager",
       category: "Applications",
+      logos: {
+        light: [CanvaIcon],
+        dark: [CanvaIconBlack],
+      },
       image: TestProject,
       alt: "task manager",
       link: "#",
@@ -294,6 +393,10 @@ export default function Home() {
     {
       title: "Arrival",
       category: "Web Development",
+      logos: {
+        light: [CanvaIcon],
+        dark: [CanvaIconBlack],
+      },
       image: TestProject,
       alt: "arrival",
       link: "#",
@@ -458,7 +561,7 @@ export default function Home() {
             <Image src={MyBitmoji} alt="avatar" width={150} height={150} />
           </figure>
 
-          <div className={styles.infocontent}>
+          <div className={styles.infoContent}>
             <h1 className={styles.name} title="Arthur BARRAUD">
               Arthur BARRAUD
             </h1>
@@ -550,7 +653,7 @@ export default function Home() {
                 className={styles.sociallink}
               >
                 <Image
-                  src={XIcon}
+                  src={isDark ? XIcon : "/icon/XBlack.svg"}
                   width={28}
                   height={28}
                   alt="X (Twitter) Icon"
@@ -564,7 +667,7 @@ export default function Home() {
                 className={styles.sociallink}
               >
                 <Image
-                  src={GithubIcon}
+                  src={isDark ? GithubIcon : GithubBlack}
                   width={28}
                   height={28}
                   alt="Github Icon"
@@ -575,7 +678,7 @@ export default function Home() {
             <li className={styles.socialItem}>
               <a href="#" className={styles.sociallink}>
                 <Image
-                  src={LinkedinGrey}
+                  src={isDark ? LinkedinGrey : LinkedinBlack}
                   width={28}
                   height={28}
                   alt="Linkedin Icon"
@@ -685,7 +788,7 @@ export default function Home() {
                   />
                   <div className={styles.serviceIconBox}>
                     <Image
-                      src={service.icon}
+                      src={isDark ? service.icon.light : service.icon.dark}
                       alt="icon"
                       width={60}
                       height={60}
@@ -769,7 +872,12 @@ export default function Home() {
                       width={80}
                     />
                   </figure>
-                  <Image src={IconQuote} alt="quote icon" />
+                  <Image
+                    src={isDark ? IconQuote : IconQuoteBlue}
+                    alt="quote icon"
+                    width={40}
+                    height={40}
+                  />
                 </div>
 
                 <div className={styles.modalContent}>
@@ -938,12 +1046,34 @@ export default function Home() {
                           src={project.image}
                           alt={project.alt}
                           loading="lazy"
+                          className={styles.projectImage}
                         />
                       </figure>
-                      <h3 className={styles.projectTitle}>{project.title}</h3>
-                      <p className={styles.projectCategory}>
-                        {project.category}
-                      </p>
+                      <div className={styles.projectInfos}>
+                        <div>
+                          <h3 className={styles.projectTitle}>
+                            {project.title}
+                          </h3>
+                          <p className={styles.projectCategory}>
+                            {project.category}
+                          </p>
+                        </div>
+                        <div className={styles.projectLogos}>
+                          {(isDark
+                            ? project.logos.light
+                            : project.logos.dark
+                          ).map((logo, i) => (
+                            <Image
+                              key={i}
+                              src={logo}
+                              alt={`${project.title} logo ${i + 1}`}
+                              loading="lazy"
+                              width={24}
+                              height={24}
+                            />
+                          ))}
+                        </div>
+                      </div>
                     </div>
                   ) : (
                     <Link href={project.link} target="_blank">
@@ -955,12 +1085,34 @@ export default function Home() {
                           src={project.image}
                           alt={project.alt}
                           loading="lazy"
+                          className={styles.projectImage}
                         />
                       </figure>
-                      <h3 className={styles.projectTitle}>{project.title}</h3>
-                      <p className={styles.projectCategory}>
-                        {project.category}
-                      </p>
+                      <div className={styles.projectInfos}>
+                        <div>
+                          <h3 className={styles.projectTitle}>
+                            {project.title}
+                          </h3>
+                          <p className={styles.projectCategory}>
+                            {project.category}
+                          </p>
+                        </div>
+                        <div className={styles.projectLogos}>
+                          {(isDark
+                            ? project.logos.light
+                            : project.logos.dark
+                          ).map((logo, i) => (
+                            <Image
+                              key={i}
+                              src={logo}
+                              alt={`${project.title} logo ${i + 1}`}
+                              loading="lazy"
+                              width={24}
+                              height={24}
+                            />
+                          ))}
+                        </div>
+                      </div>
                     </Link>
                   )}
                 </li>
@@ -1061,15 +1213,6 @@ export default function Home() {
           </section>
         </article>
       </div>
-      {/* <div style={{ maxWidth: "600px", margin: "50px auto" }}>
-        <h1>Carte 3D Interactive</h1>
-        <Carte3D
-          rectoImg="/businessCard/rectoAB.png"
-          versoImg="/businessCard/versoAB.png"
-          width={3}
-          height={2}
-        />
-      </div> */}
     </main>
   );
 }
