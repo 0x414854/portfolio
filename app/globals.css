@@ -89,6 +89,8 @@
   --transition2: 0.5s ease-in-out;
   /* filter map */
   --filter-map: grayscale(0) invert(0);
+  --filter-social-icon: brightness(0) saturate(100%) invert(41%) sepia(92%)
+    saturate(1757%) hue-rotate(183deg) brightness(96%) contrast(102%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -159,13 +161,15 @@
     --shadow5: 0px 24px 80px hsla(0, 0%, 0%, 0.25);
     /* filter map */
     --filter-map: grayscale(0) invert(1);
+    --filter-social-icon: brightness(0) saturate(100%) invert(93%) sepia(63%)
+      saturate(7090%) hue-rotate(309deg) brightness(110%) contrast(108%);
   }
 
-  .sociallink:hover .socialIcon,
+  /* .sociallink:hover .socialIcon,
   .sociallink:focus .socialIcon {
     filter: brightness(0) saturate(100%) invert(93%) sepia(63%) saturate(7090%)
       hue-rotate(309deg) brightness(110%) contrast(108%);
-  }
+  } */
 }
 
 *,

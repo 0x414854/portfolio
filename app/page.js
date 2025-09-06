@@ -57,6 +57,8 @@ import ViceVersaLogo from "@/public/logo/viceVersaLogo.png";
 
 import Carte3D from "./components/3dCardFlipAnimation.js";
 
+// Modifier description service (trop repetitif)
+// Numero portable suisse !!
 // Update style template mail
 // Ajouter description des projets du portfolio
 
@@ -82,7 +84,7 @@ export default function Home() {
       },
       title: "Conception Web",
       description:
-        "Le design le plus moderne et de haute qualité, réalisé à un niveau professionnel.",
+        "Création de designs élégants, modernes et adaptés à votre image, avec une attention particulière aux détails et à l’expérience utilisateur.",
     },
     {
       icon: {
@@ -91,7 +93,7 @@ export default function Home() {
       },
       title: "Développement web",
       description:
-        "Développement de sites web de haute qualité, à un niveau professionnel.",
+        "Création de designs élégants, modernes et adaptés à votre image, avec une attention particulière aux détails et à l’expérience utilisateur.",
     },
     {
       icon: {
@@ -126,7 +128,7 @@ export default function Home() {
       },
       title: "Photographie",
       description:
-        "Je réalise des photos de haute qualité, dans toutes les catégories, à un niveau professionnel.",
+        "Réalisation de photographies professionnelles, de haute qualité, adaptées à tous les styles et besoins.",
     },
   ];
 
@@ -744,7 +746,7 @@ export default function Home() {
           <section className={styles.aboutText}>
             <p>
               Je suis un <b>designer créatif</b> et <b>développeur web</b> basé
-              à Genève, spécialisé dans la création de
+              à Genève, spécialisé dans la création de{" "}
               <b>sites modernes, intuitifs et esthétiques</b> ainsi que dans le{" "}
               <b>design graphique</b> (cartes de visite, flyers, supports
               visuels).
@@ -1206,7 +1208,7 @@ export default function Home() {
                 data-form-btn
               >
                 <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
+                <span>Envoyer un message</span>
               </button>
               {message && <p className={styles.message}>{message}</p>}
             </form>

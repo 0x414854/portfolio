@@ -78,7 +78,7 @@
 .h4,
 .h5 {
   color: var(--white2);
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .h2 {
@@ -323,8 +323,7 @@
 
 .sociallink:hover .socialIcon,
 .sociallink:focus .socialIcon {
-  filter: brightness(0) saturate(100%) invert(41%) sepia(92%) saturate(1757%)
-    hue-rotate(183deg) brightness(96%) contrast(102%);
+  filter: var(--filter-social-icon);
 }
 
 /*NAVBAR*/
@@ -367,10 +366,10 @@
 
 /*ABOUT*/
 
-.about .articleTitle {
+/* .about .articleTitle {
   margin-bottom: 15px;
   margin-top: 15px;
-}
+} */
 
 .aboutText {
   color: var(--light-gray);
@@ -1117,7 +1116,7 @@ textarea.formInput::-webkit-realizer {
   padding: 13px 20px;
   border-radius: 14px;
   font-size: var(--fs6);
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   box-shadow: var(--shadow3);
   z-index: 1;
   transition: var(--transition1);
