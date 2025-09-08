@@ -55,7 +55,7 @@ import MnemonicShield from "@/public/projects/mnemonicShield.png";
 import Logo from "@/public/logo/noble.png";
 import ViceVersaLogo from "@/public/logo/viceVersaLogo.png";
 
-import Carte3D from "./components/3dCardFlipAnimation.js";
+import Card3D from "./components/3dCardFlipAnimation.js";
 
 // Modifier description service (trop repetitif)
 // Numero portable suisse !!
@@ -616,7 +616,7 @@ export default function Home() {
               </div>
             </li>
 
-            <li className={styles.contactItem}>
+            {/* <li className={styles.contactItem}>
               <div className={styles.iconbox}>
                 <ion-icon name="calendar-outline"></ion-icon>
               </div>
@@ -626,7 +626,7 @@ export default function Home() {
 
                 <time dateTime="1982-06-23">11 Août, 1998</time>
               </div>
-            </li>
+            </li> */}
 
             <li className={styles.contactItem}>
               <div className={styles.iconbox}>
@@ -636,7 +636,10 @@ export default function Home() {
               <div className={styles.contactInfo}>
                 <p className={styles.contacttitle}>Localisation</p>
 
-                <address>Genève, Suisse</address>
+                <address>
+                  Bassin lémanique <br />
+                  (Suisse & France)
+                </address>
               </div>
             </li>
           </ul>
@@ -655,7 +658,7 @@ export default function Home() {
                 className={styles.sociallink}
               >
                 <Image
-                  src={isDark ? XIcon : "/icon/XBlack.svg"}
+                  src={isDark ? XIcon : XIconBlack}
                   width={28}
                   height={28}
                   alt="X (Twitter) Icon"
@@ -678,7 +681,10 @@ export default function Home() {
               </a>
             </li>
             <li className={styles.socialItem}>
-              <a href="#" className={styles.sociallink}>
+              <a
+                href="www.linkedin.com/in/arthur-barraud-3302a0139"
+                className={styles.sociallink}
+              >
                 <Image
                   src={isDark ? LinkedinGrey : LinkedinBlack}
                   width={28}
@@ -1135,7 +1141,7 @@ export default function Home() {
                   </button>
                   <h2>{selectedCard.title}</h2>
 
-                  <Carte3D
+                  <Card3D
                     rectoImg={selectedCard.rectoImg}
                     versoImg={selectedCard.versoImg}
                     width={3}
@@ -1179,7 +1185,7 @@ export default function Home() {
                   type="text"
                   name="fullname"
                   className={styles.formInput}
-                  placeholder="Full name"
+                  placeholder="Nom Complet"
                   required
                   data-form-input
                 />
@@ -1187,7 +1193,7 @@ export default function Home() {
                   type="email"
                   name="email"
                   className={styles.formInput}
-                  placeholder="Email Address"
+                  placeholder="Adresse Email"
                   required
                   data-form-input
                 />
@@ -1196,7 +1202,7 @@ export default function Home() {
               <textarea
                 name="message"
                 className={styles.formInput}
-                placeholder="Your Message"
+                placeholder="Ton Message"
                 required
                 data-form-input=""
               ></textarea>
