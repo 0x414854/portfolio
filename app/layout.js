@@ -16,6 +16,9 @@ export const metadata = {
   title: "Arthur Barraud - Portfolio",
   description:
     "Développeur web et créateur de solutions logicielles. Découvrez mes projets en développement web, bots et logiciels.",
+  icons: {
+    icon: "/favicon.ico",
+  },
   keywords: [
     "Création de sites",
     "Développeur web",

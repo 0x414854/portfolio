@@ -637,8 +637,7 @@ export default function Home() {
                 <p className={styles.contacttitle}>Localisation</p>
 
                 <address>
-                  Bassin lémanique <br />
-                  (Suisse & France)
+                  Bassin lémanique -<br /> Suisse & France
                 </address>
               </div>
             </li>
