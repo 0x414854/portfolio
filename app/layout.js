@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import IonIconsLoader from "./lib/ionIconLoader";
+import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -63,7 +65,21 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <IonIconsLoader />
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-JWV4VVPDX3`}
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JWV4VVPDX3');
+          `}
+        </Script>
         {children}
+        <Analytics />
       </body>
     </html>
   );

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@react-email/render": "^1.2.1",
+    "@vercel/analytics": "^1.5.0",
     "ionicons": "^8.0.13",
     "next": "15.5.2",
     "react": "19.1.0",
