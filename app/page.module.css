@@ -658,7 +658,8 @@
 }
 
 .clientsItem img {
-  width: 100%;
+  min-width: 100%;
+  width: 200px;
   filter: grayscale(1);
   transition: var(--transition1);
   border: 1px solid transparent;

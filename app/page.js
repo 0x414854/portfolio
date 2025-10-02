@@ -45,12 +45,14 @@ import CSSIconBlack from "@/public/icon/cssIconBlack.png";
 import JSIcon from "@/public/icon/javascriptIconGrey.png";
 import JSIconBlack from "@/public/icon/javascriptIconBlack.png";
 import NextJsIcon from "@/public/icon/nextJsIconGrey.png";
+import NextJsIconBlack from "@/public/icon/nextJsIconBlack.png";
 
 import TestProject from "@/public/projects/testProject.jpg";
 import BitcoinPrice from "@/public/projects/bitcoinPrice.png";
 import BusinessCardAB from "@/public/projects/businessCardAB.png";
 import BusinessCardABDev from "@/public/projects/businessCardABDev.png";
 import MnemonicShield from "@/public/projects/mnemonicShield.png";
+import ViceVersa from "@/public/projects/viceversa.png";
 
 import Logo from "@/public/logo/noble.png";
 import ViceVersaLogo from "@/public/logo/viceVersaLogo.png";
@@ -175,10 +177,10 @@ export default function Home() {
   // AVIS
   const testimonialsData = [
     {
-      name: "Marina Smith",
-      text: "Je voulais un site qui reflète le côté unique et sur mesure de mes robes. Arthur a parfaitement compris mon identité visuelle et a créé un site à la fois moderne et romantique. J’ai reçu énormément de compliments de mes clientes, certaines m’ont même dit qu’elles m’ont choisie grâce au site.",
+      name: "Isabelle Breniaux - Vice Versa",
+      text: "J'ai fait appel à M. Arthur Barraud pour refaire le site internet de notre atelier. Je suis extrêmement satisfaite du résultat qui a dépassé nos attentes. Conseils avisés et très professionnels. Rapidité de construction et de mise en ligne. Je recommande vivement cette toute jeune entreprise!",
       avatar: Bitmoji,
-      date: "2025-09-02",
+      date: "2025-10-01",
     },
     {
       name: "Gabriel Miller",
@@ -349,15 +351,15 @@ export default function Home() {
       versoImg: "/businessCard/AB/versoDev.png",
     },
     {
-      title: "DSM.",
-      category: "Web Design",
+      title: "Vice Versa Atelier",
+      category: "Web Development",
       logos: {
-        light: [CanvaIcon],
-        dark: [CanvaIconBlack],
+        light: [NextJsIcon],
+        dark: [NextJsIconBlack],
       },
-      image: TestProject,
-      alt: "dsm.",
-      link: "#",
+      image: ViceVersa,
+      alt: "Vice Versa Atelier",
+      link: "https://www.viceversa-atelier.com",
     },
     {
       title: "Metaspark",
