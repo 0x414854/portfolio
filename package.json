@@ -18,5 +18,8 @@
     "resend": "^6.0.2",
     "three": "^0.180.0",
     "three-stdlib": "^2.36.0"
-  }
+  },
+  "browserslist": [
+    "defaults and not IE 11 and not IE_Mob 11"
+  ]
 }

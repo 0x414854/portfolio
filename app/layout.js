@@ -1,19 +1,8 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import IonIconsLoader from "./lib/ionIconLoader";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Arthur Barraud - Portfolio",
@@ -63,9 +52,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <IonIconsLoader />
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
         {/* Google Analytics */}
         <Script
           strategy="afterInteractive"
