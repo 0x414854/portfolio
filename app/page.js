@@ -53,9 +53,12 @@ import BusinessCardAB from "@/public/projects/businessCardAB.png";
 import BusinessCardABDev from "@/public/projects/businessCardABDev.png";
 import MnemonicShield from "@/public/projects/mnemonicShield.png";
 import ViceVersa from "@/public/projects/viceversa.png";
+import MyVisionBoard from "@/public/projects/myVisionBoard.png";
 
 import Logo from "@/public/logo/noble.png";
 import ViceVersaLogo from "@/public/logo/viceVersaLogo.png";
+import MyVisionBoardLogo from "@/public/logo/myvisionboard.png";
+import HaumanaLogo from "@/public/logo/haumana.png";
 
 import Card3D from "./components/3dCardFlipAnimation.js";
 
@@ -63,6 +66,7 @@ import Card3D from "./components/3dCardFlipAnimation.js";
 // Numero portable suisse !!
 // Update style template mail
 // Ajouter description des projets du portfolio
+// Ajouter avis de marina pour myvisionboard
 
 export default function Home() {
   // IS DARK ?
@@ -183,22 +187,28 @@ export default function Home() {
       date: "2025-10-01",
     },
     {
-      name: "Gabriel Miller",
-      text: "Je voulais un site qui reflète le côté unique et sur mesure de mes robes. Arthur a parfaitement compris mon identité visuelle et a créé un site à la fois moderne et romantique. J’ai reçu énormément de compliments de mes clientes, certaines m’ont même dit qu’elles m’ont choisie grâce au site.",
-      avatar: BitmojiT,
-      date: "2025-08-15",
-    },
-    {
-      name: "Emily Evans",
-      text: "Je voulais un site qui reflète le côté unique et sur mesure de mes robes. Arthur a parfaitement compris mon identité visuelle et a créé un site à la fois moderne et romantique. J’ai reçu énormément de compliments de mes clientes, certaines m’ont même dit qu’elles m’ont choisie grâce au site.",
+      name: "My Vision Board",
+      text: "Franchement j’adore cette appli! Super pratique, surtout en complément d’une vision board classique. Je peux noter mes idées dès qu’elles me viennent, modifier mes objectifs à tout moment et suivre ma progression facilement. Tout reste toujours à portée de main, et voir la courbe ainsi que le nombre d’objectifs atteints, c’est hyper motivant! Simple, claire et vraiment utile au quotidien.",
       avatar: Bitmoji,
-      date: "2025-07-30",
+      date: "2025-10-01",
     },
     {
-      name: "Henry Williams",
-      text: "Je voulais un site qui reflète le côté unique et sur mesure de mes robes. Arthur a parfaitement compris mon identité visuelle et a créé un site à la fois moderne et romantique. J’ai reçu énormément de compliments de mes clientes, certaines m’ont même dit qu’elles m’ont choisie grâce au site.",
-      avatar: BitmojiT,
-      date: "2025-06-20",
+      name: "Isabelle Breniaux - Vice Versa",
+      text: "J'ai fait appel à M. Arthur Barraud pour refaire le site internet de notre atelier. Je suis extrêmement satisfaite du résultat qui a dépassé nos attentes. Conseils avisés et très professionnels. Rapidité de construction et de mise en ligne. Je recommande vivement cette toute jeune entreprise!",
+      avatar: Bitmoji,
+      date: "2025-10-01",
+    },
+    {
+      name: "Isabelle Breniaux - Vice Versa",
+      text: "J'ai fait appel à M. Arthur Barraud pour refaire le site internet de notre atelier. Je suis extrêmement satisfaite du résultat qui a dépassé nos attentes. Conseils avisés et très professionnels. Rapidité de construction et de mise en ligne. Je recommande vivement cette toute jeune entreprise!",
+      avatar: Bitmoji,
+      date: "2025-10-01",
+    },
+    {
+      name: "Isabelle Breniaux - Vice Versa",
+      text: "J'ai fait appel à M. Arthur Barraud pour refaire le site internet de notre atelier. Je suis extrêmement satisfaite du résultat qui a dépassé nos attentes. Conseils avisés et très professionnels. Rapidité de construction et de mise en ligne. Je recommande vivement cette toute jeune entreprise!",
+      avatar: Bitmoji,
+      date: "2025-10-01",
     },
   ];
 
@@ -225,11 +235,11 @@ export default function Home() {
       height: 200,
     },
     {
-      src: Logo,
-      alt: "Logo Client 1",
-      link: "#",
-      width: 300,
-      height: 200,
+      src: MyVisionBoardLogo,
+      alt: "MyVisionBoard Logo - My Vision Board",
+      link: "https://www.myvisionboard.life",
+      width: 180,
+      height: 80,
     },
     {
       src: Logo,
@@ -362,48 +372,15 @@ export default function Home() {
       link: "https://www.viceversa-atelier.com",
     },
     {
-      title: "Metaspark",
-      category: "Web Design",
-      logos: {
-        light: [CanvaIcon],
-        dark: [CanvaIconBlack],
-      },
-      image: TestProject,
-      alt: "metaspark",
-      link: "#",
-    },
-    {
-      title: "Summary",
+      title: "MyVisionBoard",
       category: "Web Development",
       logos: {
-        light: [CanvaIcon],
-        dark: [CanvaIconBlack],
+        light: [NextJsIcon],
+        dark: [NextJsIconBlack],
       },
-      image: TestProject,
-      alt: "summary",
-      link: "#",
-    },
-    {
-      title: "Task Manager",
-      category: "Applications",
-      logos: {
-        light: [CanvaIcon],
-        dark: [CanvaIconBlack],
-      },
-      image: TestProject,
-      alt: "task manager",
-      link: "#",
-    },
-    {
-      title: "Arrival",
-      category: "Web Development",
-      logos: {
-        light: [CanvaIcon],
-        dark: [CanvaIconBlack],
-      },
-      image: TestProject,
-      alt: "arrival",
-      link: "#",
+      image: MyVisionBoard,
+      alt: "MyVisionBoard image - My Vision Board",
+      link: "https://www.myvisionboard.life",
     },
   ];
 
@@ -654,9 +631,10 @@ export default function Home() {
               </a>
             </li> */}
             <li className={styles.socialItem}>
-              <a
+              <Link
                 href="https://x.com/from0toBitcoin"
                 className={styles.sociallink}
+                target="_blank"
               >
                 <Image
                   src={isDark ? XIcon : XIconBlack}
@@ -664,13 +642,15 @@ export default function Home() {
                   height={28}
                   alt="X (Twitter) Icon"
                   className={styles.socialIcon}
+                  loading="lazy"
                 />
-              </a>
+              </Link>
             </li>
             <li className={styles.socialItem}>
-              <a
+              <Link
                 href="https://github.com/0x414854"
                 className={styles.sociallink}
+                target="_blank"
               >
                 <Image
                   src={isDark ? GithubIcon : GithubBlack}
@@ -678,13 +658,15 @@ export default function Home() {
                   height={28}
                   alt="Github Icon"
                   className={styles.socialIcon}
+                  loading="lazy"
                 />
-              </a>
+              </Link>
             </li>
             <li className={styles.socialItem}>
-              <a
-                href="www.linkedin.com/in/arthur-barraud-3302a0139"
+              <Link
+                href="https://www.linkedin.com/in/arthur-barraud-3302a0139/"
                 className={styles.sociallink}
+                target="_blank"
               >
                 <Image
                   src={isDark ? LinkedinGrey : LinkedinBlack}
@@ -692,8 +674,9 @@ export default function Home() {
                   height={28}
                   alt="Linkedin Icon"
                   className={styles.socialIcon}
+                  loading="lazy"
                 />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -801,6 +784,7 @@ export default function Home() {
                       alt="icon"
                       width={60}
                       height={60}
+                      loading="lazy"
                     />
                   </div>
 
@@ -836,6 +820,7 @@ export default function Home() {
                         width={70}
                         height={70}
                         data-testimonials-avatar
+                        loading="lazy"
                       />
                     </figure>
                     <h4
@@ -879,6 +864,7 @@ export default function Home() {
                       src={selectedTestimonial.avatar}
                       alt={selectedTestimonial.name}
                       width={80}
+                      loading="lazy"
                     />
                   </figure>
                   <Image
@@ -886,6 +872,7 @@ export default function Home() {
                     alt="quote icon"
                     width={40}
                     height={40}
+                    loading="lazy"
                   />
                 </div>
 
@@ -924,6 +911,7 @@ export default function Home() {
                       alt={client.alt}
                       width={client.width}
                       height={client.height}
+                      loading="lazy"
                     />
                   </Link>
                 </li>

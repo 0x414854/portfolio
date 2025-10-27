@@ -640,7 +640,7 @@
 .clientsList {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 15px;
   margin: 0 -15px;
   padding: 25px;
@@ -1572,8 +1572,8 @@ textarea.formInput::-webkit-realizer {
     max-width: calc(100% - 62px);
   }
   .contactItem:nth-of-type(2) .contactInfo {
-    max-width: calc(100% - 98px);
-    width: calc(100% - 98px);
+    max-width: calc(100% - 90px);
+    width: calc(100% - 90px);
   }
 
   .maincontent {
