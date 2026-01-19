@@ -5,10 +5,15 @@ import Link from "next/link";
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 
+import HomeModal from "./components/homeModal";
+
 import styles from "./page.module.css";
 
 import MyBitmoji from "@/public/bitmoji/myBitmoji.png";
-import Bitmoji from "@/public/bitmoji/bitmoji1.png";
+import viceVersaBitmoji from "@/public/bitmoji/viceVersa.png";
+import MyVisionBoardBitmoji from "@/public/bitmoji/myVisionBoard.png";
+import CDOBitmoji from "@/public/bitmoji/CDOMultiservices.png";
+
 import BitmojiT from "@/public/bitmoji/bitmoji2.png";
 
 import IconDesign from "@/public/icon/iconDesign.png";
@@ -54,10 +59,12 @@ import BusinessCardABDev from "@/public/projects/businessCardABDev.png";
 import MnemonicShield from "@/public/projects/mnemonicShield.png";
 import ViceVersa from "@/public/projects/viceversa.png";
 import MyVisionBoard from "@/public/projects/myVisionBoard.png";
+import CDOMuliservices from "@/public/projects/CDOMultiservices.png";
 
 import Logo from "@/public/logo/noble.png";
 import ViceVersaLogo from "@/public/logo/viceVersaLogo.png";
 import MyVisionBoardLogo from "@/public/logo/myvisionboard.png";
+import CDOMultiservicesLogo from "@/public/logo/CDOLogo.png";
 import HaumanaLogo from "@/public/logo/haumana.png";
 
 import Card3D from "./components/3dCardFlipAnimation.js";
@@ -67,6 +74,7 @@ import Card3D from "./components/3dCardFlipAnimation.js";
 // Update style template mail
 // Ajouter description des projets du portfolio
 // Ajouter avis de marina pour myvisionboard
+// Ajouter un avis de CDO
 
 export default function Home() {
   // IS DARK ?
@@ -183,32 +191,26 @@ export default function Home() {
     {
       name: "Isabelle Breniaux - Vice Versa",
       text: "J'ai fait appel à M. Arthur Barraud pour refaire le site internet de notre atelier. Je suis extrêmement satisfaite du résultat qui a dépassé nos attentes. Conseils avisés et très professionnels. Rapidité de construction et de mise en ligne. Je recommande vivement cette toute jeune entreprise!",
-      avatar: Bitmoji,
+      avatar: viceVersaBitmoji,
       date: "2025-10-01",
     },
     {
       name: "My Vision Board",
       text: "Franchement j’adore cette appli! Super pratique, surtout en complément d’une vision board classique. Je peux noter mes idées dès qu’elles me viennent, modifier mes objectifs à tout moment et suivre ma progression facilement. Tout reste toujours à portée de main, et voir la courbe ainsi que le nombre d’objectifs atteints, c’est hyper motivant! Simple, claire et vraiment utile au quotidien.",
-      avatar: Bitmoji,
+      avatar: MyVisionBoardBitmoji,
       date: "2025-10-01",
     },
     {
-      name: "Isabelle Breniaux - Vice Versa",
-      text: "J'ai fait appel à M. Arthur Barraud pour refaire le site internet de notre atelier. Je suis extrêmement satisfaite du résultat qui a dépassé nos attentes. Conseils avisés et très professionnels. Rapidité de construction et de mise en ligne. Je recommande vivement cette toute jeune entreprise!",
-      avatar: Bitmoji,
-      date: "2025-10-01",
+      name: "CDO Multiservices",
+      text: "Une création de site web rapide, professionnelle et parfaitement maîtrisée. CDO Multiservices dispose désormais d’un site clair, moderne et efficace, conçu pour inspirer confiance et valoriser notre savoir-faire. Un travail de qualité livré dans des délais courts, avec un vrai sens du service et du détail.”",
+      avatar: CDOBitmoji,
+      date: "2026-01-14",
     },
     {
-      name: "Isabelle Breniaux - Vice Versa",
-      text: "J'ai fait appel à M. Arthur Barraud pour refaire le site internet de notre atelier. Je suis extrêmement satisfaite du résultat qui a dépassé nos attentes. Conseils avisés et très professionnels. Rapidité de construction et de mise en ligne. Je recommande vivement cette toute jeune entreprise!",
-      avatar: Bitmoji,
-      date: "2025-10-01",
-    },
-    {
-      name: "Isabelle Breniaux - Vice Versa",
-      text: "J'ai fait appel à M. Arthur Barraud pour refaire le site internet de notre atelier. Je suis extrêmement satisfaite du résultat qui a dépassé nos attentes. Conseils avisés et très professionnels. Rapidité de construction et de mise en ligne. Je recommande vivement cette toute jeune entreprise!",
-      avatar: Bitmoji,
-      date: "2025-10-01",
+      name: "Haumana Bien-être",
+      text: "En cours de developpement",
+      avatar: viceVersaBitmoji,
+      date: "2026-01-14",
     },
   ];
 
@@ -229,24 +231,24 @@ export default function Home() {
   const clients = [
     {
       src: ViceVersaLogo,
-      alt: "Vice Versa Logo",
+      alt: "Logo du site Vice Versa Atelier - Styliste de robe de marié et accesoires",
       link: "https://viceversa-atelier.com",
       width: 200,
       height: 200,
     },
     {
       src: MyVisionBoardLogo,
-      alt: "MyVisionBoard Logo - My Vision Board",
+      alt: "Logo du site MyVisionBoard - My Vision Board",
       link: "https://www.myvisionboard.life",
       width: 180,
       height: 80,
     },
     {
-      src: Logo,
-      alt: "Logo Client 2",
-      link: "#",
-      width: 200,
-      height: 200,
+      src: CDOMultiservicesLogo,
+      alt: "Logo du site CDO Multiservices - Entreprise de nettoyage en Suisse",
+      link: "https://www.cdo-multiservices.ch",
+      width: 300,
+      height: 120,
     },
     {
       src: Logo,
@@ -381,6 +383,17 @@ export default function Home() {
       image: MyVisionBoard,
       alt: "MyVisionBoard image - My Vision Board",
       link: "https://www.myvisionboard.life",
+    },
+    {
+      title: "CDO Multiservices",
+      category: "Web Development",
+      logos: {
+        light: [NextJsIcon],
+        dark: [NextJsIconBlack],
+      },
+      image: CDOMuliservices,
+      alt: "CDO Multiservices image",
+      link: "https://www.cdo-multiservices.ch",
     },
   ];
 
@@ -534,8 +547,28 @@ export default function Home() {
     }
   }, [message]);
 
+  // RAFFLE MODAL
+
+  const [isRaffleModalOpen, setIsRaffleModalOpen] = useState(false);
+  useEffect(() => {
+    const today = new Date().toDateString();
+    const lastSeen = localStorage.getItem("contestModalSeen");
+
+    if (lastSeen !== today) {
+      setTimeout(() => {
+        setIsRaffleModalOpen(true);
+        localStorage.setItem("contestModalSeen", today);
+      }, 800);
+    }
+  }, []);
+
   return (
     <main className={styles.main}>
+      {/* Modal */}
+      <HomeModal
+        isActive={isRaffleModalOpen}
+        onClose={() => setIsRaffleModalOpen(false)}
+      />
       <aside className={styles.sidebar} data-sidebar>
         <div className={styles.sidebarInfo}>
           <figure className={styles.avatarBox}>
@@ -553,6 +586,14 @@ export default function Home() {
               <p className={styles.title}>Blockchain Developer</p> */}
             </div>
           </div>
+
+          <button
+            className={styles.modalButton}
+            onClick={() => setIsRaffleModalOpen(true)}
+          >
+            <span>Tirage au sort</span>
+            <ion-icon name="trophy"></ion-icon>
+          </button>
 
           <button className={styles.infoMoreBtn} data-sidebar-btn>
             <span>Afficher les contacts</span>
@@ -682,6 +723,17 @@ export default function Home() {
         </div>
       </aside>
       <div className={styles.maincontent}>
+        <button
+          className={styles.mainModalButton}
+          onClick={() => setIsRaffleModalOpen(true)}
+        >
+          <span className={`${styles.sparkle} ${styles.s1}`}>✦</span>
+          <span className={`${styles.sparkle} ${styles.s2}`}>✦</span>
+          <span className={`${styles.sparkle} ${styles.s3}`}>✦</span>
+          <span className={`${styles.sparkle} ${styles.s4}`}>✦</span>
+          <span className={`${styles.sparkle} ${styles.s5}`}>✦</span>
+          <span>Tirage au sort</span>
+        </button>
         <nav className={styles.navbar}>
           <ul className={styles.navbarlist}>
             <li className={styles.navbaritem}>

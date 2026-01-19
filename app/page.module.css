@@ -210,8 +210,22 @@
   transition: var(--transition1);
   z-index: 1;
 }
+.modalButton {
+  position: absolute;
+  top: -15px;
+  right: 30px;
+  border-radius: 0 10px;
+  font-size: 13px;
+  color: var(--orange-yellow-crayola);
+  background: var(--border-gradient-onyx);
+  padding: 10px;
+  box-shadow: var(--shadow2);
+  transition: var(--transition1);
+  z-index: 1;
+}
 
-.infoMoreBtn::before {
+.infoMoreBtn::before,
+.modalButton::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -222,15 +236,20 @@
 }
 
 .infoMoreBtn:hover,
-.infoMoreBtn:focus {
+.infoMoreBtn:focus,
+.modalButton:hover,
+.modalButton:focus {
   background: var(--bg-gradient-yellow1);
 }
 .infoMoreBtn:hover::before,
-.infoMoreBtn:focus::before {
+.infoMoreBtn:focus::before,
+.modalButton:hover::before,
+.modalButton:focus::before {
   background: var(--bg-gradient-yellow2);
 }
 
-.infoMoreBtn span {
+.infoMoreBtn span,
+.modalButton span {
   display: none;
 }
 
@@ -324,6 +343,10 @@
 .sociallink:hover .socialIcon,
 .sociallink:focus .socialIcon {
   filter: var(--filter-social-icon);
+}
+
+.mainModalButton {
+  display: none;
 }
 
 /*NAVBAR*/
@@ -641,7 +664,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 3rem;
   margin: 0 -15px;
   padding: 25px;
   padding-bottom: 25px;
@@ -653,7 +676,7 @@
 }
 
 .clientsItem {
-  min-width: 50%;
+  min-width: 80%;
   scroll-snap-align: start;
 }
 
@@ -1163,7 +1186,7 @@ textarea.formInput::-webkit-realizer {
 
 @media (min-width: 450px) {
   .clientsItem {
-    min-width: calc(50% - 10px);
+    min-width: calc(80% - 10px);
   }
 
   .projectImg,
@@ -1179,12 +1202,12 @@ textarea.formInput::-webkit-realizer {
 
 @media (max-width: 579px) {
   .contactInfo {
-    max-width: calc(50% - 15px);
-    width: calc(50% - 15px);
+    max-width: calc(80% - 15px);
+    width: calc(80% - 15px);
   }
   .contactItem:nth-of-type(2) .contactInfo {
-    max-width: calc(50% - 48px);
-    width: calc(50% - 10px);
+    max-width: calc(80% - 48p dx);
+    width: calc(80% - 10px);
   }
   .contactInfo :is(.contactLink, time, address) {
     white-space: nowrap;
@@ -1265,13 +1288,21 @@ textarea.formInput::-webkit-realizer {
     right: -30px;
     padding: 10px 15px;
   }
+  .modalButton {
+    top: -30px;
+    right: 130px;
+    padding: 10px 15px;
+    border-radius: 0 0 10px 10px;
+  }
 
-  .infoMoreBtn span {
+  .infoMoreBtn span,
+  .modalButton span {
     display: block;
     font-size: var(--fs8);
   }
 
-  .infoMoreBtn ion-icon {
+  .infoMoreBtn ion-icon,
+  .modalButton ion-icon {
     display: none;
   }
 
@@ -1400,14 +1431,14 @@ textarea.formInput::-webkit-realizer {
   }
 
   .clientsList {
-    gap: 25px;
+    gap: 3rem;
     margin: 0 -30px;
     padding: 45px;
     scroll-padding-inline: 45px;
   }
 
   .clientsItem {
-    min-width: calc(33.33% - 35px);
+    min-width: calc(70% - 35px);
   }
 
   .timelinelist {
@@ -1703,6 +1734,9 @@ textarea.formInput::-webkit-realizer {
   .infoContent .title {
     margin: auto;
   }
+  .modalButton {
+    display: none;
+  }
 
   .infoMoreBtn {
     display: none;
@@ -1734,5 +1768,133 @@ textarea.formInput::-webkit-realizer {
 
   .timelinetext {
     max-width: 700px;
+  }
+  .mainModalButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    right: 460px;
+    height: 59.5px;
+    z-index: 5;
+    padding: 20px 50px 20px 30px;
+    border-radius: 0 0 0 20px;
+    font-size: 13px;
+    color: var(--orange-yellow-crayola);
+    background: var(--border-gradient-onyx);
+    box-shadow: var(--shadow2);
+    transition: var(--transition1);
+  }
+  .mainModalButton::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: inherit;
+    background: var(--bg-gradient-jet);
+    transition: var(--transition1);
+    z-index: -1;
+  }
+
+  .mainModalButton:hover,
+  .mainModalButton:focus {
+    background: var(--bg-gradient-yellow1);
+  }
+
+  .mainModalButton:hover::before,
+  .mainModalButton:focus::before {
+    background: var(--bg-gradient-yellow2);
+  }
+  .sparkle {
+    position: absolute;
+    font-size: 14px;
+    color: var(--white1);
+    /* color: var(--orange-yellow-crayola); */
+    opacity: 0;
+    z-index: 1;
+    animation: sparkle 2.5s infinite ease-in-out;
+    filter: drop-shadow(0 0 6px var(--orange-yellow-crayola));
+  }
+  .s1 {
+    top: -1%;
+    left: 1%;
+    animation-delay: 0s;
+  }
+
+  .s2 {
+    top: 4%;
+    left: 70%;
+    animation-delay: 0.3s;
+  }
+
+  .s3 {
+    top: 12%;
+    left: 35%;
+    animation-delay: 0.6s;
+  }
+
+  .s4 {
+    top: 60%;
+    left: 14%;
+    animation-delay: 0.9s;
+  }
+
+  .s5 {
+    top: 80%;
+    left: 65%;
+    animation-delay: 1.2s;
+  }
+
+  @keyframes sparkle {
+    0% {
+      opacity: 0;
+      transform: scale(0.6) rotate(0deg);
+    }
+    40% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1) rotate(90deg);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.6) rotate(180deg);
+    }
+  }
+}
+@media (min-width: 1450px) {
+  .mainModalButton {
+    right: 420px;
+  }
+}
+@media (min-width: 1920px) {
+  .mainModalButton {
+    right: 450px;
+  }
+}
+@media (min-width: 2047px) {
+  .modalButton {
+    right: 460px;
+  }
+}
+@media (min-width: 2240px) {
+  .modalButton {
+    right: 920px;
+  }
+}
+@media (min-width: 2560px) {
+  .modalButton {
+    right: 1075px;
+  }
+}
+@media (min-width: 3200px) {
+  .modalButton {
+    right: 1410px;
+  }
+}
+@media (min-width: 3840px) {
+  .modalButton {
+    right: 1725px;
   }
 }
