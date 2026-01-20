@@ -303,6 +303,10 @@
   .recap {
     width: 80%;
   }
+  .successMessage {
+    width: 800px;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 1280px) {
   .recap {
