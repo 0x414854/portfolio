@@ -37,6 +37,17 @@ export default function DrawPage() {
     }, 100); // petit délai pour s'assurer que l'élément est rendu
   };
 
+  const handleFormSuccess = () => {
+    setShowRules(true);
+
+    setTimeout(() => {
+      const rulesElement = document.getElementById("rules");
+      if (rulesElement) {
+        rulesElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 100);
+  };
+
   return (
     <main className={styles.DrawPageContainer}>
       {/* Bouton de retour */}
@@ -138,7 +149,7 @@ export default function DrawPage() {
       {/* Règlement */}
 
       <section className={styles.ctaForm}>
-        <DrawForm showRules={handleOpenRules} />
+        <DrawForm showRules={handleOpenRules} onSuccess={handleFormSuccess} />
       </section>
 
       {/* CTA pour formulaire */}
@@ -178,12 +189,12 @@ export default function DrawPage() {
 
             <li>
               Les inscriptions sont ouvertes jusqu’au
-              <span className={styles.ctaText}> 13 février à 20h</span>.
+              <span className={styles.ctaText}> 6 février à 20h</span>.
             </li>
 
             <li>
               Le tirage au sort aura lieu le
-              <span className={styles.ctaText}> 14 février à 20h</span>, parmi
+              <span className={styles.ctaText}> 7 février à 20h</span>, parmi
               l’ensemble des participations valides.
             </li>
 
@@ -211,7 +222,7 @@ export default function DrawPage() {
               Les gagnants seront
               <span className={styles.ctaText}>
                 {" "}
-                contactés le 15 février
+                contactés le 9 février
               </span>{" "}
               via les coordonnées fournies lors de l’inscription.
             </li>

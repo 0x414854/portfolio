@@ -229,19 +229,31 @@
 .inputError {
   outline: 1px solid #e63946;
 }
+.successWrapper {
+  position: relative;
+  width: 90%;
+}
+
 .successMessage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: #e6f9f0;
   border: 1px solid #3ccf91;
   color: #1e7f52;
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 16px;
   margin-bottom: 20px;
   text-align: center;
   font-weight: 600;
 }
+
 @media (min-width: 590px) {
   .titleSection,
-  .drawForm {
+  .drawForm,
+  .successWrapper {
     width: 80%;
   }
   .stepRow input,

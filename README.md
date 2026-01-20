@@ -4,8 +4,5 @@
 
 Coming soon...
 
-- Ajouter bitmoji CDO + avis
-- Ajuster les couleur en mode !dark
-- Modifier couleur iterne dans input website url
 - Faire en sorte que les erreur des label reste rouge si inout pas remplis => actuel = tout rouge et si un remplis, tout les label passe au blanc
 - rectifier pourquoi pour le nom de l'enteprise la border de l'input reste rouge et pas pour les autres
