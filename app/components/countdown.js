@@ -4,18 +4,24 @@ import styles from "@/styles/components/countdown.module.css";
 import { useEffect, useState } from "react";
 
 export default function Countdown({ targetDate }) {
+  const [mounted, setMounted] = useState(false);
   const [timeLeft, setTimeLeft] = useState(null);
 
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
+
     const target = new Date(targetDate).getTime();
 
-    const interval = setInterval(() => {
+    const updateTime = () => {
       const now = Date.now();
       const distance = target - now;
 
       if (distance <= 0) {
         setTimeLeft(null);
-        clearInterval(interval);
         return;
       }
 
@@ -35,11 +41,27 @@ export default function Countdown({ targetDate }) {
           "0"
         ),
       });
-    }, 1000);
+    };
+
+    updateTime();
+    const interval = setInterval(updateTime, 1000);
 
     return () => clearInterval(interval);
-  }, [targetDate]);
+  }, [mounted, targetDate]);
 
+  /* 🔹 Skeleton SSR-safe */
+  if (!mounted) {
+    return (
+      <div className={styles.skeleton}>
+        <span />
+        <span />
+        <span />
+        <span />
+      </div>
+    );
+  }
+
+  /* 🔹 Countdown terminé */
   if (!timeLeft) {
     return (
       <p>
