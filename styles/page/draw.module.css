@@ -38,6 +38,7 @@
 }
 .backButton:hover img {
   transform: translateX(-4px);
+  /* filter: invert(94%) sepia(88%) saturate(716%) hue-rotate(7deg) brightness(1.1); */
 }
 
 /* Titre et sous-titre */
@@ -460,5 +461,15 @@
     top: 22%;
     left: 10%;
     animation-delay: 0.6s;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .backButton img {
+    filter: invert(1);
+  }
+  .backButton:hover img {
+    /* au hover, on applique un color overlay avec mix-blend-mode ou filter */
+    filter: invert(36%) sepia(96%) saturate(5350%) hue-rotate(180deg)
+      brightness(0.95) contrast(1);
   }
 }

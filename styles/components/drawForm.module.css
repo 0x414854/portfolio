@@ -120,14 +120,16 @@
   padding: 10px 12px;
   border-radius: 8px;
   border: none;
-  background: var(--light-gray);
+  background: var(--smoky-black);
   color: black;
 }
 .stepRow select {
+  appearance: none;
   padding: 10px 12px;
   border-radius: 8px;
   border: none;
-  background: var(--light-gray);
+  background: var(--smoky-black);
+  color: var(--white1);
 }
 .buttonGroup {
   display: flex;
@@ -138,8 +140,8 @@
 .buttonGroup button {
   padding: 8px 16px;
   border-radius: 30px;
-  background: var(--light-gray);
-  color: var(--bg-body);
+  background: var(--smoky-black);
+  color: var(--white1);
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -174,6 +176,7 @@
   cursor: pointer;
   border: 1px solid transparent;
   transition: all 0.3s ease;
+  /* color: var(--jet); */
 }
 
 .submitBtn {
@@ -190,7 +193,7 @@
 
 .backBtn {
   background: var(--bg-body);
-  color: var(--white1);
+  color: var(--orange-yellow-crayola);
   border: 1px solid var(--orange-yellow-crayola);
 }
 
@@ -292,5 +295,11 @@
 @media (min-width: 1280px) {
   .recap {
     width: 80%;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .backBtn {
+    color: var(--jet);
   }
 }
