@@ -521,6 +521,8 @@
 @media (min-width: 1280px) {
   .modal {
     width: 60%;
+    max-height: 80vh;
+    overflow-y: none;
   }
 }
 @media (min-width: 1440px) {

@@ -63,15 +63,15 @@ export default function DrawPage() {
         <h1 className={styles.title}>
           🎉 Grand Tirage au Sort pour Votre Entreprise
         </h1>
-        <p className={styles.subtitle}>
+        <h2 className={styles.subtitle}>
           Gagnez un site web professionnel clé en main et boostez votre activité
-        </p>
+        </h2>
       </section>
 
       {/* Countdown */}
       <section className={styles.countdownSection}>
-        <h2>⏳ Temps restant avant le tirage</h2>
-        <Countdown targetDate="2026-02-06T20:00:00" />
+        {/* <h2>⏳ Temps restant avant le tirage</h2> */}
+        <Countdown />
       </section>
 
       {/* Récompenses */}
