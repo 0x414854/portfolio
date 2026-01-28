@@ -33,7 +33,7 @@ export async function POST(req) {
 
   try {
     const body = await req.json();
-    const { secret, mode } = body;
+    const { mode } = body;
 
     console.log("🔎 Mode reçu :", mode);
 
@@ -83,7 +83,7 @@ export async function POST(req) {
         .from("prospects")
         .select("email")
         .not("email", "is", null)
-        .eq("draw_email_send", false);
+        .eq("draw_email_sent", false);
 
       if (error) {
         console.error("❌ Erreur récupération prospects :", error.message);
@@ -133,7 +133,7 @@ export async function POST(req) {
           const { error: updateError } = await supabase
             .from("prospects")
             .update({
-              draw_email_send: true,
+              draw_email_sent: true,
               draw_email_sent_at: new Date(),
               draw_email_resend_id: response.data?.id,
             })
