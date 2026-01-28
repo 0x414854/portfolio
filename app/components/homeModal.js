@@ -91,7 +91,6 @@ export default function HomeModal({ isActive, onClose }) {
         </ul>
 
         <div className={styles.countdown}>
-          <h3>Temps restant avant le tirage :</h3>
           <Countdown targetDate="2026-02-06T20:00:00" />
         </div>
 

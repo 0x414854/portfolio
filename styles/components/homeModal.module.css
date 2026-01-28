@@ -305,10 +305,6 @@
   background: var(--text-gradient-yellow);
   border-radius: 14px;
 }
-.countdown h3 {
-  font-size: 18px;
-  margin-bottom: 0.5rem;
-}
 
 /* subtle urgency animation */
 @keyframes pulse {
@@ -521,7 +517,7 @@
 @media (min-width: 1280px) {
   .modal {
     width: 60%;
-    max-height: 80vh;
+    max-height: 90vh;
     overflow-y: none;
   }
 }
