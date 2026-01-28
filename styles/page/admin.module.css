@@ -202,6 +202,81 @@
   cursor: not-allowed;
 }
 
+.pdfCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.pdfCard {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  color: var(--orange-yellow-crayola);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.pdfCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.pdfInfo {
+  margin-bottom: 1rem;
+}
+
+.pdfName {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.pdfMeta {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.pdfActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.viewButton,
+.deleteButton {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.viewButton {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.viewButton:hover {
+  background-color: #4338ca;
+}
+
+.deleteButton {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.deleteButton:hover {
+  background-color: #b91c1c;
+}
+
 .cardsContainer {
   display: flex;
   flex-wrap: wrap;

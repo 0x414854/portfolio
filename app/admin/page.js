@@ -90,6 +90,13 @@ export default function AdminPage() {
     }
   };
 
+  // Export automatique du PDF dès qu'un report est généré
+  useEffect(() => {
+    if (report) {
+      exportReport();
+    }
+  }, [report]);
+
   // -------- FETCH PDF HISTORY --------
   const fetchReports = async () => {
     try {
@@ -105,6 +112,31 @@ export default function AdminPage() {
   useEffect(() => {
     if (authorized) fetchReports();
   }, [authorized]);
+
+  // -------- DELETE PDF --------
+  const handleDeletePdf = async (fileName) => {
+    if (!confirm(`Voulez-vous vraiment supprimer ${fileName} ?`)) return;
+
+    try {
+      const res = await fetch(
+        `/api/reports/delete?file=${encodeURIComponent(fileName)}`,
+        {
+          method: "DELETE",
+        }
+      );
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "Erreur suppression PDF");
+      }
+
+      // Mettre à jour la liste après suppression
+      setPdfReports((prev) => prev.filter((file) => file.name !== fileName));
+    } catch (err) {
+      alert("Erreur lors de la suppression : " + err.message);
+      console.error(err);
+    }
+  };
 
   // -------- PAGE LOGIN --------
   if (!authorized) {
@@ -168,15 +200,52 @@ export default function AdminPage() {
             : `Lancer la campagne (${mode.toUpperCase()})`}
         </button>
 
-        {report && (
+        {/* {report && (
           <button onClick={exportReport} className={styles.sendButton}>
             Exporter PDF
           </button>
-        )}
+        )} */}
 
         <div className={styles.pdfList}>
           <h2>📁 Historique des rapports PDF</h2>
-          {/* <ul>
+          <div className={styles.pdfCardsContainer}>
+            {pdfReports.map((file) => {
+              // Convertir la taille en KB/MB
+              const sizeInKB = file.size;
+              const date = file.date;
+
+              return (
+                <div key={file.name} className={styles.pdfCard}>
+                  <div className={styles.pdfInfo}>
+                    <p className={styles.pdfName}>{file.name}</p>
+                    <p className={styles.pdfMeta}>
+                      {sizeInKB} KB • {date}
+                    </p>
+                  </div>
+                  <div className={styles.pdfActions}>
+                    <a
+                      href={file.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.viewButton}
+                      download={file.name} // force le téléchargement si nécessaire
+                    >
+                      Voir
+                    </a>
+                    <button
+                      className={styles.deleteButton}
+                      onClick={() => handleDeletePdf(file.name)}
+                    >
+                      Supprimer
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* <ul>
             {pdfReports.map((file) => (
               <li key={file.name}>
                 <a
@@ -191,16 +260,6 @@ export default function AdminPage() {
               </li>
             ))}
           </ul> */}
-          <ul>
-            {pdfReports.map((file) => (
-              <li key={file.name}>
-                <a href={file.url} target="_blank" rel="noopener noreferrer">
-                  {file.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
 
         {report && (
           <>

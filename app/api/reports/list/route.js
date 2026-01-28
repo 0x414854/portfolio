@@ -11,13 +11,33 @@ export async function GET() {
 
     if (error) throw error;
 
-    // Retourne seulement le nom et l'URL publique
-    const files = data.map((file) => {
-      const { publicUrl } = supabase.storage
-        .from("mail reports")
-        .getPublicUrl(file.name);
-      return { name: file.name, url: publicUrl };
-    });
+    const files = await Promise.all(
+      data.map(async (file) => {
+        const { data, error } = await supabase.storage
+          .from("mail reports")
+          .createSignedUrl(file.name, 60 * 60); // URL valable 1h
+
+        if (error) console.error("Erreur URL  :", error);
+
+        const url = data.signedUrl;
+
+        const sizeInKB = file.metadata?.size
+          ? (file.metadata.size / 1024).toFixed(2)
+          : null;
+
+        const date = file.updated_at
+          ? new Date(file.updated_at).toISOString()
+          : null;
+
+        return {
+          name: file.name,
+          url: url,
+          size: sizeInKB,
+          date,
+        };
+      })
+    );
+    console.log(files);
 
     return new Response(JSON.stringify({ files }), { status: 200 });
   } catch (err) {
