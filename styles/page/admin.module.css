@@ -57,6 +57,7 @@
 .adminPage {
   display: flex;
   width: 100%;
+  flex-direction: column;
   /* height: 100vh; */
   /* align-items: center; */
   /* justify-content: center; */
@@ -75,11 +76,112 @@
   border-radius: 16px;
   color: var(--white1);
 }
-.dashboardContainer h1 {
+.dashboardHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: var(--white1);
+  gap: 2rem;
+}
+.dashboardHeader h1 {
   font-size: 1.8rem;
   color: var(--white1);
   text-align: center;
 }
+
+.adminStatus {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  font-weight: bold;
+}
+.statusContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.statusContainer p {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.connectedIndicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: green;
+  display: inline-block;
+  animation: connected 3s infinite;
+}
+@keyframes connected {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logoutButton {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #ff3b30;
+  color: var(--white1);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Container du select mode */
+.modeSelector {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* margin: 20px 0; */
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+/* Label */
+.modeSelector label {
+  font-weight: 500;
+  color: var(--white1);
+  font-size: 1rem;
+}
+
+/* Select */
+.modeSelector select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/* Effet au focus */
+.modeSelector select:focus {
+  border-color: #4f46e5; /* violet clair pour accent */
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+  outline: none;
+}
+
+/* Option hover (dans certains navigateurs) */
+.modeSelector select option:hover {
+  background-color: #f0f0f0;
+}
+
 .sendButton {
   padding: 12px 20px;
   background-color: #007bff;
@@ -186,9 +288,20 @@
     width: 80%;
     margin: 0 auto;
   }
-  .dashboardContainer h1 {
+  .dashboardHeader h1 {
     font-size: 2.2rem;
   }
+  .adminStatus {
+    flex-direction: row-reverse;
+    gap: 3rem;
+  }
+  .statusContainer {
+    gap: 2rem;
+  }
+  .statusContainer p,
+  .logoutButton,
+  .modeSelector label,
+  .modeSelector select,
   .sendButton {
     font-size: 1.1rem;
   }
@@ -216,9 +329,13 @@
     width: 80%;
     margin: 0 auto;
   }
-  .dashboardContainer h1 {
+  .dashboardHeader h1 {
     font-size: 2.6rem;
   }
+  .statusContainer p,
+  .logoutButton,
+  .modeSelector label,
+  .modeSelector select,
   .sendButton {
     font-size: 1.2rem;
   }
@@ -246,9 +363,13 @@
     width: 80%;
     margin: 0 auto;
   }
-  .dashboardContainer h1 {
+  .dashboardHeader h1 {
     font-size: 3rem;
   }
+  .statusContainer p,
+  .logoutButton,
+  .modeSelector label,
+  .modeSelector select,
   .sendButton {
     font-size: 1.3rem;
   }

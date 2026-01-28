@@ -20,6 +20,11 @@ export async function GET() {
 }
 
 export async function POST(req) {
+  const session = req.cookies.get("admin_session");
+
+  if (!session) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
   const startTime = Date.now();
 
   console.log("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
@@ -32,11 +37,11 @@ export async function POST(req) {
 
     console.log("🔎 Mode reçu :", mode);
 
-    // 🔐 Vérification sécurité
-    if (secret !== process.env.ADMIN_SECRET) {
-      console.warn("⛔ Tentative d'accès non autorisée");
-      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-    }
+    // // 🔐 Vérification sécurité
+    // if (secret !== process.env.ADMIN_SECRET) {
+    //   console.warn("⛔ Tentative d'accès non autorisée");
+    //   return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    // }
 
     console.log("🔐 Authentification validée");
 
@@ -49,6 +54,7 @@ export async function POST(req) {
     }
 
     let emails = [];
+    let details = [];
 
     // 🧪 MODE TEST
     if (mode === "test") {
@@ -59,6 +65,13 @@ export async function POST(req) {
         "ath.tes@proton.me",
         "arthur.barraud@proton.me",
       ];
+
+      // details = emails.map((email) => ({
+      //   email,
+      //   status: "sent",
+      //   resendId: "test-id", // ou null si tu veux
+      //   error: null,
+      // }));
     }
 
     // 🚀 MODE PRODUCTION
@@ -97,7 +110,6 @@ export async function POST(req) {
 
     let success = 0;
     let failed = 0;
-    let details = [];
 
     // 🔁 Envoi des emails
     for (let i = 0; i < emails.length; i++) {

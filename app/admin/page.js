@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "@/styles/page/admin.module.css";
 
 export default function AdminPage() {
@@ -9,15 +9,45 @@ export default function AdminPage() {
   const [report, setReport] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [mode, setMode] = useState("test"); // mode par défaut
 
-  const handleLogin = () => {
-    if (password === process.env.NEXT_PUBLIC_ADMIN_SECRET) {
-      setAuthorized(true);
-    } else {
-      setError("Mot de passe incorrect");
+  // Vérifie si admin_session existe au chargement
+  useEffect(() => {
+    const cookie = document.cookie.includes("admin_session=true");
+    if (cookie) setAuthorized(true);
+  }, []);
+
+  // -------- LOGIN --------
+  const handleLogin = async () => {
+    setError("");
+
+    const res = await fetch("/api/admin/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ password }),
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      setError(data.error);
+      return;
     }
+
+    // Crée le cookie admin_session pour 1 jour
+    document.cookie = `admin_session=true; path=/; max-age=${60 * 60 * 24}`;
+    setAuthorized(true);
   };
 
+  // -------- LOGOUT --------
+  const handleLogout = () => {
+    document.cookie = "admin_session=; path=/; max-age=0"; // supprime le cookie
+    setAuthorized(false);
+    setReport(null);
+    setPassword("");
+  };
+
+  // -------- ENVOI EMAILS --------
   const sendEmails = async () => {
     setLoading(true);
     setReport(null);
@@ -25,10 +55,7 @@ export default function AdminPage() {
     const res = await fetch("/api/send-draw-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        secret: password,
-        mode: "test", // change to "prod" pour la prod
-      }),
+      body: JSON.stringify({ mode }),
     });
 
     const data = await res.json();
@@ -36,6 +63,7 @@ export default function AdminPage() {
     setLoading(false);
   };
 
+  // -------- PAGE LOGIN --------
   if (!authorized) {
     return (
       <main className={styles.loginPage}>
@@ -57,17 +85,44 @@ export default function AdminPage() {
     );
   }
 
+  // -------- PAGE DASHBOARD --------
   return (
     <main className={styles.adminPage}>
-      <div className={styles.dashboardContainer}>
-        <h1>📊 Dashboard Campagne Email</h1>
+      <section className={styles.dashboardContainer}>
+        <div className={styles.dashboardHeader}>
+          <h1>📊 Dashboard Campagne Email</h1>
+          <div className={styles.adminStatus}>
+            <div className={styles.statusContainer}>
+              <p>
+                <span className={styles.connectedIndicator}></span> Connecté
+              </p>
+              <button onClick={handleLogout} className={styles.logoutButton}>
+                Logout
+              </button>
+            </div>
+
+            <div className={styles.modeSelector}>
+              <label htmlFor="mode">Mode :</label>
+              <select
+                id="mode"
+                value={mode}
+                onChange={(e) => setMode(e.target.value)}
+              >
+                <option value="test">TEST</option>
+                <option value="prod">PRODUCTION</option>
+              </select>
+            </div>
+          </div>
+        </div>
 
         <button
           onClick={sendEmails}
           disabled={loading}
           className={styles.sendButton}
         >
-          {loading ? "Envoi en cours..." : "Lancer la campagne (TEST)"}
+          {loading
+            ? "Envoi en cours..."
+            : `Lancer la campagne (${mode.toUpperCase()})`}
         </button>
 
         {report && (
@@ -113,7 +168,7 @@ export default function AdminPage() {
             </div>
           </>
         )}
-      </div>
+      </section>
     </main>
   );
 }
