@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import styles from "@/styles/page/admin.module.css";
 
 export default function AdminPage() {
@@ -10,6 +11,7 @@ export default function AdminPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [mode, setMode] = useState("test"); // mode par défaut
+  const [pdfReports, setPdfReports] = useState([]);
 
   // Vérifie si admin_session existe au chargement
   useEffect(() => {
@@ -34,17 +36,17 @@ export default function AdminPage() {
       return;
     }
 
-    // Crée le cookie admin_session pour 1 jour
     document.cookie = `admin_session=true; path=/; max-age=${60 * 60 * 24}`;
     setAuthorized(true);
   };
 
   // -------- LOGOUT --------
   const handleLogout = () => {
-    document.cookie = "admin_session=; path=/; max-age=0"; // supprime le cookie
+    document.cookie = "admin_session=; path=/; max-age=0";
     setAuthorized(false);
     setReport(null);
     setPassword("");
+    setPdfReports([]);
   };
 
   // -------- ENVOI EMAILS --------
@@ -59,9 +61,50 @@ export default function AdminPage() {
     });
 
     const data = await res.json();
-    setReport(data);
+    if (!res.ok) {
+      alert("Erreur : " + (data.error || "Unknown error"));
+    } else {
+      setReport(data);
+    }
+
     setLoading(false);
   };
+
+  // -------- EXPORT PDF --------
+  const exportReport = async () => {
+    if (!report) return;
+
+    const res = await fetch("/api/reports/save", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ report }),
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
+      alert(`PDF sauvegardé ! 📄`);
+      fetchReports(); // rafraîchit la liste
+    } else {
+      alert("Erreur lors de la génération du PDF : " + data.error);
+    }
+  };
+
+  // -------- FETCH PDF HISTORY --------
+  const fetchReports = async () => {
+    try {
+      const res = await fetch("/api/reports/list");
+      if (!res.ok) throw new Error("Erreur récupération PDF");
+      const data = await res.json();
+      setPdfReports(data.files);
+    } catch (err) {
+      console.error("Erreur récupération PDF :", err);
+    }
+  };
+
+  useEffect(() => {
+    if (authorized) fetchReports();
+  }, [authorized]);
 
   // -------- PAGE LOGIN --------
   if (!authorized) {
@@ -124,6 +167,40 @@ export default function AdminPage() {
             ? "Envoi en cours..."
             : `Lancer la campagne (${mode.toUpperCase()})`}
         </button>
+
+        {report && (
+          <button onClick={exportReport} className={styles.sendButton}>
+            Exporter PDF
+          </button>
+        )}
+
+        <div className={styles.pdfList}>
+          <h2>📁 Historique des rapports PDF</h2>
+          {/* <ul>
+            {pdfReports.map((file) => (
+              <li key={file.name}>
+                <a
+                  href={`/api/reports/download?file=${encodeURIComponent(
+                    file.name
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {file.name}
+                </a>
+              </li>
+            ))}
+          </ul> */}
+          <ul>
+            {pdfReports.map((file) => (
+              <li key={file.name}>
+                <a href={file.url} target="_blank" rel="noopener noreferrer">
+                  {file.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         {report && (
           <>
