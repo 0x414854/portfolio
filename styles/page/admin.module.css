@@ -202,6 +202,16 @@
   cursor: not-allowed;
 }
 
+.emptyState {
+  padding: 40px;
+  text-align: center;
+  background: #f9fafb;
+  border: 1px dashed #d1d5db;
+  border-radius: 12px;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
 .pdfCardsContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -356,7 +366,8 @@
   }
   .input,
   .button,
-  .errorMessage {
+  .errorMessage,
+  .emptyState {
     font-size: 1.1rem;
   }
   .button {
@@ -397,7 +408,8 @@
   }
   .input,
   .button,
-  .errorMessage {
+  .errorMessage,
+  .emptyState {
     font-size: 1.2rem;
   }
   .button {
@@ -431,7 +443,8 @@
   }
   .input,
   .button,
-  .errorMessage {
+  .errorMessage,
+  .emptyState {
     font-size: 1.3rem;
   }
   .button {

@@ -16,19 +16,35 @@ import CDOBitmoji from "@/public/bitmoji/CDOMultiservices.png";
 
 import BitmojiT from "@/public/bitmoji/bitmoji2.png";
 
-import IconDesign from "@/public/icon/iconDesign.png";
-import IconDesignBlue from "@/public/icon/iconDesignBlue.png";
-import IconDev from "@/public/icon/iconDev.png";
-import IconDevBlue from "@/public/icon/iconDevBlue.png";
-import IconSoftware from "@/public/icon/iconSoftware.png";
-import IconSoftwareBlue from "@/public/icon/iconSoftwareBlue.png";
+// import IconDesign from "@/public/icon/iconDesign.png";
+// import IconDesignBlue from "@/public/icon/iconDesignBlue.png";
+// import IconDev from "@/public/icon/iconDev.png";
+// import IconDevBlue from "@/public/icon/iconDevBlue.png";
+// import IconSoftware from "@/public/icon/iconSoftware.png";
+// import IconSoftwareBlue from "@/public/icon/iconSoftwareBlue.png";
+// import IconRedesign from "@/public/icon/iconRedesign.png";
+// import IconRedesignBlue from "@/public/icon/iconRedesignBlue.png";
+// import IconBranding from "@/public/icon/iconBranding.png";
+// import IconBrandingBlue from "@/public/icon/iconBrandingBlue.png";
+// import IconPhoto from "@/public/icon/iconPhoto.png";
+// import IconPhotoBlue from "@/public/icon/iconPhotoBlue.png";
 
-import IconRedesign from "@/public/icon/iconRedesign.png";
-import IconRedesignBlue from "@/public/icon/iconRedesignBlue.png";
-import IconBranding from "@/public/icon/iconBranding.png";
-import IconBrandingBlue from "@/public/icon/iconBrandingBlue.png";
-import IconPhoto from "@/public/icon/iconPhoto.png";
-import IconPhotoBlue from "@/public/icon/iconPhotoBlue.png";
+import IconDesign from "@/public/icon/services/design.png";
+import IconDesignBlue from "@/public/icon/services/designBlue.png";
+import IconDev from "@/public/icon/services/dev.png";
+import IconDevBlue from "@/public/icon/services/devBlue.png";
+import IconBot from "@/public/icon/services/bot.png";
+import IconBotBlue from "@/public/icon/services/botBlue.png";
+import IconRedesign from "@/public/icon/services/refonte.png";
+import IconRedesignBlue from "@/public/icon/services/refonteBlue.png";
+import IconBranding from "@/public/icon/services/branding.png";
+import IconBrandingBlue from "@/public/icon/services/brandingBlue.png";
+import IconAudit from "@/public/icon/services/audit.png";
+import IconAuditBlue from "@/public/icon/services/auditBlue.png";
+import IconCopywriting from "@/public/icon/services/copywritting.png";
+import IconCopywritingBlue from "@/public/icon/services/copywrittingBlue.png";
+import IconEmailing from "@/public/icon/services/emailing.png";
+import IconEmailingBlue from "@/public/icon/services/emailingBlue.png";
 
 import IconQuote from "@/public/icon/iconQuote.png";
 import IconQuoteBlue from "@/public/icon/iconQuoteBlue.png";
@@ -98,7 +114,7 @@ export default function Home() {
       },
       title: "Conception Web",
       description:
-        "Création de designs élégants, modernes et adaptés à votre image, avec une attention particulière aux détails et à l’expérience utilisateur.",
+        "Création de sites élégants, modernes et adaptés à votre image, avec une attention particulière à l’expérience utilisateur et à la conversion.",
     },
     {
       icon: {
@@ -107,24 +123,25 @@ export default function Home() {
       },
       title: "Développement web",
       description:
-        "Création de designs élégants, modernes et adaptés à votre image, avec une attention particulière aux détails et à l’expérience utilisateur.",
+        "Développement de sites et applications performants, sécurisés et optimisés pour tous les appareils.",
     },
     {
       icon: {
-        light: IconSoftware,
-        dark: IconSoftwareBlue,
+        light: IconBot,
+        dark: IconBotBlue,
       },
       title: "Bots & Logiciels",
       description:
-        "Automatisation intelligente et développement de solutions sur mesure.",
+        "Automatisation intelligente et développement de solutions sur mesure pour gagner du temps et améliorer vos processus.",
     },
     {
       icon: {
         light: IconRedesign,
         dark: IconRedesignBlue,
       },
-      title: "Refonte",
-      description: "Modernisation et optimisation de sites existants.",
+      title: "Refonte & Optimisation",
+      description:
+        "Modernisation, optimisation et amélioration de l’expérience utilisateur de vos sites existants pour de meilleurs résultats.",
     },
     {
       icon: {
@@ -137,12 +154,30 @@ export default function Home() {
     },
     {
       icon: {
-        light: IconPhoto,
-        dark: IconPhotoBlue,
+        light: IconCopywriting,
+        dark: IconCopywritingBlue,
       },
-      title: "Photographie",
+      title: "Copywriting & Contenu",
       description:
-        "Réalisation de photographies professionnelles, de haute qualité, adaptées à tous les styles et besoins.",
+        "Rédaction de contenus percutants et stratégiques pour vos sites, newsletters, réseaux sociaux et campagnes marketing.",
+    },
+    {
+      icon: {
+        light: IconAudit,
+        dark: IconAuditBlue,
+      },
+      title: "Audit & Analyse",
+      description:
+        "Évaluation complète de vos sites, campagnes marketing ou stratégies digitales pour identifier les points d’amélioration et proposer des actions concrètes.",
+    },
+    {
+      icon: {
+        light: IconEmailing,
+        dark: IconEmailingBlue,
+      },
+      title: "Email Marketing",
+      description:
+        "Conception de newsletters et automatisations pour engager vos clients et prospects.",
     },
   ];
 
@@ -572,7 +607,13 @@ export default function Home() {
       <aside className={styles.sidebar} data-sidebar>
         <div className={styles.sidebarInfo}>
           <figure className={styles.avatarBox}>
-            <Image src={MyBitmoji} alt="avatar" width={150} height={150} />
+            <Image
+              src={MyBitmoji}
+              alt="avatar"
+              width={150}
+              height={150}
+            ></Image>
+            <Link href="/admin" />
           </figure>
 
           <div className={styles.infoContent}>

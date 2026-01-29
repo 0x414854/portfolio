@@ -208,41 +208,47 @@ export default function AdminPage() {
 
         <div className={styles.pdfList}>
           <h2>📁 Historique des rapports PDF</h2>
-          <div className={styles.pdfCardsContainer}>
-            {pdfReports.map((file) => {
-              // Convertir la taille en KB/MB
-              const sizeInKB = file.size;
-              const date = file.date;
+          {pdfReports.length === 0 ? (
+            <div className={styles.emptyState}>
+              <p>Aucun rapport disponible pour le moment.</p>
+            </div>
+          ) : (
+            <div className={styles.pdfCardsContainer}>
+              {pdfReports.map((file) => {
+                // Convertir la taille en KB/MB
+                const sizeInKB = file.size;
+                const date = file.date;
 
-              return (
-                <div key={file.name} className={styles.pdfCard}>
-                  <div className={styles.pdfInfo}>
-                    <p className={styles.pdfName}>{file.name}</p>
-                    <p className={styles.pdfMeta}>
-                      {sizeInKB} KB • {date}
-                    </p>
+                return (
+                  <div key={file.name} className={styles.pdfCard}>
+                    <div className={styles.pdfInfo}>
+                      <p className={styles.pdfName}>{file.name}</p>
+                      <p className={styles.pdfMeta}>
+                        {sizeInKB} KB • {date}
+                      </p>
+                    </div>
+                    <div className={styles.pdfActions}>
+                      <a
+                        href={file.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.viewButton}
+                        download={file.name} // force le téléchargement si nécessaire
+                      >
+                        Voir
+                      </a>
+                      <button
+                        className={styles.deleteButton}
+                        onClick={() => handleDeletePdf(file.name)}
+                      >
+                        Supprimer
+                      </button>
+                    </div>
                   </div>
-                  <div className={styles.pdfActions}>
-                    <a
-                      href={file.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={styles.viewButton}
-                      download={file.name} // force le téléchargement si nécessaire
-                    >
-                      Voir
-                    </a>
-                    <button
-                      className={styles.deleteButton}
-                      onClick={() => handleDeletePdf(file.name)}
-                    >
-                      Supprimer
-                    </button>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+          )}
         </div>
 
         {/* <ul>
