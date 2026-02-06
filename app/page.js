@@ -115,6 +115,7 @@ export default function Home() {
       title: "Conception Web",
       description:
         "Création de sites élégants, modernes et adaptés à votre image, avec une attention particulière à l’expérience utilisateur et à la conversion.",
+      href: "/services/web-designer",
     },
     {
       icon: {
@@ -124,6 +125,7 @@ export default function Home() {
       title: "Développement web",
       description:
         "Développement de sites et applications performants, sécurisés et optimisés pour tous les appareils.",
+      href: "/services/developpement",
     },
     {
       icon: {
@@ -133,6 +135,7 @@ export default function Home() {
       title: "Bots & Logiciels",
       description:
         "Automatisation intelligente et développement de solutions sur mesure pour gagner du temps et améliorer vos processus.",
+      href: "/services/design",
     },
     {
       icon: {
@@ -142,6 +145,7 @@ export default function Home() {
       title: "Refonte & Optimisation",
       description:
         "Modernisation, optimisation et amélioration de l’expérience utilisateur de vos sites existants pour de meilleurs résultats.",
+      href: "/services/design",
     },
     {
       icon: {
@@ -151,6 +155,7 @@ export default function Home() {
       title: "Branding & Identité",
       description:
         "Création d’identités de marque uniques et mémorables, des logos et cartes de visite jusqu’aux chartes graphiques complètes.",
+      href: "/services/design",
     },
     {
       icon: {
@@ -160,6 +165,7 @@ export default function Home() {
       title: "Copywriting & Contenu",
       description:
         "Rédaction de contenus percutants et stratégiques pour vos sites, newsletters, réseaux sociaux et campagnes marketing.",
+      href: "/services/design",
     },
     {
       icon: {
@@ -169,6 +175,7 @@ export default function Home() {
       title: "Audit & Analyse",
       description:
         "Évaluation complète de vos sites, campagnes marketing ou stratégies digitales pour identifier les points d’amélioration et proposer des actions concrètes.",
+      href: "/services/design",
     },
     {
       icon: {
@@ -178,6 +185,7 @@ export default function Home() {
       title: "Email Marketing",
       description:
         "Conception de newsletters et automatisations pour engager vos clients et prospects.",
+      href: "/services/design",
     },
   ];
 
@@ -888,6 +896,9 @@ export default function Home() {
                     <p className={styles.serviceItemText}>
                       {service.description}
                     </p>
+                    {/* <Link href={service.href} className={styles.serviceLink}>
+                      Je veux ce service
+                    </Link> */}
                   </div>
                 </li>
               ))}

@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import styles from "@/styles/components/countdown.module.css";
 
 /* 📅 Dates clés */
-const REGISTRATION_END = new Date("2026-02-06T20:00:00").getTime();
-const DRAW_DATE = new Date("2026-02-07T20:00:00").getTime();
+const REGISTRATION_END = new Date("2026-02-14T20:00:00").getTime();
+const DRAW_DATE = new Date("2026-02-15T20:00:00").getTime();
 const DRAW_DURATION = 1 * 60 * 1000; // 30 secondes de tirage
 
 /* 🔁 Utils */

@@ -27,8 +27,12 @@ export const metadata = {
   ],
   authors: [{ name: "Arthur Barraud" }],
   openGraph: {
-    title: "Arthur Barraud - Portfolio",
+    title: {
+      default: "Arthur Barraud - Portfolio",
+      template: "%s | Arthur Barraud",
+    },
     description: "Développeur web et créateur de solutions logicielles.",
+    metadataBase: new URL("https://arthurbarraud.me"),
     url: "https://www.arthurbarraud.me",
     siteName: "Arthur Barraud - Portfolio",
     images: [

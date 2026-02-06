@@ -37,7 +37,7 @@ export async function GET() {
         };
       })
     );
-    console.log(files);
+    // console.log(files);
 
     return new Response(JSON.stringify({ files }), { status: 200 });
   } catch (err) {

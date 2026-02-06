@@ -133,6 +133,7 @@ export async function POST(req) {
           const { error: updateError } = await supabase
             .from("prospects")
             .update({
+              status: "contacted",
               draw_email_sent: true,
               draw_email_sent_at: new Date(),
               draw_email_resend_id: response.data?.id,

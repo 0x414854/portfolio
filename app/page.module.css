@@ -450,6 +450,10 @@
   border-radius: inherit;
   z-index: -1;
 }
+.serviceItem:hover .serviceIconBox img {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
 .serviceOverlay {
   position: absolute;
   inset: 0;
@@ -472,6 +476,7 @@
 }
 .serviceIconBox img {
   margin: auto;
+  transition: all 0.3s ease;
 }
 
 .serviceContentBox {
@@ -487,6 +492,62 @@
   font-weight: var(--fw300);
   line-height: 1.6;
 }
+.serviceLink {
+  /* font-size: var(--fs6);
+  padding: 10px;
+  background: var(--orange-yellow-crayola);
+  border: 1px solid transparent;
+  border-radius: 14px;
+  margin: 20px auto 0 auto;
+  width: 100%;
+  color: var(--eerie-black1); */
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 0 auto;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--orange-yellow-crayola);
+  background: var(--bg-gradient-skill-note);
+  background-size: 250%;
+  background-position: left;
+  cursor: pointer;
+  overflow: hidden;
+  transition:
+    background-position 1s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+  z-index: 0;
+  pointer-events: none;
+}
+.serviceLink::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 28px;
+  background: var(--jet);
+  z-index: -1;
+  transition: background-position 1s ease;
+  line-height: 42.5px;
+}
+.serviceLink:hover,
+.serviceLink:focus {
+  background-position: right;
+  /* box-shadow: 0 10px 20px var(--orange-yellow-crayola-50);*/
+  transform: translateY(-2px);
+}
+
+.serviceLink:hover::before,
+.serviceLink:focus:before {
+  background-position: right;
+}
+/* .serviceLink:hover,
+.serviceLink:focus {
+  border: 1px solid;
+} */
 
 /*TESTIMONIALS*/
 
