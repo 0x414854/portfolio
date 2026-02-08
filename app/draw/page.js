@@ -189,12 +189,12 @@ export default function DrawPage() {
 
             <li>
               Les inscriptions sont ouvertes jusqu’au
-              <span className={styles.ctaText}> 6 février à 20h</span>.
+              <span className={styles.ctaText}> 14 février à 20h</span>.
             </li>
 
             <li>
               Le tirage au sort aura lieu le
-              <span className={styles.ctaText}> 7 février à 20h</span>, parmi
+              <span className={styles.ctaText}> 14 février à 22h</span>, parmi
               l’ensemble des participations valides.
             </li>
 
@@ -222,7 +222,7 @@ export default function DrawPage() {
               Les gagnants seront
               <span className={styles.ctaText}>
                 {" "}
-                contactés le 9 février
+                contactés le 16 février
               </span>{" "}
               via les coordonnées fournies lors de l’inscription.
             </li>

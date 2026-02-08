@@ -2,11 +2,12 @@
 
 import { useEffect, useState } from "react";
 import styles from "@/styles/components/countdown.module.css";
+import Link from "next/link";
 
 /* 📅 Dates clés */
 const REGISTRATION_END = new Date("2026-02-14T20:00:00").getTime();
-const DRAW_DATE = new Date("2026-02-15T20:00:00").getTime();
-const DRAW_DURATION = 1 * 60 * 1000; // 30 secondes de tirage
+const DRAW_DATE = new Date("2026-02-14T22:00:00").getTime();
+const DRAW_DURATION = 1 * 60 * 1000;
 
 /* 🔁 Utils */
 const format = (value) => String(value).padStart(2, "0");
@@ -111,7 +112,7 @@ export default function Countdown() {
     return (
       <div className={styles.wrapper}>
         <h3 className={styles.label}>❌ Inscriptions terminées</h3>
-        <p className={styles.subLabel}>🎲 Tirage le 7 février à 20h</p>
+        <p className={styles.subLabel}>🎲 Tirage le 14 février à 22h</p>
         <CountdownUI timeLeft={timeLeft} />
       </div>
     );
@@ -140,7 +141,10 @@ export default function Countdown() {
           </li>
         ))}
       </ul>
-      <p>📩 Les gagnants seront contactés le 9 février</p>
+      <div>
+        <p>📩 Les gagnants seront contactés le 16 février.</p>
+        <p>Merci à tous les participants! 🤝</p>
+      </div>
     </div>
   );
 }
