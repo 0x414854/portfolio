@@ -232,7 +232,7 @@ export default function Home() {
   // AVIS
   const testimonialsData = [
     {
-      name: "Isabelle Breniaux - Vice Versa",
+      name: "Vice Versa",
       text: "J'ai fait appel à M. Arthur Barraud pour refaire le site internet de notre atelier. Je suis extrêmement satisfaite du résultat qui a dépassé nos attentes. Conseils avisés et très professionnels. Rapidité de construction et de mise en ligne. Je recommande vivement cette toute jeune entreprise!",
       avatar: viceVersaBitmoji,
       date: "2025-10-01",
@@ -1267,7 +1267,7 @@ export default function Home() {
             </figure>
           </section>
 
-          <section className={styles.contactForm}>
+          <section className={styles.contactForm} id="contactForm">
             <h3 className={`${styles.h3} ${styles.formTitle}`}>
               Contactez moi
             </h3>
