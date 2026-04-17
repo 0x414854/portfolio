@@ -1,0 +1,113 @@
+{
+  "PortofolioPage": {
+    "sideBar": {
+      "tags": {
+        "tag_1": "Web Developer",
+        "tag_2": "Web Designer",
+        "tag_3": "Blockchain Developer"
+      },
+      "infoMoreBtn": "Show contacts",
+      "contactInfos": {
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location",
+        "switzerland": "Lake Geneva region - Switzerland & France",
+        "australia": "Perth - Australia"
+      }
+    },
+    "navbar": {
+      "about": "About",
+      "skills": "Skills",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "aboutArticle": {
+      "about": {
+        "title": "About me",
+        "p1": "I am a <b>creative designer</b> and <b>freelance web developer</b>, formerly based in Geneva and currently in Australia for one year. I help businesses create <b>modern, high-performing, conversion-focused websites</b> as well as their <b>visual identity</b> (logos, business cards, flyers, and digital assets).",
+        "p2": "I am developing a particular expertise in the <b>food and hospitality industry</b> (restaurants, cafés, bars, caterers), a field I am passionate about where <b>branding, visual identity, and customer experience are essential</b>.",
+        "p3": "Although I currently work with businesses across various industries, my goal is to increasingly support hospitality professionals by creating <b>digital experiences that attract attention and drive reservations</b>.",
+        "p4": "Each project is tailor-made with a results-driven approach: <b>attract, convince, and convert your customers</b> through strategic design and an optimized user experience."
+      },
+      "services": {
+        "title": "What I do",
+        "design": {
+          "title": "Web Design",
+          "description": "Creation of elegant, modern websites tailored to your brand, with a strong focus on user experience and conversion."
+        },
+        "dev": {
+          "title": "Web Development",
+          "description": "Development of fast, secure, and fully responsive websites and applications optimized for all devices."
+        },
+        "bot": {
+          "title": "Bots & Software",
+          "description": "Smart automation and custom software development to save time and improve your workflows."
+        },
+        "redesign": {
+          "title": "Redesign & Optimization",
+          "description": "Modernization, optimization, and improvement of your existing websites for better performance and results."
+        },
+        "branding": {
+          "title": "Branding & Identity",
+          "description": "Creation of unique and memorable brand identities, from logos and business cards to complete brand guidelines."
+        },
+        "copywriting": {
+          "title": "Copywriting & Content",
+          "description": "Writing impactful and strategic content for your websites, newsletters, social media, and marketing campaigns."
+        },
+        "audit": {
+          "title": "Audit & Analysis",
+          "description": "Comprehensive evaluation of your website, marketing campaigns, or digital strategy to identify improvements and provide actionable recommendations."
+        },
+        "email": {
+          "title": "Email Marketing",
+          "description": "Design of newsletters and automation flows to engage your customers and prospects."
+        },
+        "ctaButton": "I want this service"
+      },
+      "testimonials": {
+        "title": "Testimonials",
+        "text_1": "I hired Mr. Arthur Barraud to redesign our workshop website. I am extremely satisfied with the result, which exceeded our expectations. Professional and insightful advice. Fast development and deployment. I highly recommend this young company!",
+        "date_1": "2025-10-01",
+        "text_2": "Honestly, I love this app! Super practical, especially as a complement to a traditional vision board. I can note ideas as soon as they come, update my goals at any time, and easily track my progress. Everything is always at hand, and seeing the chart and completed goals is extremely motivating. Simple, clear, and truly useful every day.",
+        "date_2": "2025-10-01",
+        "text_3": "A fast, professional, and perfectly executed website creation. CDO Multiservices now has a clear, modern, and efficient website designed to build trust and showcase our expertise. High-quality work delivered in a short timeframe, with great attention to detail and service.",
+        "date_3": "2026-01-14",
+        "text_4": "In development",
+        "date_4": "2026-04-14"
+      },
+      "clients": {
+        "title": "Clients"
+      }
+    },
+    "skillsArticle": {
+      "title": "My skills"
+    },
+    "portfolioArticle": {
+      "title": "Portfolio",
+      "filter": {
+        "select": "Select a category",
+        "all": "All",
+        "design": "Web Design",
+        "software": "Software / Python",
+        "dev": "Web Development",
+        "card": "Business Card"
+      }
+    },
+    "contactArticle": {
+      "title": "Contact",
+      "form": {
+        "title": "Get in touch",
+        "name": "Full Name",
+        "email": "Email Address",
+        "message": "Your Message",
+        "submitButton": "Launch my project",
+        "sentMessage": "✅ Message sent successfully.",
+        "errorMessage": "❌ An error occurred. Please try again."
+      }
+    },
+    "RaffleModal": {
+      "draw": "Draw"
+    }
+  }
+}

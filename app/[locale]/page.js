@@ -1,13 +1,14 @@
 "use client";
 
+import styles from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useState, useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 
-import HomeModal from "./components/homeModal";
-
-import styles from "./page.module.css";
+// import HomeModal from "./components/homeModal";
+import LanguageSwitcher from "../components/languageSwitcher";
 
 import MyBitmoji from "@/public/bitmoji/myBitmoji.png";
 import viceVersaBitmoji from "@/public/bitmoji/viceVersa.png";
@@ -81,18 +82,18 @@ import Logo from "@/public/logo/noble.png";
 import ViceVersaLogo from "@/public/logo/viceVersaLogo.png";
 import MyVisionBoardLogo from "@/public/logo/myvisionboard.png";
 import CDOMultiservicesLogo from "@/public/logo/CDOLogo.png";
-import HaumanaLogo from "@/public/logo/haumana.png";
-
-import Card3D from "./components/3dCardFlipAnimation.js";
+import HaumanaLogo from "@/public/logo/haumana_1.png";
+import Carte3D from "../components/3dCardFlipAnimation";
 
 // Modifier description service (trop repetitif)
 // Numero portable suisse !!
 // Update style template mail
 // Ajouter description des projets du portfolio
-// Ajouter avis de marina pour myvisionboard
-// Ajouter un avis de CDO
+// Ajouter balsie 'alt' des infos client en anglais
+// Ajouter au formualire de contact => 'checkbox (etre recontacter), phoneNumber, Nom entreprise (optionel)
 
 export default function Home() {
+  const t = useTranslations("PortofolioPage");
   // IS DARK ?
   const [isDark, setIsDark] = useState(false);
   useEffect(() => {
@@ -112,9 +113,8 @@ export default function Home() {
         light: IconDesign,
         dark: IconDesignBlue,
       },
-      title: "Conception Web",
-      description:
-        "Création de sites élégants, modernes et adaptés à votre image, avec une attention particulière à l’expérience utilisateur et à la conversion.",
+      title: t("aboutArticle.services.design.title"),
+      description: t("aboutArticle.services.design.description"),
       href: "/services/web-designer",
     },
     {
@@ -122,9 +122,8 @@ export default function Home() {
         light: IconDev,
         dark: IconDevBlue,
       },
-      title: "Développement web",
-      description:
-        "Développement de sites et applications performants, sécurisés et optimisés pour tous les appareils.",
+      title: t("aboutArticle.services.dev.title"),
+      description: t("aboutArticle.services.dev.description"),
       href: "/services/developpement",
     },
     {
@@ -132,9 +131,8 @@ export default function Home() {
         light: IconBot,
         dark: IconBotBlue,
       },
-      title: "Bots & Logiciels",
-      description:
-        "Automatisation intelligente et développement de solutions sur mesure pour gagner du temps et améliorer vos processus.",
+      title: t("aboutArticle.services.bot.title"),
+      description: t("aboutArticle.services.bot.description"),
       href: "/services/design",
     },
     {
@@ -142,9 +140,8 @@ export default function Home() {
         light: IconRedesign,
         dark: IconRedesignBlue,
       },
-      title: "Refonte & Optimisation",
-      description:
-        "Modernisation, optimisation et amélioration de l’expérience utilisateur de vos sites existants pour de meilleurs résultats.",
+      title: t("aboutArticle.services.redesign.title"),
+      description: t("aboutArticle.services.redesign.description"),
       href: "/services/design",
     },
     {
@@ -152,9 +149,8 @@ export default function Home() {
         light: IconBranding,
         dark: IconBrandingBlue,
       },
-      title: "Branding & Identité",
-      description:
-        "Création d’identités de marque uniques et mémorables, des logos et cartes de visite jusqu’aux chartes graphiques complètes.",
+      title: t("aboutArticle.services.branding.title"),
+      description: t("aboutArticle.services.branding.description"),
       href: "/services/design",
     },
     {
@@ -162,9 +158,8 @@ export default function Home() {
         light: IconCopywriting,
         dark: IconCopywritingBlue,
       },
-      title: "Copywriting & Contenu",
-      description:
-        "Rédaction de contenus percutants et stratégiques pour vos sites, newsletters, réseaux sociaux et campagnes marketing.",
+      title: t("aboutArticle.services.copywriting.title"),
+      description: t("aboutArticle.services.copywriting.description"),
       href: "/services/design",
     },
     {
@@ -172,9 +167,8 @@ export default function Home() {
         light: IconAudit,
         dark: IconAuditBlue,
       },
-      title: "Audit & Analyse",
-      description:
-        "Évaluation complète de vos sites, campagnes marketing ou stratégies digitales pour identifier les points d’amélioration et proposer des actions concrètes.",
+      title: t("aboutArticle.services.audit.title"),
+      description: t("aboutArticle.services.audit.description"),
       href: "/services/design",
     },
     {
@@ -182,9 +176,8 @@ export default function Home() {
         light: IconEmailing,
         dark: IconEmailingBlue,
       },
-      title: "Email Marketing",
-      description:
-        "Conception de newsletters et automatisations pour engager vos clients et prospects.",
+      title: t("aboutArticle.services.email.title"),
+      description: t("aboutArticle.services.email.description"),
       href: "/services/design",
     },
   ];
@@ -233,27 +226,27 @@ export default function Home() {
   const testimonialsData = [
     {
       name: "Vice Versa",
-      text: "J'ai fait appel à M. Arthur Barraud pour refaire le site internet de notre atelier. Je suis extrêmement satisfaite du résultat qui a dépassé nos attentes. Conseils avisés et très professionnels. Rapidité de construction et de mise en ligne. Je recommande vivement cette toute jeune entreprise!",
+      text: t("aboutArticle.testimonials.text_1"),
       avatar: viceVersaBitmoji,
-      date: "2025-10-01",
+      date: t("aboutArticle.testimonials.date_1"),
     },
     {
       name: "My Vision Board",
-      text: "Franchement j’adore cette appli! Super pratique, surtout en complément d’une vision board classique. Je peux noter mes idées dès qu’elles me viennent, modifier mes objectifs à tout moment et suivre ma progression facilement. Tout reste toujours à portée de main, et voir la courbe ainsi que le nombre d’objectifs atteints, c’est hyper motivant! Simple, claire et vraiment utile au quotidien.",
+      text: t("aboutArticle.testimonials.text_2"),
       avatar: MyVisionBoardBitmoji,
-      date: "2025-10-01",
+      date: t("aboutArticle.testimonials.date_2"),
     },
     {
       name: "CDO Multiservices",
-      text: "Une création de site web rapide, professionnelle et parfaitement maîtrisée. CDO Multiservices dispose désormais d’un site clair, moderne et efficace, conçu pour inspirer confiance et valoriser notre savoir-faire. Un travail de qualité livré dans des délais courts, avec un vrai sens du service et du détail.”",
+      text: t("aboutArticle.testimonials.text_3"),
       avatar: CDOBitmoji,
-      date: "2026-01-14",
+      date: t("aboutArticle.testimonials.date_3"),
     },
     {
       name: "Haumana Bien-être",
-      text: "En cours de developpement",
+      text: t("aboutArticle.testimonials.text_4"),
       avatar: viceVersaBitmoji,
-      date: "2026-01-14",
+      date: t("aboutArticle.testimonials.date_4"),
     },
   ];
 
@@ -294,11 +287,11 @@ export default function Home() {
       height: 120,
     },
     {
-      src: Logo,
-      alt: "Logo Client 3",
+      src: HaumanaLogo,
+      alt: "Logo du site Haumana Bien-Être - Psychopracticienne, masseuse à Présilly",
       link: "#",
       width: 200,
-      height: 200,
+      height: 120,
     },
     {
       src: Logo,
@@ -360,7 +353,7 @@ export default function Home() {
   const projects = [
     {
       title: "Mnemonic Shield",
-      category: "Software / Python",
+      category: t("portfolioArticle.filter.software"),
       logos: {
         light: [PythonIcon],
         dark: [PythonIconBlack],
@@ -371,7 +364,7 @@ export default function Home() {
     },
     {
       title: "Bitcoin Price",
-      category: "Web Development",
+      category: t("portfolioArticle.filter.dev"),
       logos: {
         light: [HTMLIcon, CSSIcon, JSIcon],
         dark: [HTMLIconBlack, CSSIconBlack, JSIconBlack],
@@ -382,7 +375,7 @@ export default function Home() {
     },
     {
       title: "Arthur BARRAUD",
-      category: "Business Card",
+      category: t("portfolioArticle.filter.card"),
       logos: {
         light: [CanvaIcon],
         dark: [CanvaIconBlack],
@@ -395,7 +388,7 @@ export default function Home() {
 
     {
       title: "Arthur BARRAUD",
-      category: "Business Card",
+      category: t("portfolioArticle.filter.card"),
       logos: {
         light: [CanvaIcon],
         dark: [CanvaIconBlack],
@@ -407,7 +400,7 @@ export default function Home() {
     },
     {
       title: "Vice Versa Atelier",
-      category: "Web Development",
+      category: t("portfolioArticle.filter.dev"),
       logos: {
         light: [NextJsIcon],
         dark: [NextJsIconBlack],
@@ -418,7 +411,7 @@ export default function Home() {
     },
     {
       title: "MyVisionBoard",
-      category: "Web Development",
+      category: t("portfolioArticle.filter.dev"),
       logos: {
         light: [NextJsIcon],
         dark: [NextJsIconBlack],
@@ -429,7 +422,7 @@ export default function Home() {
     },
     {
       title: "CDO Multiservices",
-      category: "Web Development",
+      category: t("portfolioArticle.filter.dev"),
       logos: {
         light: [NextJsIcon],
         dark: [NextJsIconBlack],
@@ -549,7 +542,7 @@ export default function Home() {
 
     return () => {
       sidebarBtn?.removeEventListener("click", () =>
-        elementToggleFunc(sidebar)
+        elementToggleFunc(sidebar),
       );
     };
   }, []);
@@ -574,10 +567,10 @@ export default function Home() {
 
     const result = await res.json();
     if (result.success) {
-      setMessage("✅ Message envoyé avec succès.");
+      setMessage(t("contactArticle.form.sentMessage"));
       e.target.reset(); // <-- Vider le formulaire
     } else {
-      setMessage("❌ Une erreur est survenue. Veuillez réessayer.");
+      setMessage(t("contactArticle.form.errorMessage"));
     }
   };
   useEffect(() => {
@@ -608,10 +601,10 @@ export default function Home() {
   return (
     <main className={styles.main}>
       {/* Modal */}
-      <HomeModal
+      {/* <HomeModal
         isActive={isRaffleModalOpen}
         onClose={() => setIsRaffleModalOpen(false)}
-      />
+      /> */}
       <aside className={styles.sidebar} data-sidebar>
         <div className={styles.sidebarInfo}>
           <figure className={styles.avatarBox}>
@@ -630,22 +623,24 @@ export default function Home() {
             </h1>
             <div className={styles.tag}>
               {" "}
-              <p className={styles.title}>Web Developer</p>
-              {/* <p className={styles.title}>Web Designer</p>
-              <p className={styles.title}>Blockchain Developer</p> */}
+              <p className={styles.title}>{t("sideBar.tags.tag_1")}</p>
+              {/* <p className={styles.title}>{t("sideBar.tags.tag_2")}</p>
+              <p className={styles.title}>{t("sideBar.tags.tag_3")}</p> */}
             </div>
           </div>
 
-          <button
+          {/* MODAL RAFFLE BUTTON */}
+          {/* <button
             className={styles.modalButton}
             onClick={() => setIsRaffleModalOpen(true)}
           >
-            <span>Tirage au sort</span>
+            <span>{t("RaffleModal.draw")}</span>
             <ion-icon name="trophy"></ion-icon>
-          </button>
+          </button> */}
+          <LanguageSwitcher />
 
           <button className={styles.infoMoreBtn} data-sidebar-btn>
-            <span>Afficher les contacts</span>
+            <span>{t("sideBar.infoMoreBtn")}</span>
             <ion-icon name="chevron-down"></ion-icon>
           </button>
         </div>
@@ -660,7 +655,9 @@ export default function Home() {
               </div>
 
               <div className={styles.contactInfo}>
-                <p className={styles.contacttitle}>Email</p>
+                <p className={styles.contacttitle}>
+                  {t("sideBar.contactInfos.email")}
+                </p>
 
                 <Link
                   href="mailto:arthur.barraud@proton.me"
@@ -677,10 +674,12 @@ export default function Home() {
               </div>
 
               <div className={styles.contactInfo}>
-                <p className={styles.contacttitle}>Téléphone</p>
+                <p className={styles.contacttitle}>
+                  {t("sideBar.contactInfos.phone")}
+                </p>
 
                 <a href="tel:+33660988623" className={styles.contactLink}>
-                  +33 (0)6 60 98 86 23
+                  +33 (0)6 60 98 86 23 (FR)<br></br>+61 411 480 676 (AU)
                 </a>
               </div>
             </li>
@@ -703,10 +702,14 @@ export default function Home() {
               </div>
 
               <div className={styles.contactInfo}>
-                <p className={styles.contacttitle}>Localisation</p>
+                <p className={styles.contacttitle}>
+                  {t("sideBar.contactInfos.location")}
+                </p>
 
                 <address>
-                  Bassin lémanique -<br /> Suisse & France
+                  {t("sideBar.contactInfos.switzerland")}
+                  <br />
+                  {t("sideBar.contactInfos.australia")}
                 </address>
               </div>
             </li>
@@ -772,7 +775,8 @@ export default function Home() {
         </div>
       </aside>
       <div className={styles.maincontent}>
-        <button
+        {/* RAFFLE MODAL BUTTON */}
+        {/* <button
           className={styles.mainModalButton}
           onClick={() => setIsRaffleModalOpen(true)}
         >
@@ -781,17 +785,17 @@ export default function Home() {
           <span className={`${styles.sparkle} ${styles.s3}`}>✦</span>
           <span className={`${styles.sparkle} ${styles.s4}`}>✦</span>
           <span className={`${styles.sparkle} ${styles.s5}`}>✦</span>
-          <span>Tirage au sort</span>
-        </button>
+          <span>{t("RaffleModal.draw")}</span>
+        </button> */}
         <nav className={styles.navbar}>
           <ul className={styles.navbarlist}>
             <li className={styles.navbaritem}>
               <button
                 className={`${styles.navbarlink} ${styles.active}`}
                 data-nav-link
-                data-page="a propos"
+                data-page="about"
               >
-                A propos
+                {t("navbar.about")}
               </button>
             </li>
             <li className={styles.navbaritem}>
@@ -800,7 +804,7 @@ export default function Home() {
                 data-nav-link
                 data-page="compétences"
               >
-                Compétences
+                {t("navbar.skills")}
               </button>
             </li>
             <li className={styles.navbaritem}>
@@ -809,7 +813,7 @@ export default function Home() {
                 data-nav-link
                 data-page="portfolio"
               >
-                Portfolio
+                {t("navbar.portfolio")}
               </button>
             </li>
             <li className={styles.navbaritem}>
@@ -818,7 +822,7 @@ export default function Home() {
                 data-nav-link
                 data-page="contact"
               >
-                Contact
+                {t("navbar.contact")}
               </button>
             </li>
           </ul>
@@ -826,44 +830,40 @@ export default function Home() {
 
         <article
           className={`${styles.article} ${styles.about} ${styles.active}`}
-          data-page="a propos"
+          data-page="about"
         >
           <header>
             <h2 className={`${styles.h2} ${styles.articleTitle}`}>
-              À propos de moi
+              {t("aboutArticle.about.title")}
             </h2>
           </header>
 
           <section className={styles.aboutText}>
             <p>
-              Je suis un <b>designer créatif</b> et <b>développeur web</b> basé
-              à Genève, spécialisé dans la création de{" "}
-              <b>sites modernes, intuitifs et esthétiques</b> ainsi que dans le{" "}
-              <b>design graphique</b> (cartes de visite, flyers, supports
-              visuels).
+              {t.rich("aboutArticle.about.p1", {
+                b: (chunks) => <b>{chunks}</b>,
+              })}
             </p>
             <p>
-              Je me spécialise dans les projets liés au{" "}
-              <b>secteur de la bouche</b> (restaurants, traiteurs, boulangeries,
-              bars, etc.), où l’image et l’expérience client sont essentielles.
+              {t.rich("aboutArticle.about.p2", {
+                b: (chunks) => <b>{chunks}</b>,
+              })}
             </p>
             <p>
-              Mais ma créativité ne s’arrête pas là : je conçois également des
-              solutions pour <b>tous types de métiers et d’entreprises</b>, en
-              adaptant chaque projet à son identité et à ses besoins
-              spécifiques.
+              {t.rich("aboutArticle.about.p3", {
+                b: (chunks) => <b>{chunks}</b>,
+              })}
             </p>
             <p>
-              Mon objectif : construire des sites à la fois{" "}
-              <b>fonctionnels, attractifs et mémorables</b>, qui mettent en
-              valeur votre activité et transmettent votre message de la façon la
-              plus <b>impactante et créative possible.</b> ✨
+              {t.rich("aboutArticle.about.p4", {
+                b: (chunks) => <b>{chunks}</b>,
+              })}
             </p>
           </section>
 
           <section className={styles.service}>
             <h3 className={`${styles.h3} ${styles.serviceTitle}`}>
-              Ce que je fais
+              {t("aboutArticle.services.title")}
             </h3>
 
             <ul className={styles.serviceList} ref={containerRef}>
@@ -897,7 +897,7 @@ export default function Home() {
                       {service.description}
                     </p>
                     {/* <Link href={service.href} className={styles.serviceLink}>
-                      Je veux ce service
+                      {t("aboutArticle.services.ctaButton")}
                     </Link> */}
                   </div>
                 </li>
@@ -907,7 +907,7 @@ export default function Home() {
 
           <section className={styles.testimonials}>
             <h3 className={`${styles.h3} ${styles.testimonialsTitle}`}>
-              Témoignages
+              {t("aboutArticle.testimonials.title")}
             </h3>
             <ul className={`${styles.testimonialsList} ${styles.hasScrollbar}`}>
               {testimonialsData.map((t, index) => (
@@ -991,7 +991,7 @@ export default function Home() {
                         day: "2-digit",
                         month: "long",
                         year: "numeric",
-                      }
+                      },
                     )}
                   </time>
 
@@ -1004,7 +1004,9 @@ export default function Home() {
           )}
 
           <section className={styles.clients}>
-            <h3 className={`${styles.h3} ${styles.clientsTitle}`}>Clients</h3>
+            <h3 className={`${styles.h3} ${styles.clientsTitle}`}>
+              {t("aboutArticle.clients.title")}
+            </h3>
 
             <ul className={`${styles.clientsList} ${styles.hasScrollbar}`}>
               {clients.map((client, index) => (
@@ -1030,7 +1032,7 @@ export default function Home() {
         >
           <header>
             <h2 className={`${styles.h2} ${styles.articleTitle}`}>
-              Mes Compétences
+              {t("skillsArticle.title")}
             </h2>
           </header>
           <section className={styles.skill}>
@@ -1072,34 +1074,44 @@ export default function Home() {
           data-page="portfolio"
         >
           <header>
-            <h2 className={`${styles.h2} ${styles.articleTitle}`}>Portfolio</h2>
+            <h2 className={`${styles.h2} ${styles.articleTitle}`}>
+              {t("portfolioArticle.title")}
+            </h2>
           </header>
 
           <section className={styles.projects}>
             <ul className={styles.filterList}>
               <li className={styles.filterItem}>
                 <button className={styles.active} data-filter-btn>
-                  All
+                  {t("portfolioArticle.filter.all")}
                 </button>
               </li>
               <li className={styles.filterItem}>
-                <button data-filter-btn>Web Design</button>
+                <button data-filter-btn>
+                  {t("portfolioArticle.filter.design")}
+                </button>
               </li>
               <li className={styles.filterItem}>
-                <button data-filter-btn>Software / Python</button>
+                <button data-filter-btn>
+                  {t("portfolioArticle.filter.software")}
+                </button>
               </li>
               <li className={styles.filterItem}>
-                <button data-filter-btn>Web Development</button>
+                <button data-filter-btn>
+                  W{t("portfolioArticle.filter.dev")}
+                </button>
               </li>
               <li className={styles.filterItem}>
-                <button data-filter-btn>Business Card</button>
+                <button data-filter-btn>
+                  {t("portfolioArticle.filter.card")}
+                </button>
               </li>
             </ul>
 
             <div className={styles.filterSelectBox}>
               <button className={styles.filterSelect} data-select>
                 <div className={styles.selectValue} data-select-value>
-                  Select Category
+                  {t("portfolioArticle.filter.select")}
                 </div>
 
                 <div className={styles.selecticon}>
@@ -1109,19 +1121,29 @@ export default function Home() {
 
               <ul className={styles.selectList}>
                 <li className={styles.selectItem}>
-                  <button data-select-item>All</button>
+                  <button data-select-item>
+                    {t("portfolioArticle.filter.all")}
+                  </button>
                 </li>
                 <li className={styles.selectItem}>
-                  <button data-select-item>Web Design</button>
+                  <button data-select-item>
+                    {t("portfolioArticle.filter.design")}
+                  </button>
                 </li>
                 <li className={styles.selectItem}>
-                  <button data-select-item>Software / Python</button>
+                  <button data-select-item>
+                    {t("portfolioArticle.filter.software")}
+                  </button>
                 </li>
                 <li className={styles.selectItem}>
-                  <button data-select-item>Web Development</button>
+                  <button data-select-item>
+                    {t("portfolioArticle.filter.dev")}
+                  </button>
                 </li>
                 <li className={styles.selectItem}>
-                  <button data-select-item>Business Card</button>
+                  <button data-select-item>
+                    {t("portfolioArticle.filter.card")}
+                  </button>
                 </li>
               </ul>
             </div>
@@ -1134,7 +1156,7 @@ export default function Home() {
                   data-filter-item
                   data-category={project.category.toLowerCase()}
                 >
-                  {project.category === "Business Card" ? (
+                  {project.category === t("portfolioArticle.filter.card") ? (
                     <div
                       className={styles.projectClickable}
                       onClick={() => handleOpenModal(project)}
@@ -1234,7 +1256,7 @@ export default function Home() {
                   </button>
                   <h2>{selectedCard.title}</h2>
 
-                  <Card3D
+                  <Carte3D
                     rectoImg={selectedCard.rectoImg}
                     versoImg={selectedCard.versoImg}
                     width={3}
@@ -1251,7 +1273,9 @@ export default function Home() {
           data-page="contact"
         >
           <header>
-            <h2 className={`${styles.h2} ${styles.articleTitle}`}>Contact</h2>
+            <h2 className={`${styles.h2} ${styles.articleTitle}`}>
+              {t("contactArticle.title")}
+            </h2>
           </header>
 
           <section className={styles.mapBox} data-mapbox>
@@ -1269,7 +1293,7 @@ export default function Home() {
 
           <section className={styles.contactForm} id="contactForm">
             <h3 className={`${styles.h3} ${styles.formTitle}`}>
-              Contactez moi
+              {t("contactArticle.form.title")}
             </h3>
 
             <form onSubmit={handleSubmit} className={styles.form} data-form>
@@ -1278,7 +1302,7 @@ export default function Home() {
                   type="text"
                   name="fullname"
                   className={styles.formInput}
-                  placeholder="Nom Complet"
+                  placeholder={t("contactArticle.form.name")}
                   required
                   data-form-input
                 />
@@ -1286,7 +1310,7 @@ export default function Home() {
                   type="email"
                   name="email"
                   className={styles.formInput}
-                  placeholder="Adresse Email"
+                  placeholder={t("contactArticle.form.email")}
                   required
                   data-form-input
                 />
@@ -1295,7 +1319,7 @@ export default function Home() {
               <textarea
                 name="message"
                 className={styles.formInput}
-                placeholder="Ton Message"
+                placeholder={t("contactArticle.form.message")}
                 required
                 data-form-input=""
               ></textarea>
@@ -1307,7 +1331,7 @@ export default function Home() {
                 data-form-btn
               >
                 <ion-icon name="paper-plane"></ion-icon>
-                <span>Envoyer un message</span>
+                <span>{t("contactArticle.form.submitButton")}</span>
               </button>
               {message && <p className={styles.message}>{message}</p>}
             </form>

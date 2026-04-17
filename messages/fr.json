@@ -1,0 +1,113 @@
+{
+  "PortofolioPage": {
+    "sideBar": {
+      "tags": {
+        "tag_1": "Web developer",
+        "tag_2": "Web designer",
+        "tag_3": "Blockchain developer"
+      },
+      "infoMoreBtn": "Afficher les contacts",
+      "contactInfos": {
+        "email": "Email",
+        "phone": "Téléphone",
+        "location": "Localisation",
+        "switzerland": "Bassin lémanique - Suisse & France",
+        "australia": "Perth - Australia"
+      }
+    },
+    "navbar": {
+      "about": "A propos",
+      "skills": "Compétences",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "aboutArticle": {
+      "about": {
+        "title": "À propos de moi",
+        "p1": "Je suis <b>designer créatif</b> et <b>développeur web freelance</b>, anciennement basé à Genève et actuellement en Australie pour une année. J’accompagne les entreprises dans la création de <b>sites web modernes, performants et orientés conversion</b>, ainsi que dans leur <b>identité visuelle</b> (logos, cartes de visite, flyers et supports digitaux).",
+        "p2": "Je développe une expertise particulière dans le <b>secteur de la restauration</b> (restaurants, cafés, bars, traiteurs), un domaine qui me passionne et où <b>l’image, le branding et l’expérience client sont essentiels</b>.",
+        "p3": "Même si je travaille aujourd’hui avec des entreprises de différents secteurs, mon objectif est d’accompagner davantage les professionnels de la restauration en créant des <b>expériences digitales qui donnent envie et génèrent des réservations</b>.",
+        "p4": "Chaque projet est conçu sur mesure avec une approche orientée résultats : <b>attirer, convaincre et convertir vos clients</b> grâce à un design stratégique et une expérience utilisateur optimisée."
+      },
+      "services": {
+        "title": "Ce que je fais",
+        "design": {
+          "title": "Conception Web",
+          "description": "Création de sites élégants, modernes et adaptés à votre image, avec une attention particulière à l’expérience utilisateur et à la conversion."
+        },
+        "dev": {
+          "title": "Développement web",
+          "description": "Développement de sites et applications performants, sécurisés et optimisés pour tous les appareils."
+        },
+        "bot": {
+          "title": "Bots & Logiciels",
+          "description": "Automatisation intelligente et développement de solutions sur mesure pour gagner du temps et améliorer vos processus."
+        },
+        "redesign": {
+          "title": "Refonte & Optimisation",
+          "description": "Modernisation, optimisation et amélioration de l’expérience utilisateur de vos sites existants pour de meilleurs résultats."
+        },
+        "branding": {
+          "title": "Branding & Identité",
+          "description": "Création d’identités de marque uniques et mémorables, des logos et cartes de visite jusqu’aux chartes graphiques complètes."
+        },
+        "copywriting": {
+          "title": "Copywriting & Contenu",
+          "description": "Rédaction de contenus percutants et stratégiques pour vos sites, newsletters, réseaux sociaux et campagnes marketing."
+        },
+        "audit": {
+          "title": "Audit & Analyse",
+          "description": "Évaluation complète de vos sites, campagnes marketing ou stratégies digitales pour identifier les points d’amélioration et proposer des actions concrètes."
+        },
+        "email": {
+          "title": "Email Marketing",
+          "description": "Conception de newsletters et automatisations pour engager vos clients et prospects."
+        },
+        "ctaButton": "Je veux ce service"
+      },
+      "testimonials": {
+        "title": "Témoignages",
+        "text_1": "J'ai fait appel à M. Arthur Barraud pour refaire le site internet de notre atelier. Je suis extrêmement satisfaite du résultat qui a dépassé nos attentes. Conseils avisés et très professionnels. Rapidité de construction et de mise en ligne. Je recommande vivement cette toute jeune entreprise!",
+        "date_1": "2025-10-01",
+        "text_2": "Franchement j’adore cette appli! Super pratique, surtout en complément d’une vision board classique. Je peux noter mes idées dès qu’elles me viennent, modifier mes objectifs à tout moment et suivre ma progression facilement. Tout reste toujours à portée de main, et voir la courbe ainsi que le nombre d’objectifs atteints, c’est hyper motivant! Simple, claire et vraiment utile au quotidien.",
+        "date_2": "2025-10-01",
+        "text_3": "Une création de site web rapide, professionnelle et parfaitement maîtrisée. CDO Multiservices dispose désormais d’un site clair, moderne et efficace, conçu pour inspirer confiance et valoriser notre savoir-faire. Un travail de qualité livré dans des délais courts, avec un vrai sens du service et du détail.",
+        "date_3": "2026-01-14",
+        "text_4": "En cours de developpement",
+        "date_4": "2026-04-14"
+      },
+      "clients": {
+        "title": "Clients"
+      }
+    },
+    "skillsArticle": {
+      "title": "Mes compétences"
+    },
+    "portfolioArticle": {
+      "title": "Portfolio",
+      "filter": {
+        "select": "Sélectionner une catégorie",
+        "all": "Tous",
+        "design": "Web Design",
+        "software": "Logiciel / Python",
+        "dev": "Développement Web",
+        "card": "Carte de visite"
+      }
+    },
+    "contactArticle": {
+      "title": "Contact",
+      "form": {
+        "title": "Contactez moi",
+        "name": "Nom Complet",
+        "email": "Adresse Email",
+        "message": "Ton Message",
+        "submitButton": "Lancer mon projet",
+        "sentMessage": "✅ Message envoyé avec succès.",
+        "errorMessage": "❌ Une erreur est survenue. Veuillez réessayer."
+      }
+    },
+    "RaffleModal": {
+      "draw": "Tirage au sort"
+    }
+  }
+}

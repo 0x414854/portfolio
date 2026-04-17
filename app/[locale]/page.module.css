@@ -507,7 +507,7 @@
   justify-content: center;
   margin: 20px auto 0 auto;
   padding: 14px 28px;
-  border-radius: 30px;
+  border-radius: 14px;
   text-decoration: none;
   font-weight: bold;
   color: var(--orange-yellow-crayola);
@@ -520,14 +520,14 @@
     background-position 1s ease,
     transform 0.2s ease,
     box-shadow 0.3s ease;
-  z-index: 0;
+  z-index: 1;
   pointer-events: none;
 }
 .serviceLink::before {
   content: "";
   position: absolute;
   inset: 2px;
-  border-radius: 28px;
+  border-radius: 14px;
   background: var(--jet);
   z-index: -1;
   transition: background-position 1s ease;
@@ -536,13 +536,14 @@
 .serviceLink:hover,
 .serviceLink:focus {
   background-position: right;
-  /* box-shadow: 0 10px 20px var(--orange-yellow-crayola-50);*/
+  /* box-shadow: 0 10px 20px var(--orange-yellow-crayola-50); */
   transform: translateY(-2px);
 }
 
 .serviceLink:hover::before,
 .serviceLink:focus:before {
   background-position: right;
+  transform: translateY(-2px);
 }
 /* .serviceLink:hover,
 .serviceLink:focus {

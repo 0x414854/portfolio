@@ -1,0 +1,37 @@
+.languages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: -9;
+  left: 60%;
+  gap: 10px;
+  /* background: red; */
+}
+.language {
+  color: var(--white1);
+}
+@media (min-width: 590px) {
+  .languages {
+    top: -23px;
+    left: 55%;
+  }
+}
+@media (min-width: 768px) {
+  .languages {
+    left: 68%;
+  }
+}
+@media (min-width: 1024px) {
+  .languages {
+    left: 76%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .languages {
+    top: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
