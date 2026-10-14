@@ -7,7 +7,7 @@ import { Redis } from "@upstash/redis";
 import {
   EmailTemplateContact,
   EmailTemplateContactBackup,
-} from "@/app/[locale]/components/email/templateEmailSimplitech";
+} from "@/app/components/email/templateEmailSimplitech";
 
 // --------------------------------------------------
 // Configuration
