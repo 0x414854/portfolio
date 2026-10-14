@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 import styles from "@/styles/test/test.module.css";
 
 // Adapte ce chemin à l'emplacement réel de Carte3D.
-import Carte3D from "../components/3dCardFlipAnimation";
+import Carte3D from "@/app/components/3dCardFlipAnimation";
 
 import PythonIcon from "@/public/icon/pythonIconGrey.png";
 import PythonIconBlack from "@/public/icon/pythonIconBlack.png";

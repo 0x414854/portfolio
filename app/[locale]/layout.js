@@ -7,9 +7,9 @@ import { setRequestLocale } from "next-intl/server";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import Header from "./components/header/header";
-import StarBackground from "./components/starBackground";
-import Footer from "./components/footer/footer";
+import Header from "../components/header/header";
+import StarBackground from "../components/starBackground";
+import Footer from "../components/footer/footer";
 // import StarBackground from "./components/starBackground";
 export const metadata = {
   title: "Arthur Barraud - Portfolio",

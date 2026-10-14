@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 
-import Carte3D from "../components/3dCardFlipAnimation";
+import Carte3D from "@/app/components/3dCardFlipAnimation";
 
 import PythonIcon from "@/public/icon/pythonIconGrey.png";
 import PythonIconBlack from "@/public/icon/pythonIconBlack.png";

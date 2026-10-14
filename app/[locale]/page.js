@@ -1,18 +1,18 @@
 import styles from "./page.module.css";
 
 // import StarBackground from "../components/starBackground";
-import Hero from "./components/website/hero";
-import ProblemSection from "./components/website/customerIssues";
-import ServicesSection from "./components/website/services";
-import MainOfferSection from "./components/website/mainOffer";
-import MaintenanceSection from "./components/website/maintenance";
-import ClientsBanner from "./components/banner/client_banner";
-import FAQ from "./components/website/faq";
-import Testimonials from "@/app/[locale]/components/website/reviews";
-import WhyMeSection from "./components/website/whyMe";
-import FinalCTA from "./components/website/cta";
-import WhyDeveloperSection from "./components/website/whyDeveloper";
-import ProcessSection from "./components/website/process";
+import Hero from "../components/website/hero";
+import ProblemSection from "../components/website/customerIssues";
+import ServicesSection from "../components/website/services";
+import MainOfferSection from "../components/website/mainOffer";
+import MaintenanceSection from "../components/website/maintenance";
+import ClientsBanner from "../components/banner/client_banner";
+import FAQ from "../components/website/faq";
+import ClientReviews from "../components/website/reviews";
+import WhyMeSection from "../components/website/whyMe";
+import FinalCTA from "../components/website/cta";
+import WhyDeveloperSection from "../components/website/whyDeveloper";
+import ProcessSection from "../components/website/process";
 import { useTranslations } from "next-intl";
 
 // Ajuster ecart (margin) entre chaque composant => tous le meme (4rem??)
@@ -92,7 +92,7 @@ export default function Test() {
       <WhyMeSection />
       <MaintenanceSection />
       <ClientsBanner />
-      <Testimonials />
+      <ClientReviews />
       <FAQ title={`Questions fréquentes`} items={faq} />
       <FinalCTA />
     </section>
