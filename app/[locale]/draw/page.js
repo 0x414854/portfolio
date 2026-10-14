@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Countdown from "@/app/components/countdown"; // ton composant countdown réutilisable
-import DrawForm from "@/app/components/drawForm";
+import Countdown from "@/app/components/draw/countdown"; // ton composant countdown réutilisable
+import DrawForm from "@/app/components/draw/drawForm";
 import styles from "@/styles/page/draw.module.css";
 
 import BackArrowWhite from "@/public/icon/backArrowWhite.png";

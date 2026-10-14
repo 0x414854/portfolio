@@ -1,6 +1,6 @@
 import { Link } from "@/i18n/navigation";
 import styles from "@/styles/page/croissance.module.css";
-import Globe from "@/app/[locale]/components/worldParticlesAnimation";
+import Globe from "@/app/components/worldParticlesAnimation";
 import { useTranslations } from "next-intl";
 
 export default function EssentielPage() {

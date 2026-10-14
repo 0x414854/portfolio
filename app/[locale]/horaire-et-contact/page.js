@@ -1,8 +1,8 @@
 import styles from "@/styles/page/horaire_et_contact.module.css";
 import contact from "@/app/config/config";
-import StarBackground from "../components/starBackground";
-import ContactSchedule from "../components/contactSchedule";
-import ContactForm from "../components/form/contactForm";
+// import StarBackground from "../components/starBackground";
+import ContactSchedule from "@/app/components/contactSchedule";
+import ContactForm from "@/app/components/form/contactForm";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa6";
 import { useTranslations } from "next-intl";
 
@@ -45,8 +45,6 @@ export default function ContactPage() {
 
   return (
     <main className={styles.page}>
-      <StarBackground />
-
       <div className={styles.container}>
         <header className={styles.hero}>
           <p className={styles.eyebrow}>

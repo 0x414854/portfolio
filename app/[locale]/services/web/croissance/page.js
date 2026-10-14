@@ -1,6 +1,6 @@
 import { Link } from "@/i18n/navigation";
 import styles from "@/styles/page/croissance.module.css";
-import WorldAnimation from "@/app/[locale]/components/worldAnimation";
+import WorldAnimation from "@/app/components/worldAnimation";
 import { useTranslations } from "next-intl";
 
 export default function EssentielPage() {
