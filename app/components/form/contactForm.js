@@ -23,23 +23,32 @@ export default function ContactForm({
   const services = [
     {
       key: "web",
-      options: ["refonte", "essentiel", "croissance", "business"],
+      options: [
+        { key: "refonte", value: "web_refonte" },
+        { key: "essentiel", value: "web_essentiel" },
+        { key: "croissance", value: "web_croissance" },
+        { key: "business", value: "web_business" },
+      ],
     },
     {
       key: "automation",
-      options: ["simple", "simple", "simple"],
+      options: [{ key: "simple", value: "automation_simple" }],
     },
     {
       key: "maintenance",
-      options: ["essentiel", "evolution", "premium"],
+      options: [
+        { key: "essentiel", value: "maintenance_essentiel" },
+        { key: "evolution", value: "maintenance_evolution" },
+        { key: "premium", value: "maintenance_premium" },
+      ],
     },
     {
       key: "consulting",
-      options: ["refonte"],
+      options: [{ key: "refonte", value: "consulting_refonte" }],
     },
     {
       key: "other",
-      options: ["other"],
+      options: [{ key: "other", value: "other_other" }],
     },
   ];
 
@@ -73,6 +82,10 @@ export default function ContactForm({
       });
 
       if (!response.ok) {
+        const result = await response.json().catch(() => ({}));
+
+        console.error("Erreur API contact :", response.status, result);
+
         setStatus("error");
         return;
       }
@@ -162,17 +175,14 @@ export default function ContactForm({
               {t("fields.service.placeholder")}
             </option>
 
-            {services.map((group, i) => (
+            {services.map((group) => (
               <optgroup
-                key={`${group.key}-${i}`}
+                key={group.key}
                 label={t(`services.${group.key}.label`)}
               >
-                {group.options.map((option, j) => (
-                  <option
-                    key={`${group.key}-${option}-${j}`}
-                    value={t(`services.${group.key}.options.${option}.value`)}
-                  >
-                    {t(`services.${group.key}.options.${option}.label`)}
+                {group.options.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {t(`services.${group.key}.options.${option.key}.label`)}
                   </option>
                 ))}
               </optgroup>

@@ -36,7 +36,19 @@ const CONTACT_FROM_EMAIL = process.env.CONTACT_FROM_EMAIL;
 const SITE_URL = process.env.SITE_URL;
 
 // Codes autorisés par le formulaire
-const ALLOWED_SERVICES = ["Web", "Software", "Consulting", "Other"];
+
+const ALLOWED_SERVICES = [
+  "web_refonte",
+  "web_essentiel",
+  "web_croissance",
+  "web_business",
+  "automation_simple",
+  "maintenance_essentiel",
+  "maintenance_evolution",
+  "maintenance_premium",
+  "consulting_refonte",
+  "other_other",
+];
 
 const ALLOWED_BUDGETS = [
   "",
@@ -157,6 +169,9 @@ export async function POST(request) {
 
     if (!body || typeof body !== "object" || Array.isArray(body)) {
       return jsonError("Les données envoyées sont invalides.", 400);
+    }
+    if (cleanString(body.website, 200)) {
+      return NextResponse.json({ success: true }, { status: 200 });
     }
 
     const name = cleanString(body.name, 120);

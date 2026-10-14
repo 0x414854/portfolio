@@ -18,10 +18,16 @@ const COLORS = {
 const FONT = "Arial, Helvetica, sans-serif";
 
 const SERVICE_LABELS = {
-  Web: "Développement web",
-  Software: "Développement logiciel",
-  Consulting: "Conseil et accompagnement",
-  Other: "Autre besoin",
+  web_refonte: "Développement Web — Refonte",
+  web_essentiel: "Développement Web — Essentiel",
+  web_croissance: "Développement Web — Croissance",
+  web_business: "Développement Web — Business",
+  automation_simple: "Automatisation — Automatisation simple",
+  maintenance_essentiel: "Maintenance — Essentiel",
+  maintenance_evolution: "Maintenance — Évolution",
+  maintenance_premium: "Maintenance — Premium",
+  consulting_refonte: "Conseil et accompagnement — Refonte",
+  other_other: "Autre besoin",
 };
 
 const BUDGET_LABELS = {
