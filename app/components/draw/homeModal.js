@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "@/styles/components/homeModal.module.css";
-import Countdown from "@/app/components/countdown";
+import Countdown from "./countdown";
 
 export default function HomeModal({ isActive, onClose }) {
   //   useEffect(() => {

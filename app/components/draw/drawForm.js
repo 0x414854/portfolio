@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "@/styles/components/drawForm.module.css";
 import { createClient } from "@supabase/supabase-js";
-import Fireworks from "./fireworks";
+import Fireworks from "../fireworks";
 
 // Init Supabase
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
