@@ -1,0 +1,340 @@
+.ctaSection {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 24px 110px;
+  color: #f7f7f8;
+  background: transparent;
+  isolation: isolate;
+}
+
+.ctaContainer {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 90px 30px 28px;
+  border: 1px solid rgba(242, 198, 93, 0.19);
+  border-radius: 28px;
+  /* background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.035), transparent 42%),
+    #0e0e10; */
+  box-shadow:
+    0 30px 100px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+.ctaGlow {
+  position: absolute;
+  z-index: -1;
+  top: -270px;
+  left: 50%;
+  width: 850px;
+  height: 650px;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse,
+    rgba(242, 198, 93, 0.15) 0%,
+    rgba(191, 135, 35, 0.055) 36%,
+    transparent 70%
+  );
+  filter: blur(25px);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.ctaGrid {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 0.16;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black, transparent 82%);
+}
+
+.ctaContent {
+  position: relative;
+  z-index: 1;
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 27px;
+  color: #d9bd77;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.2em;
+}
+
+.statusDot {
+  position: relative;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e7c15f;
+  box-shadow: 0 0 13px rgba(231, 193, 95, 0.65);
+}
+
+.statusDot::after {
+  position: absolute;
+  inset: -4px;
+  border: 1px solid rgba(231, 193, 95, 0.4);
+  border-radius: 50%;
+  content: "";
+  animation: dotPulse 2.5s ease-out infinite;
+}
+
+.title {
+  margin: 0;
+  color: #f8f8fa;
+  font-size: clamp(40px, 6.2vw, 76px);
+  font-weight: 750;
+  line-height: 1.07;
+  letter-spacing: -0.065em;
+}
+
+.title > span {
+  display: inline-block;
+  padding-bottom: 7px;
+  color: transparent;
+  background: linear-gradient(
+    105deg,
+    #fff0bf 0%,
+    #f2c65d 42%,
+    #dca13a 72%,
+    #ffe9ad 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.description {
+  max-width: 650px;
+  margin: 27px auto 0;
+  color: #a9a9b3;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.description strong {
+  color: #e5e1d7;
+  font-weight: 500;
+}
+
+/* Actions */
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 35px;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-height: 54px;
+  padding: 0 23px;
+  border-radius: 11px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 250ms ease,
+    border-color 250ms ease,
+    background 250ms ease,
+    box-shadow 250ms ease;
+}
+
+.primaryButton {
+  color: #17130a;
+  border: 1px solid #f5d889;
+  background: linear-gradient(110deg, #ffe9a6, #f2c65d 52%, #e1a638);
+  box-shadow:
+    0 5px 22px rgba(226, 170, 59, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.primaryButton:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 10px 34px rgba(226, 170, 59, 0.27),
+    0 0 30px rgba(226, 170, 59, 0.09);
+}
+
+.buttonArrow {
+  font-size: 19px;
+  transition: transform 250ms ease;
+}
+
+.primaryButton:hover .buttonArrow {
+  transform: translate(3px, -3px);
+}
+
+.secondaryButton {
+  color: #dedee3;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.secondaryButton:hover {
+  transform: translateY(-2px);
+  border-color: rgba(242, 198, 93, 0.4);
+  background: rgba(242, 198, 93, 0.045);
+}
+
+.secondaryButton > span {
+  color: #d9bd77;
+  font-size: 17px;
+  transition: transform 250ms ease;
+}
+
+.secondaryButton:hover > span {
+  transform: translateX(4px);
+}
+
+/* Réassurance */
+
+.reassurance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 27px;
+  color: #85858f;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.reassuranceIcon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  color: #c8a957;
+}
+
+.reassuranceIcon svg {
+  width: 19px;
+  height: 19px;
+}
+
+/* Signature de fin */
+
+.bottomLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 75px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #777781;
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: 0.17em;
+}
+
+.bottomLineAccent {
+  color: #d7b75f;
+}
+
+/* Animations */
+
+@keyframes dotPulse {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.8);
+  }
+
+  80%,
+  100% {
+    opacity: 0;
+    transform: scale(1.9);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 640px) {
+  .ctaSection {
+    padding: 65px 16px 75px;
+  }
+
+  .ctaContainer {
+    padding: 65px 20px 22px;
+    border-radius: 21px;
+  }
+
+  .eyebrow {
+    gap: 8px;
+    font-size: 9px;
+    letter-spacing: 0.13em;
+  }
+
+  .title {
+    font-size: clamp(36px, 9vw, 50px);
+  }
+
+  .description {
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 11px;
+    margin-top: 29px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    min-height: 52px;
+    padding: 0 17px;
+  }
+
+  .reassurance {
+    align-items: flex-start;
+    max-width: 300px;
+    margin: 23px auto 0;
+    text-align: left;
+  }
+
+  .bottomLine {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 49px;
+    font-size: 9px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .statusDot::after {
+    animation: none;
+  }
+
+  .primaryButton,
+  .secondaryButton,
+  .buttonArrow,
+  .secondaryButton > span {
+    transition: none;
+  }
+}

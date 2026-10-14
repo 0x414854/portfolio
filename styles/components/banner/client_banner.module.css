@@ -1,0 +1,369 @@
+.bannerSection {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 3.5rem 0;
+}
+
+.container {
+  width: 100%;
+  /* max-width: 1440px; */
+  margin: 0 auto;
+}
+
+/* -------------------------------- */
+/* Header */
+/* -------------------------------- */
+
+.header {
+  width: 90%;
+  /* max-width: 720px; */
+  margin: 0 auto 2rem;
+  padding: 0 1.25rem;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 22px;
+  color: #d8b36a;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.19em;
+}
+.statusDot {
+  position: relative;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e7c15f;
+  box-shadow: 0 0 13px rgba(231, 193, 95, 0.65);
+}
+
+.statusDot::after {
+  position: absolute;
+  inset: -4px;
+  border: 1px solid rgba(231, 193, 95, 0.4);
+  border-radius: 50%;
+  content: "";
+  animation: dotPulse 2.5s ease-out infinite;
+}
+
+@keyframes dotPulse {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.8);
+  }
+
+  80%,
+  100% {
+    opacity: 0;
+    transform: scale(1.9);
+  }
+}
+
+.title {
+  color: var(--white1);
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+.gradientText {
+  background: var(--text-gradient-yellow);
+  background-size: 200% auto;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientText 5s linear infinite;
+}
+
+@keyframes gradientText {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: 200% center;
+  }
+}
+
+.description {
+  color: var(--white1);
+  max-width: 80%;
+  margin: 1rem auto 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.65;
+}
+
+/* -------------------------------- */
+/* Marquee */
+/* -------------------------------- */
+
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* -------------------------------- */
+/* Fade edges */
+/* -------------------------------- */
+
+.marquee::before,
+.marquee::after {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  width: 3rem;
+  content: "";
+  pointer-events: none;
+}
+
+.marquee::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--onyx, --light-gray),
+    /* var(--background-color, #fff), */ transparent
+  );
+}
+
+.marquee::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    var(--onyx, --light-gray),
+    /* var(--background-color, #fff), */ transparent
+  );
+}
+
+/* -------------------------------- */
+/* Track */
+/* -------------------------------- */
+
+.track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  animation: marquee 25s linear infinite;
+  will-change: transform;
+  gap: 8rem;
+}
+
+/* -------------------------------- */
+/* Groups */
+/* -------------------------------- */
+
+.clientGroup {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1rem 0 1rem;
+}
+
+/* -------------------------------- */
+/* Client */
+/* -------------------------------- */
+
+.client {
+  display: flex;
+  flex-shrink: 0;
+  width: 180px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  outline: none;
+  padding-left: 3rem;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 1;
+  /* filter: grayscale(1); */
+  transition:
+    opacity 250ms ease,
+    filter 250ms ease,
+    transform 250ms ease;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* -------------------------------- */
+/* Hover / Focus */
+/* -------------------------------- */
+
+.client:hover .logo,
+.client:focus-visible .logo {
+  opacity: 1;
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+
+.client:focus-visible {
+  border-radius: 0.5rem;
+  outline: 2px solid currentColor;
+  outline-offset: 6px;
+}
+
+/* -------------------------------- */
+/* Animation */
+/* -------------------------------- */
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* -------------------------------- */
+/* Tablet */
+/* -------------------------------- */
+
+@media (min-width: 576px) {
+  .bannerSection {
+    padding: 4rem 0;
+  }
+
+  .header {
+    margin-bottom: 2.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .marquee::before,
+  .marquee::after {
+    width: 5rem;
+  }
+
+  .client {
+    width: 140px;
+    height: 65px;
+  }
+
+  .clientGroup {
+    gap: 3rem;
+    padding-right: 3rem;
+  }
+
+  .track {
+    animation-duration: 30s;
+  }
+}
+
+/* -------------------------------- */
+/* Desktop */
+/* -------------------------------- */
+
+@media (min-width: 768px) {
+  .bannerSection {
+    padding: 5rem 0;
+  }
+
+  .header {
+    margin-bottom: 3rem;
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .marquee::before,
+  .marquee::after {
+    width: 7rem;
+  }
+
+  .client {
+    width: 160px;
+    height: 70px;
+  }
+
+  .clientGroup {
+    gap: 4rem;
+    padding-right: 4rem;
+  }
+
+  .track {
+    animation-duration: 32s;
+  }
+}
+
+/* -------------------------------- */
+/* Large desktop */
+/* -------------------------------- */
+
+@media (min-width: 1200px) {
+  .bannerSection {
+    padding: 6rem 0;
+  }
+
+  .header {
+    margin-bottom: 3.5rem;
+  }
+
+  .title {
+    font-size: 2.75rem;
+  }
+
+  .marquee::before,
+  .marquee::after {
+    width: 10rem;
+  }
+
+  .client {
+    width: 300px;
+    height: 80px;
+  }
+
+  .clientGroup {
+    gap: 5rem;
+    padding-right: 5rem;
+  }
+
+  .track {
+    animation-duration: 35s;
+  }
+}
+
+/* -------------------------------- */
+/* Reduced motion */
+/* -------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .gradientText {
+    animation: none;
+    background-position: 0% center;
+  }
+
+  .track {
+    animation: none;
+    transform: none;
+  }
+
+  .logo {
+    transition: none;
+  }
+}

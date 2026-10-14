@@ -109,5 +109,1232 @@
     "RaffleModal": {
       "draw": "Draw"
     }
+  },
+
+  "Header": {
+    "logoSub": "BOOST YOUR VISIBILITY",
+    "mobileMenuLabel": "EXPLORE",
+    "mobileLanguageLabel": "WEBSITE LANGUAGE",
+    "mobileSocialLabel": "LET'S CONNECT",
+    "mobileCTA": "Start a project",
+    "link_1": "Services",
+    "link_2": "Hours & Contact",
+    "link_3": "Portfolio"
+  },
+  "Homepage": {
+    "Hero": {
+      "badge": "WEB DESIGN & DEVELOPMENT",
+      "title": "A website that <highlight>grows</highlight> your business.",
+      "description": "We create modern, fast, and professional websites to help you increase visibility, attract new customers, and grow your business.",
+      "ctaButtons": {
+        "button_1": "Discover our packages",
+        "button_2": "Request a quote"
+      },
+      "features": {
+        "feature_1": "Professional website",
+        "feature_2": "Responsive on all screens",
+        "feature_3": "Fast delivery",
+        "feature_4": "Built to scale"
+      },
+      "mockup": {
+        "logo": "YOURLOGO",
+        "nav": {
+          "link_1": "Home",
+          "link_2": "Services",
+          "link_3": "Contact"
+        },
+        "label": "DIGITAL EXPERIENCE",
+        "title": {
+          "1": "BUILD.",
+          "2": "GROW."
+        },
+        "subtitle": "Your digital presence starts here.",
+        "ctaButton": "Get started",
+        "stats": {
+          "stat_1": "Performance",
+          "stat_2": "Responsive",
+          "stat_3": "Growth"
+        },
+        "floatingCard": {
+          "card_1": "Performance",
+          "card_2": "Visibility",
+          "card_3": "Responsive"
+        }
+      }
+    },
+    "CustomerIssues": {
+      "problems": {
+        "question_1": "Don't have a website ?",
+        "answer_1": "Your future customers are searching for your business online. Without a professional website, they may struggle to find your services and contact details.",
+        "question_2": "Is your website outdated ?",
+        "answer_2": "A website that no longer reflects your business can damage your image and create a first impression that doesn't match the quality of your work.",
+        "question_3": "Struggling with visibility ?",
+        "answer_3": "A poorly optimised website can remain invisible to your future customers. A clear structure and optimised content help improve your online presence.",
+        "question_4": "Losing time ?",
+        "answer_4": "Repetitive tasks and manual processes take up valuable time. The right tools can simplify your day-to-day operations and automate certain tasks.",
+        "question_5": "Not getting enough enquiries ?",
+        "answer_5": "A website should guide visitors towards a clear action: requesting a quote, booking an appointment, or contacting you. A well-designed user journey makes this easier."
+      },
+      "eyebrow": "YOUR ONLINE PRESENCE",
+      "title": "Your online presence<tag> should work for you.</tag>",
+      "intro": "Your website should showcase your business, build trust, improve your visibility, and make it easier for future customers to get in touch.",
+      "prompt": "Does any of this sound familiar ?",
+      "transition": {
+        "label": "The solution",
+        "solution": "We create simple, modern digital solutions tailored to your business, turning these challenges into opportunities.",
+        "cta": "Discover our solutions"
+      }
+    },
+    "Services": {
+      "automationVisual": {
+        "step_1": "New lead",
+        "statusStep_1": "Received",
+        "step_2": "Automation",
+        "statusStep_2": "Active",
+        "step_3": "Action completed",
+        "statusStep_3": "Completed"
+      },
+      "services": {
+        "service_1": {
+          "category": "ONLINE PRESENCE",
+          "title": "Website Development",
+          "description": "A professional, fast, and elegant website to showcase your business, build trust, and turn visitors into leads.",
+          "features": {
+            "feature_1": "Modern, custom design",
+            "feature_2": "Optimised mobile experience",
+            "feature_3": "Performance and basic SEO",
+            "feature_4": "Optimised contact journey"
+          },
+          "cta": "Explore our packages"
+        },
+        "service_2": {
+          "category": "TIME SAVING",
+          "title": "Automation",
+          "description": "Free yourself from repetitive tasks with automations tailored to your business. Less manual work, more time for what matters.",
+          "features": {
+            "feature_1": "Automated lead management",
+            "feature_2": "Automatic replies and notifications",
+            "feature_3": "Integration of your tools",
+            "feature_4": "Workflow automation"
+          },
+          "cta": "Explore automation solutions"
+        }
+      },
+      "section": {
+        "eyebrow": "OUR EXPERTISE",
+        "title": "Solutions to<br></br><highlight>grow your business.</highlight>",
+        "subtitle": "A stronger online presence. Simplified tasks. Solutions designed to help you move forward.",
+        "priceLabel": "Starting at",
+        "bottomNote": "Solutions tailored to your goals and budget."
+      }
+    },
+    "WhyDev": {
+      "comparisons": {
+        "title_1": "Strategy & Conversion",
+        "description_1": "Pages structured around your goals, with clear messaging and carefully considered calls to action.",
+        "title_2": "Technical Quality",
+        "description_2": "Well-maintained code, optimised performance, and an experience tailored to both mobile and desktop.",
+        "title_3": "Security & Reliability",
+        "description_3": "Forms, dependencies, and access points checked according to your project's needs.",
+        "title_4": "Project Management",
+        "description_4": "A dedicated point of contact who handles technical decisions, testing, and agreed-upon fixes.",
+        "title_5": "Custom Identity",
+        "description_5": "Design and content tailored to your business, your customers, and your positioning.",
+        "title_6": "Long-Term Growth",
+        "description_6": "A maintainable foundation designed to make changes and future features easier to implement."
+      },
+      "aiLimits": {
+        "limit_1": "Often a generic website",
+        "limit_2": "A conversion strategy still to be defined",
+        "limit_3": "Code that needs checking and testing",
+        "limit_4": "Unreliable security",
+        "limit_5": "Fixes that still need to be handled",
+        "limit_6": "Maintenance to plan for"
+      },
+      "devBenefits": {
+        "benefit_1": "An experience tailored to your audience",
+        "benefit_2": "A user journey designed to convert",
+        "benefit_3": "Verified performance",
+        "benefit_4": "Appropriate security checks",
+        "benefit_5": "Structured testing and fixes",
+        "benefit_6": "A structure designed to evolve"
+      },
+      "eyebrow": "BEYOND AI GENERATION",
+      "title": "A website that exists.<br></br><highlight>Or a website that works for you.</highlight>",
+      "subtitle": "Building a website has become accessible to everyone. Creating a professional, reliable experience tailored to your business requires a different approach. I turn your goals into a custom website that is tested and designed to grow with your business.",
+      "comparisonCard": {
+        "card_ia": {
+          "label": "UNVERIFIED AI GENERATION",
+          "title": "A starting point.",
+          "description": "Quick to produce, but the result depends on the instructions, the checks performed, and the work still required.",
+          "footer": "The result still needs to be validated."
+        },
+        "card_dev": {
+          "label": "PROFESSIONAL DEVELOPMENT",
+          "title": "A website designed to perform.",
+          "description": "A structured approach combining strategy, design, development, and testing before launch.",
+          "footer": "Every decision has a purpose."
+        }
+      },
+      "benefitsHeader": {
+        "eyebrow": "WHAT MAKES THE DIFFERENCE",
+        "title": "More than just great design.",
+        "description": "Technical details and design decisions make the difference between a website that is simply online and a tool that delivers real value to your business."
+      }
+    },
+    "Process": {
+      "steps": {
+        "title_1": "Let's Talk About Your Project",
+        "description_1": "We discuss your business, your needs, and your goals.",
+        "title_2": "Website Development",
+        "description_2": "We build your website and tailor every detail to your business.",
+        "title_3": "Approval",
+        "description_3": "You review and approve the result, and we make the final adjustments.",
+        "title_4": "Launch",
+        "description_4": "Your website goes live, ready for your future customers and to help grow your business."
+      },
+      "eyebrow": "OUR APPROACH",
+      "title": "How does it <highlight>work?</highlight>",
+      "description": "A successful project starts with a clear process. From our first conversation to launch, every step is designed to make the journey simple for you.",
+      "stepLabel": "STEP"
+    },
+    "MainOffer": {
+      "growVisual": {
+        "eyebrow": "GROWTH PACKAGE",
+        "title_1": "Your business.",
+        "title_2": "New potential.",
+        "dashboard": {
+          "label": "YOUR ONLINE PRESENCE",
+          "strong": "A system designed to convert",
+          "status": "ACTIVE",
+          "chartCaptions": {
+            "span_1": "VISIBILITY",
+            "span_2": "CONVERSION",
+            "span_3": "GROWTH"
+          },
+          "growSteps": {
+            "strong_1": "Get noticed",
+            "small_1": "SEO & local presence",
+            "strong_2": "Build trust",
+            "small_2": "Professional image",
+            "strong_3": "Generate enquiries",
+            "small_3": "Conversion-focused user journey",
+            "strong_4": "Every detail matters.",
+            "small_4": "A strategy tailored to your business."
+          }
+        }
+      },
+      "section": {
+        "features": {
+          "feature_1": "Up to 6 pages",
+          "feature_2": "Professional design",
+          "feature_3": "Mobile-friendly",
+          "feature_4": "Enhanced SEO",
+          "feature_5": "Local optimisation",
+          "feature_6": "Enquiry form",
+          "feature_7": "WhatsApp integration",
+          "feature_8": "Google Maps",
+          "feature_9": "Integrated FAQ",
+          "feature_10": "Conversion optimisation"
+        },
+        "eyebrow": "THE PACKAGE TO TAKE YOUR BUSINESS TO THE NEXT LEVEL",
+        "title": "The website designed to<br></br><highlight>grow your business.</highlight>",
+        "subtitle": "A professional online presence that builds trust, attracts the right customers, and turns visits into enquiries.",
+        "popularBadge": "Most popular package",
+        "offer": {
+          "kicker": "OUR SIGNATURE OFFER",
+          "title": "GROWTH PACKAGE",
+          "description": "More than just a brochure website: a tool designed to grow your business.",
+          "priceLabel": "Starting at",
+          "priceNote": "Pricing tailored to your project",
+          "featuresTitle": "Everything you need to grow your online presence",
+          "includedNumber": "10 inclusions",
+          "primaryCTA": "Explore the offer",
+          "secondaryCTA": "Let's discuss your project",
+          "reassurance": "Let's discuss your project and goals."
+        },
+        "visualLabel": "AN ONLINE PRESENCE THAT MAKES A DIFFERENCE",
+        "footer": {
+          "strong_1": "Greater visibility",
+          "small_1": "A website designed for SEO",
+          "strong_2": "More enquiries",
+          "small_2": "A conversion-focused user journey"
+        },
+        "vidualIndex_1": "BUILT FOR GROWTH",
+        "vidualIndex_2": "2026 — WEB EXPERIENCE"
+      }
+    },
+    "WhyMe": {
+      "advantages": {
+        "title_1": "Fast and modern",
+        "description_1": "A smooth, responsive experience that makes your website enjoyable for visitors to use.",
+        "title_2": "Responsive on all devices",
+        "description_2": "A polished layout on mobile, tablet, and desktop, whatever the screen size.",
+        "title_3": "Designed for your business",
+        "description_3": "A clear structure that showcases your services and makes it easy for customers to get in touch.",
+        "title_4": "Built to evolve",
+        "description_4": "A website designed to accommodate new pages and features as your business grows."
+      },
+      "eyebrow": "WHY CHOOSE ME",
+      "title": "Websites designed for <highlight>today and tomorrow.</highlight>",
+      "description": "A website should be more than just visually appealing. It should be fast, accessible, and designed to support your business as it grows.",
+      "footerNote": "An approach designed to last."
+    },
+    "Maintenance": {
+      "plans": {
+        "plan_1": {
+          "name": "Essential",
+          "description": "Everything you need to keep your website maintained.",
+          "features": {
+            "feature_1": "Technical monitoring",
+            "feature_2": "Website maintenance",
+            "feature_3": "Basic support"
+          },
+          "label": "FOR PEACE OF MIND"
+        },
+        "plan_2": {
+          "name": "Growth",
+          "description": "Your website, maintained. Your ideas, moving forward.",
+          "features": {
+            "feature_1": "Maintenance and technical monitoring",
+            "feature_2": "Regular updates",
+            "feature_3": "Personalized guidance",
+            "feature_4": "A dedicated point of contact"
+          },
+          "label": "MOST POPULAR"
+        },
+        "plan_3": {
+          "name": "Premium",
+          "description": "More comprehensive support for the long term.",
+          "features": {
+            "feature_1": "Enhanced technical monitoring",
+            "feature_2": "More frequent updates",
+            "feature_3": "Priority support"
+          },
+          "label": "TAKE IT FURTHER"
+        }
+      },
+      "eyebrow": "MAINTENANCE & SUPPORT",
+      "title": "Your website evolves. <highlight>We keep an eye on it.</highlight>",
+      "description": "A high-performing website needs more than just a successful launch. We stay by your side to maintain it, help it evolve, and let you focus on your business.",
+      "planLabel": "OUR RECOMMENDATION",
+      "period": "/ month",
+      "footerNote": "The right balance between maintenance and growth.",
+      "bottomNote": "You focus on your business. <strong>We take care of your website.</strong>"
+    },
+    "ClientsBanner": {
+      "eyebrow": "TRUSTED BY BUSINESSES",
+      "title": "Helping businesses grow their <span>online visibility </span>",
+      "description": "From website creation to process automation, we help businesses build a professional, consistent, and effective online presence.",
+      "logosLabel": "Businesses that trust us"
+    },
+    "Reviews": {
+      "reviews": {
+        "quotes": {
+          "quote_1": "Honestly, I love this app! It’s so practical, especially when used alongside a traditional vision board. I can jot down ideas as soon as they come to me, update my goals at any time, and easily track my progress. Everything is always within reach, and seeing the progress chart and the number of goals achieved is incredibly motivating! Simple, clear, and genuinely useful in everyday life.",
+          "quote_2": "I hired Mr. Arthur Barraud to redesign our workshop’s website, and I’m extremely satisfied with the result, which exceeded our expectations. His advice was insightful and highly professional. The website was built and launched quickly. I highly recommend this young company!",
+          "quote_3": "Fast, professional, and expertly executed website development. CDO Multiservices now has a clear, modern, and effective website designed to inspire trust and showcase our expertise. High-quality work delivered within a short timeframe, with a genuine commitment to service and attention to detail.",
+          "quote_4": ""
+        },
+        "services": {
+          "website": "Website Development"
+        }
+      },
+      "eyebrow": "THEIR WORDS, THEIR EXPERIENCE",
+      "mobileHint": "Scroll to discover the reviews"
+    },
+    "FAQ": {
+      "question_1": "How much does it cost to build a professional website?",
+      "answer_1": "Our professional websites start at €500. The price depends on your project, the number of pages, and the features you need. Each website is designed to showcase your business, strengthen your credibility, and turn visitors into potential customers. <br></br><br></br>Have a project in mind? Contact us for a quote tailored to your needs and budget.",
+
+      "question_2": "How long does it take to build a website?",
+      "answer_2": "The timeline depends on your project and the package you choose. Our Essential package can be delivered within 5 business days, while a custom website typically takes around 2 weeks. These timeframes are estimates and depend in particular on when we receive your content and on the complexity of the project. <br></br><br></br>We work with you to establish a clear timeline so you can launch your online presence under the best possible conditions.",
+
+      "question_3": "Will my website work on mobile phones and tablets?",
+      "answer_3": "Yes. All our websites are designed to adapt to mobile phones, tablets, and desktop computers. Responsive design allows your visitors to browse easily on any screen, with a seamless experience, a polished layout, and easy access to your information. <br></br><br></br>A mobile-friendly website improves the user experience and supports SEO best practices on Google.",
+
+      "question_4": "Will my website design be tailored to my business?",
+      "answer_4": "Yes. We design a personalized website based on your business, visual identity, and target audience. The colors, layout, content, and calls to action are carefully considered to present your services clearly and professionally. <br></br><br></br>The goal is to help you stand out from your competitors, build trust from the very first visit, and make it easy for potential customers to get in touch.",
+
+      "question_5": "Will my website be optimized for search engines (SEO)?",
+      "answer_5": "Yes. We incorporate SEO fundamentals from the very beginning of your website project, including a clear page structure, optimized titles, content optimization, technical performance, and mobile compatibility. Depending on your project, we can also work on local SEO to improve your visibility among customers in your area. <br></br><br></br>SEO lays a solid foundation for helping search engines better understand your website. However, results depend on many factors and cannot be guaranteed. Our goal is to help you build your online visibility over the long term.",
+
+      "question_6": "Can I add new features to my website as my business grows?",
+      "answer_6": "Yes. Your website is designed to evolve alongside your business. You can consider adding new pages, forms, specific features, or automations based on your needs and the technical possibilities of your project. <br></br><br></br>Whether you want to expand your services, improve the customer journey, or simplify certain tasks, we can explore solutions that align with your goals. This gives you a foundation designed to support your growth.",
+
+      "question_7": "Do I have to pay a subscription for my website?",
+      "answer_7": "No. Your website can be built without a mandatory monthly subscription for the website creation itself. Hosting is included according to the terms of your package. Starting with the Growth package, your domain name is also included free of charge for the first year. Additional fees may apply to certain third-party services or specific features. <br></br><br></br>If you would like ongoing support after launch, we offer optional maintenance plans. We explain all expected costs upfront so you can choose a solution that fits your budget.",
+
+      "question_8": "Will my website be secure, and can you maintain it?",
+      "answer_8": "We follow appropriate development practices to help ensure your website's security and reliability. Depending on the technologies used, this may include HTTPS configuration, dependency checks, and form security measures. However, no website can be guaranteed to be completely risk-free. <br></br><br></br>After launch, we can also provide maintenance services tailored to your needs, including updates, bug fixes, and technical checks. This gives you access to ongoing support to help keep your website running smoothly over time.",
+
+      "question_9": "Are hosting and a domain name included in your package?",
+      "answer_9": "Hosting is included according to the terms of your package. Starting with the Growth package, your domain name is included free of charge for the first year. For other packages, the domain name is an additional cost. We can take care of the configuration and launch to make the technical process easier for you. <br></br><br></br>After the first year, domain name renewal fees may apply. We explain the applicable terms before launch so you know exactly what is included in your package.",
+
+      "question_10": "Which tasks can you automate in my business?",
+      "answer_10": "We build automations tailored to your business to reduce repetitive tasks and save you time. Depending on your needs and the tools you use, these may include lead management, automated notifications, customer inquiry tracking, connecting your tools, or automating specific steps in your workflows. <br></br><br></br>Every solution is assessed based on your current processes and goals. The aim is to reduce manual work, streamline your operations, and allow you to focus on growing your business. <br></br><br></br>Want to find out what could be automated in your business? Contact us to explore solutions tailored to your needs."
+    },
+    "CTA": {
+      "eyebrow": "YOUR PROJECT STARTS HERE",
+      "title": "Your business deserves<br></br><highlight>a website that does it justice.</highlight>",
+      "description": "Looking to grow your business, bring an idea to life, or improve your online presence?<strong> Let's create a website that inspires trust and makes people want to choose you.</strong>",
+      "cta_1": "Let's discuss your project",
+      "cta_2": "Explore my services",
+      "bottomNote": "A conversation to understand your needs, with no obligation.",
+      "footerQuestion": "AN IDEA? A PROJECT?",
+      "footerAnswer": "LET'S BRING IT TO LIFE."
+    }
+  },
+  "Footer": {
+    "description": "Simplitech helps businesses with modern websites, website maintenance, and process automation.",
+    "servicesSection": {
+      "title": "Services",
+      "service_1": "Website Design",
+      "service_2": "Website Maintenance",
+      "service_3": "Automation"
+    },
+    "compagnySection": {
+      "title": "Company",
+      "link_1": "Contact",
+      "link_2": "Legal Notice",
+      "link_3": "Privacy Policy",
+      "link_4": "Terms and Conditions of Sale"
+    },
+    "scheduleSection": {
+      "title": "Business Hours",
+      "status": {
+        "open": "Currently Open",
+        "close": "Currently Closed"
+      },
+      "timeZoneLabel": "Local Time — Brisbane",
+      "hours": {
+        "weekdays": "Monday – Friday",
+        "weekend": "Saturday – Sunday"
+      },
+      "today": "Today ",
+      "week": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday"
+      }
+    },
+    "copyright": "Simplitech. All rights reserved."
+  },
+  "ServicesPage": {
+    "plans": {
+      "plan_1": {
+        "name": "Essential",
+        "price": "€500",
+        "pages": "Up to 3 pages",
+        "description": "To establish a professional online presence.",
+        "features": {
+          "feature_1": "Responsive design",
+          "feature_2": "Contact form",
+          "feature_3": "Google Maps integration",
+          "feature_4": "Basic SEO"
+        }
+      },
+      "plan_2": {
+        "name": "Growth",
+        "price": "€790",
+        "pages": "Up to 6 pages",
+        "description": "To increase your visibility and generate leads.",
+        "features": {
+          "feature_1": "Everything you need to get started",
+          "feature_2": "Enhanced SEO",
+          "feature_3": "Conversion rate optimization",
+          "feature_4": "WhatsApp integration and analytics",
+          "feature_5": "Optional appointment booking and automation"
+        }
+      },
+      "plan_3": {
+        "name": "Business",
+        "price": "€1,290",
+        "pages": "Up to 10 pages",
+        "description": "For a more comprehensive and personalized online presence.",
+        "features": {
+          "feature_1": "Everything you need to grow your business",
+          "feature_2": "Custom design",
+          "feature_3": "Enhanced SEO and analytics",
+          "feature_4": "WhatsApp integration",
+          "feature_5": "Booking and automation included",
+          "feature_6": "30 days of support after delivery"
+        }
+      }
+    },
+    "eyebrow": "SIMPLITECH / SERVICES",
+    "title": "Digital solutions to support<br></br>your <highlight>growth.</highlight>",
+    "description": "Websites, maintenance, and automation: practical solutions to grow your business and simplify your day-to-day operations.",
+    "web": {
+      "eyebrow": "01 — YOUR ONLINE PRESENCE",
+      "title": "Website <highlight>development.</highlight>",
+      "description": "A professional, fast-loading website designed to turn visitors into customers.",
+      "plans": {
+        "popular": "RECOMMENDED",
+        "priceCaption": "One-time payment",
+        "ctaDiscover": "Explore the package",
+        "ctaForm": "Discuss my project"
+      },
+      "bottomNote": "Every project is different. Specific requirements may be quoted separately."
+    },
+    "maintenance": {
+      "browserURL": "your-website.com",
+      "eyebrow": "02 — PEACE OF MIND",
+      "title": "Website <highlight>maintenance.</highlight>",
+      "description": "Keep your website secure, up to date, and running smoothly without having to manage the technical side yourself.",
+      "price": "€27–€97",
+      "period": "/ month",
+      "cta": "Compare plans"
+    },
+    "automation": {
+      "flowCaption": "AUTOMATED WORKFLOW",
+      "eyebrow": "03 — EFFICIENCY",
+      "title": "Custom <highlight>automation.</highlight>",
+      "description": "Connect your tools, reduce repetitive tasks, and spend more time growing your business.",
+      "price": "Custom quote",
+      "cta": "Explore the possibilities",
+      "bottomNote": "PRACTICAL SOLUTIONS. TANGIBLE RESULTS."
+    }
+  },
+  "WebPage": {
+    "Essentiel": {
+      "backLink": "All services",
+      "eyebrow": "PACKAGE 01 — WEBSITE",
+      "title": "<highlight>Essential</highlight> Website",
+      "description": "A professional online presence to get your business up and running quickly.",
+      "badges": {
+        "badge_1": "Delivered within 5 business days*",
+        "badge_2": "Responsive design"
+      },
+      "visual": {
+        "bubbles": {
+          "bubble_1": "Visibility",
+          "bubble_2": "New customers",
+          "bubble_3": "Credibility",
+          "bubble_4": "Inquiries"
+        },
+        "centerLabel": "Your website"
+      },
+      "features": {
+        "title": "What's included",
+        "feature_1": "Modern, professional website",
+        "feature_2": "Up to 3 custom pages",
+        "feature_3": "Design optimized for mobile phones, tablets, and desktops",
+        "feature_4": "Presentation of your business and services",
+        "feature_5": "Contact details and business hours",
+        "feature_6": "Contact form",
+        "feature_7": "Call and contact buttons",
+        "feature_8": "Google Maps integration",
+        "feature_9": "Links to your social media profiles",
+        "feature_10": "Basic SEO optimization",
+        "feature_11": "Website launch"
+      },
+      "note": "* Estimated timeframe from receipt of all required content and project approval.",
+      "forLabel": "Ideal for",
+      "tags": {
+        "tag_1": "Tradespeople",
+        "tag_2": "Freelancers",
+        "tag_3": "Local businesses",
+        "tag_4": "Restaurants",
+        "tag_5": "Bars",
+        "tag_6": "Hair salons",
+        "tag_7": "Local professionals"
+      },
+      "goalLabel": "The goal",
+      "goal": "Present your business clearly, build trust with visitors, and make it easy for them to get in touch.",
+      "priceLabel": "Package price",
+      "price": "€500",
+      "priceCaption": "Starting price for a website with up to 3 pages.",
+      "cta": {
+        "title": "Ready to launch your website?",
+        "subtitle": "Let's discuss your project.",
+        "cta": "Request a quote"
+      }
+    },
+    "Croissance": {
+      "backLink": "All services",
+      "eyebrow": "PACKAGE 02 — WEBSITE",
+      "title": "<highlight>Growth</highlight> Website",
+      "description": "A professional online presence to get your business up and running quickly.",
+      "badges": {
+        "badge_1": "Delivered within 5 business days*",
+        "badge_2": "Responsive design"
+      },
+      "visual": {
+        "tags": {
+          "tag_1": "New customers",
+          "tag_2": "Visibility",
+          "tag_3": "Conversions",
+          "tag_4": "Leads",
+          "tag_5": "Growth",
+          "tag_6": "Profitability",
+          "tag_7": "Credibility",
+          "tag_8": "Opportunities",
+          "tag_9": "Performance",
+          "tag_10": "Customer acquisition",
+          "tag_11": "Trust",
+          "tag_12": "Differentiation",
+          "tag_13": "Expansion",
+          "tag_14": "Search rankings",
+          "tag_15": "Appeal",
+          "tag_16": "Development",
+          "tag_17": "Results",
+          "tag_18": "Competitiveness",
+          "tag_19": "Efficiency",
+          "tag_20": "Ambition",
+          "tag_21": "Impact",
+          "tag_22": "Excellence",
+          "tag_23": "Potential",
+          "tag_24": "Success",
+          "tag_25": "Revenue"
+        }
+      },
+      "features": {
+        "title": "What's included",
+        "feature_1": "Everything you need to get started",
+        "feature_2": "Up to 6 custom pages",
+        "feature_3": "Design optimized for mobile phones, tablets, and desktops",
+        "feature_4": "Presentation of your business and services",
+        "feature_5": "Contact details and business hours",
+        "feature_6": "Contact form",
+        "feature_7": "Call and contact buttons",
+        "feature_8": "Google Maps integration",
+        "feature_9": "Optimized calls to action",
+        "feature_10": "Links to your social media profiles",
+        "feature_11": "Enhanced SEO optimization",
+        "feature_12": "WhatsApp integration",
+        "feature_13": "Multilingual website (French and English)",
+        "feature_14": "Local visibility optimization",
+        "feature_15": "Analytics tool setup",
+        "feature_16": "Performance optimization",
+        "feature_17": "FAQ section",
+        "feature_18": "Conversion-focused website structure",
+        "feature_19": "Website launch",
+        "feature_20": "Conversion-focused website structure"
+      },
+      "note": "* Estimated timeframe from receipt of all required content and project approval.",
+      "forLabel": "Ideal for",
+      "tags": {
+        "tag_1": "Tradespeople",
+        "tag_2": "Freelancers",
+        "tag_3": "Sole traders",
+        "tag_4": "Hair salons",
+        "tag_5": "Local shops",
+        "tag_6": "Restaurants",
+        "tag_7": "Campsites",
+        "tag_8": "Local professionals",
+        "tag_9": "Startups"
+      },
+      "goalLabel": "The goal",
+      "goal": "Increase your visibility, build trust, and attract new customers with a website designed to grow your business.",
+      "priceLabel": "Package price",
+      "price": "€790",
+      "priceCaption": "Starting price for a website with up to 6 pages.",
+      "cta": {
+        "title": "Ready to launch your website?",
+        "subtitle": "Let's discuss your project.",
+        "cta": "Request a quote"
+      }
+    },
+    "Business": {
+      "backLink": "All services",
+      "eyebrow": "PACKAGE 03 — WEBSITE",
+      "title": "<highlight>Business</highlight> Website",
+      "description": "A professional online presence to get your business up and running quickly.",
+      "badges": {
+        "badge_1": "Delivered within 5 business days*",
+        "badge_2": "Responsive design"
+      },
+      "features": {
+        "title": "What's included",
+        "feature_1": "Modern, professional website",
+        "feature_2": "Up to 10 custom pages",
+        "feature_3": "Design optimized for mobile phones, tablets, and desktops",
+        "feature_4": "Presentation of your business and services",
+        "feature_5": "Dedicated pages for your different services",
+        "feature_6": "Contact details and business hours",
+        "feature_7": "Advanced contact form",
+        "feature_8": "Call and contact buttons",
+        "feature_9": "Google Maps integration",
+        "feature_10": "Optimized calls to action",
+        "feature_11": "Links to your social media profiles",
+        "feature_12": "Advanced SEO optimization",
+        "feature_13": "WhatsApp integration",
+        "feature_14": "Multilingual website (French and English + 1 additional language)",
+        "feature_15": "Local visibility optimization",
+        "feature_16": "Analytics tool setup",
+        "feature_17": "Performance optimization",
+        "feature_18": "User experience optimization",
+        "feature_19": "FAQ section",
+        "feature_20": "Conversion-focused website structure",
+        "feature_21": "Website launch",
+        "feature_22": "30 days of priority support"
+      },
+      "note": "* Estimated timeframe from receipt of all required content and project approval.",
+      "forLabel": "Ideal for",
+      "tags": {
+        "tag_1": "SMEs",
+        "tag_2": "Construction companies",
+        "tag_3": "Sole traders",
+        "tag_4": "Real estate agencies",
+        "tag_5": "Local shops",
+        "tag_6": "Consulting firms",
+        "tag_7": "Wellness centers",
+        "tag_8": "Training providers",
+        "tag_9": "Service businesses"
+      },
+      "goalLabel": "The goal",
+      "goal": "Grow your business with a comprehensive, high-performing website designed to convert more visitors into customers, streamline your processes, and support your long-term growth.",
+      "priceLabel": "Package price",
+      "price": "€1,290",
+      "priceCaption": "Starting price for a website with up to 10 pages.",
+      "cta": {
+        "title": "Ready to launch your website?",
+        "subtitle": "Let's discuss your project.",
+        "cta": "Request a quote"
+      }
+    },
+    "Maintenance": {
+      "backLink": "All services",
+      "hero": {
+        "eyebrow": "SIMPLITECH — MAINTENANCE & SUPPORT",
+        "title": "Your website deserves<br></br>to <highlight>stand the test of time.</highlight>",
+        "description": "Keep your website running smoothly, secure, and up to date. Choose the level of support that suits your business, with no unexpected costs.",
+        "actions": {
+          "plans": "Explore maintenance plans",
+          "included": "What's included"
+        },
+        "trust": {
+          "item_1": "Clear monthly pricing",
+          "item_2": "Additional costs approved before work begins"
+        },
+        "visual": {
+          "site": "Your website",
+          "status": "In safe hands.",
+          "card_1_title": "Website monitored",
+          "card_1_text": "Technical maintenance",
+          "card_2_title": "Ready to evolve",
+          "card_2_text": "As your needs change"
+        }
+      },
+      "benefits": {
+        "item_1": {
+          "title": "A well-maintained website",
+          "text": "Helping prevent technical issues."
+        },
+        "item_2": {
+          "title": "A predictable budget",
+          "text": "A plan tailored to your needs."
+        },
+        "item_3": {
+          "title": "A dedicated contact",
+          "text": "For your requests and future improvements."
+        }
+      },
+      "pricing": {
+        "eyebrow": "OUR PLANS",
+        "title": "Your website, <highlight>at your pace.</highlight>",
+        "description": "From technical maintenance to ongoing support, choose the plan that fits the way you work.",
+        "popular": "MOST POPULAR",
+        "pricePeriod": "/ month",
+        "priceNote": "Maintenance subscription",
+        "featuresTitle": "Your plan includes",
+        "footnote": "Major updates and services outside your plan are quoted separately.",
+        "disclaimer": "Services are provided within the scope defined in your agreement. Paid third-party services and additional requests may be charged separately.",
+        "plans": {
+          "essentiel": {
+            "name": "Essential",
+            "price": "27",
+            "description": "Everything you need to keep your website in good shape.",
+            "target": "For a website that needs to remain reliable.",
+            "cta": "Choose Essential",
+            "features": {
+              "feature_1": "Website hosting",
+              "feature_2": "SSL certificate / HTTPS",
+              "feature_3": "Website monitoring",
+              "feature_4": "Regular backups",
+              "feature_5": "Technical maintenance",
+              "feature_6": "Fixes for covered bugs",
+              "feature_7": "Technical updates"
+            },
+            "excluded": {
+              "item_1": "Content changes",
+              "item_2": "Performance optimization, included in the next plan"
+            }
+          },
+          "evolution": {
+            "name": "Growth",
+            "price": "57",
+            "description": "A maintained website updated as your needs change.",
+            "target": "For a business that wants to keep its website up to date.",
+            "cta": "Choose Growth",
+            "features": {
+              "feature_1": "Everything in the Essential plan",
+              "feature_2": "2 minor changes per month",
+              "feature_3": "Updates to supplied text and images",
+              "feature_4": "Updates to business hours and contact details",
+              "feature_5": "Updates to existing prices and services",
+              "feature_6": "Performance optimization",
+              "feature_7": "Priority email support"
+            },
+            "excluded": {
+              "item_1": "Creation of new pages",
+              "item_2": "New features or automations"
+            }
+          },
+          "premium": {
+            "name": "Premium",
+            "price": "97",
+            "description": "Ongoing support to take your website further.",
+            "target": "For a business that needs enhanced support.",
+            "cta": "Choose Premium",
+            "features": {
+              "feature_1": "Everything in the Growth plan",
+              "feature_2": "5 minor changes per month",
+              "feature_3": "Content additions within the agreed scope",
+              "feature_4": "Priority support",
+              "feature_5": "Recommendations for improvements",
+              "feature_6": "Monthly review",
+              "feature_7": "Simplified monthly report"
+            },
+            "excluded": {
+              "item_1": "Complete website redesign",
+              "item_2": "Advanced SEO and advertising campaigns"
+            }
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "A CLEARLY DEFINED SERVICE",
+        "title": "What's included.<br></br><highlight>And what isn't.</highlight>",
+        "description": "Maintenance keeps your existing website in good shape. New projects and major changes are quoted separately.",
+        "included": {
+          "title": "Included in your plan",
+          "subtitle": "To keep your website in good working order.",
+          "items": {
+            "item_1": {
+              "title": "Technical maintenance",
+              "text": "Monitoring, updates, and website upkeep."
+            },
+            "item_2": {
+              "title": "Security and backups",
+              "text": "HTTPS and backups according to your plan."
+            },
+            "item_3": {
+              "title": "Bug fixes",
+              "text": "Fixes for issues covered within the agreed maintenance scope."
+            },
+            "item_4": {
+              "title": "Minor changes",
+              "text": "Depending on your plan and within your monthly allowance."
+            }
+          },
+          "footnote": "Content changes are available with the Growth and Premium plans, subject to the monthly allowance."
+        },
+        "extra": {
+          "title": "Quoted separately",
+          "subtitle": "For more extensive website improvements.",
+          "items": {
+            "item_1": {
+              "title": "Creation of a new page",
+              "text": "A new service page, landing page, or new page structure."
+            },
+            "item_2": {
+              "title": "New functionality",
+              "text": "Booking systems, customer portals, or specialized business features."
+            },
+            "item_3": {
+              "title": "Automation",
+              "text": "CRM integrations, advanced notifications, or custom workflows."
+            },
+            "item_4": {
+              "title": "Design overhaul",
+              "text": "Major changes to a page or a complete website redesign."
+            },
+            "item_5": {
+              "title": "Content creation",
+              "text": "Copywriting, visual design, or photography."
+            },
+            "item_6": {
+              "title": "Advanced SEO and advertising",
+              "text": "In-depth SEO strategy and management of Google or Meta Ads campaigns."
+            }
+          },
+          "footnote": "You'll receive an estimate and approve the budget before work begins."
+        },
+        "example": {
+          "title": "Need something beyond your plan?",
+          "text": "Tell us what you need. We'll suggest a suitable solution and provide pricing before any work begins.",
+          "cta": "Request a quote"
+        }
+      },
+      "process": {
+        "eyebrow": "HOW IT WORKS",
+        "title": "Simple, from request<br></br><highlight>to completion.</highlight>",
+        "steps": {
+          "step_1": {
+            "title": "Get in touch",
+            "text": "Send us your request along with the details and materials needed to handle it."
+          },
+          "step_2": {
+            "title": "We check the scope",
+            "text": "We'll confirm whether your request is covered by your plan or requires a separate quote."
+          },
+          "step_3": {
+            "title": "We carry out the work",
+            "text": "Your request is handled according to your plan's priorities and estimated timeframes, with your approval where required."
+          }
+        }
+      },
+      "faq": {
+        "eyebrow": "FREQUENTLY ASKED QUESTIONS",
+        "title": "Need more<br></br><highlight>details?</highlight>",
+        "description": "Answers to the most common questions about our maintenance plans.",
+        "cta": "Ask a question",
+        "items": {
+          "faq_1": {
+            "question": "Can I change my plan?",
+            "answer": "You can request to switch to another plan. The change will take effect according to the terms set out in your agreement."
+          },
+          "faq_2": {
+            "question": "Are changes unlimited?",
+            "answer": "No. Growth includes up to 2 minor changes per month, while Premium includes up to 5. Unused changes do not roll over. Complex requests may require a separate quote."
+          },
+          "faq_3": {
+            "question": "What counts as a minor change?",
+            "answer": "Examples include editing existing text, replacing a supplied image, or updating business hours. A new page, redesign, or new feature does not count as a minor change."
+          },
+          "faq_4": {
+            "question": "Are hosting and the domain name included?",
+            "answer": "Hosting is included in the plans presented. The domain name, paid third-party services, and renewals must be specified in the quote or agreement."
+          },
+          "faq_5": {
+            "question": "What if I need a major change?",
+            "answer": "Describe what you need, and we'll provide a separate estimate before work begins. No additional work will proceed without your approval."
+          }
+        }
+      },
+      "finalCta": {
+        "eyebrow": "YOUR WEBSITE, OUR SUPPORT",
+        "title": "Focus on<br></br><highlight>your business.</highlight>",
+        "description": "Choose your maintenance plan and keep your website ready to support your business.",
+        "cta": "Choose my plan",
+        "note": "Have a question? Let's discuss your project."
+      }
+    },
+    "Automations": {
+      "eyebrow": "NEW PROJECT",
+      "title": {
+        "line1": "Something",
+        "line2": "is",
+        "highlight": "in the works."
+      },
+      "description": {
+        "line1": "I'm working on something new.",
+        "line2": "The project will be available very soon."
+      },
+      "status": "CURRENTLY IN DEVELOPMENT",
+      "footer": {
+        "conception": "DESIGN",
+        "development": "DEVELOPMENT",
+        "soon": "COMING SOON"
+      },
+      "projectLabel": "PROJECT_001"
+    }
+  },
+  "Contact": {
+    "hero": {
+      "eyebrow": "SIMPLITECH / CONTACT",
+      "title": "Let's talk about your <highlight>next project.</highlight>",
+      "description": "Have a question, an idea, or a specific need? Tell me about your project, and I'll get back to you as soon as possible.",
+      "cta": "Send a message"
+    },
+    "cards": {
+      "email": {
+        "label": "Direct communication",
+        "title": "By email",
+        "description": "For general inquiries or an initial discussion.",
+        "linkLabel": "Send an email",
+        "unavailable": "The email address will be available soon."
+      },
+      "phone": {
+        "label": "Phone",
+        "title": "Choose your country",
+        "description": "Two phone numbers will be available to make communication easier.",
+        "unavailable": "Phone contact details will be available soon."
+      },
+      "location": {
+        "label": "Location",
+        "timezoneLabel": "Reference time zone:"
+      },
+      "socials": {
+        "label": "Online",
+        "title": "Find Simplitech online",
+        "description": "Explore my profiles and projects.",
+        "ariaLabel": "Visit Simplitech's {label} profile",
+        "unavailable": "Social media links will be available soon."
+      }
+    },
+    "form": {
+      "eyebrow": "Your message",
+      "title": "Let's discuss your project.",
+      "description": "Just a few details are enough to get started. Use the form to tell me more about your needs.",
+      "fields": {
+        "name": {
+          "label": "Full name *",
+          "placeholder": "John Doe"
+        },
+        "email": {
+          "label": "Email address *",
+          "placeholder": "arthur.barraud@proton.me"
+        },
+        "phone": {
+          "label": "Phone number *",
+          "placeholder": "+33660988623"
+        },
+        "service": {
+          "label": "Service you're interested in *",
+          "placeholder": "Select a service"
+        },
+        "budget": {
+          "label": "Estimated budget",
+          "options": {
+            "discuss": "To be discussed",
+            "under1000": "Under €1,000",
+            "1000to5000": "€1,000 – €5,000",
+            "5000to10000": "€5,000 – €10,000",
+            "over10000": "Over €10,000"
+          }
+        },
+        "timeline": {
+          "label": "Desired timeframe",
+          "options": {
+            "define": "To be determined",
+            "urgent": "As soon as possible",
+            "month": "Within a month",
+            "quarter": "Within 3 months",
+            "flexible": "Flexible"
+          }
+        },
+        "message": {
+          "label": "Tell me about your project *",
+          "placeholder": "Tell me about your business, your goals..."
+        },
+        "website": {
+          "label": "Leave this field blank"
+        }
+      },
+      "services": {
+        "web": {
+          "label": "Web Development",
+          "options": {
+            "refonte": {
+              "label": "Redesign",
+              "value": "Refonte"
+            },
+            "essentiel": {
+              "label": "Essential",
+              "value": "Essentiel"
+            },
+            "croissance": {
+              "label": "Growth",
+              "value": "Croissance"
+            },
+            "business": {
+              "label": "Business",
+              "value": "Business"
+            }
+          }
+        },
+        "automation": {
+          "label": "Automation",
+          "options": {
+            "simple": {
+              "label": "Basic automation",
+              "value": "Automatisation simple"
+            }
+          }
+        },
+        "maintenance": {
+          "label": "Maintenance",
+          "options": {
+            "essentiel": {
+              "label": "Essential",
+              "value": "Essentiel"
+            },
+            "evolution": {
+              "label": "Growth",
+              "value": "Evolution"
+            },
+            "premium": {
+              "label": "Premium",
+              "value": "Premium"
+            }
+          }
+        },
+        "consulting": {
+          "label": "Consulting & Support",
+          "options": {
+            "refonte": {
+              "label": "Redesign",
+              "value": "Refonte"
+            }
+          }
+        },
+        "other": {
+          "label": "Other",
+          "options": {
+            "other": {
+              "label": "Other",
+              "value": "Autre"
+            }
+          }
+        }
+      },
+      "consentText": "I agree to my information being used to process my request, in accordance with the <privacyLink>Privacy Policy</privacyLink>. *",
+      "submit": {
+        "label": "Send message",
+        "loading": "Sending…"
+      },
+      "status": {
+        "success": "Your message has been sent successfully.",
+        "error": "Your message could not be sent. Please check your information or try again later."
+      },
+      "requiredNote": "* Required fields",
+      "privacyNote": "The information you provide will only be used to process your request. Read our <privacyLink>Privacy Policy</privacyLink>."
+    }
+  },
+  "Portfolio": {
+    "filters": {
+      "all": "All projects",
+      "design": "Design",
+      "software": "Software",
+      "dev": "Web Development",
+      "card": "Business Cards",
+      "ariaLabel": "Filter projects",
+      "selectLabel": "Project category"
+    },
+    "projects": {
+      "eyebrow": "SIMPLITECH / PROJECTS",
+      "titleLine1": "Ideas turned",
+      "titleLine2": "into tangible results.",
+      "description": "Websites, digital tools, and graphic design: explore a selection of development and design projects.",
+      "viewCards": "View cards",
+      "discover": "Explore",
+      "technologiesLabel": "Technologies used",
+      "openCard": "View business card: {title}",
+      "openProject": "{action}: {title} (opens in a new tab)",
+      "resultsCount": "{count, plural, =0 {No projects displayed} one {# project displayed} other {# projects displayed}}"
+    },
+    "common": {
+      "visitSite": "Visit website"
+    },
+    "projectDetails": {
+      "mnemonic-shield": {
+        "title": "Mnemonic Shield",
+        "eyebrow": "PYTHON / SECURITY",
+        "description": "A security tool designed to encode a mnemonic phrase as a cryptographic sigil.",
+        "alt": "Preview of Mnemonic Shield, a Python cryptographic security project",
+        "linkLabel": "Visit website"
+      },
+      "bitcoin-price": {
+        "title": "Bitcoin Price",
+        "eyebrow": "HTML / CSS / JAVASCRIPT",
+        "description": "A web interface dedicated to viewing the price of Bitcoin.",
+        "alt": "Screenshot of the Bitcoin Price web project",
+        "linkLabel": "Visit website"
+      },
+      "business-card": {
+        "title": "Arthur BARRAUD",
+        "eyebrow": "DESIGN / VISUAL IDENTITY",
+        "description": "A professional business card with a clean, polished design.",
+        "alt": "Preview of the Arthur BARRAUD professional business card"
+      },
+      "business-card-dev": {
+        "title": "Arthur BARRAUD — Dev",
+        "eyebrow": "DESIGN / WEB DEVELOPMENT",
+        "description": "An alternative business card designed around a web developer identity.",
+        "alt": "Preview of the Arthur BARRAUD web developer business card"
+      },
+      "vice-versa": {
+        "title": "Vice Versa Atelier",
+        "eyebrow": "NEXT.JS / WEBSITE",
+        "description": "A website showcasing the world and activities of Vice Versa Atelier.",
+        "alt": "Preview of the Vice Versa Atelier website"
+      },
+      "my-vision-board": {
+        "title": "MyVisionBoard",
+        "eyebrow": "NEXT.JS / WEB APPLICATION",
+        "description": "A web application for organizing ideas and visualizing goals.",
+        "alt": "Preview of the MyVisionBoard web application"
+      },
+      "cdo-multiservices": {
+        "title": "CDO Multiservices",
+        "eyebrow": "NEXT.JS / BUSINESS WEBSITE",
+        "description": "A business website showcasing the activities and services of CDO Multiservices.",
+        "alt": "Preview of the CDO Multiservices business website"
+      },
+      "haumana-bien-etre": {
+        "title": "Haumana Bien-Être",
+        "eyebrow": "NEXT.JS / WEBSITE",
+        "description": "A website showcasing the activities and philosophy of Haumana Bien-Être.",
+        "alt": "Preview of the Haumana Bien-Être website"
+      }
+    },
+    "modal": {
+      "close": "Close window",
+      "eyebrow": "PROJECT PREVIEW"
+    },
+    "skills": {
+      "eyebrow": "SKILLS",
+      "titleLine1": "Skills",
+      "titleLine2": "that bring your projects to life.",
+      "description": "The technologies and tools I use to create web experiences and digital solutions.",
+      "learning": "Currently learning",
+      "levelLabel": "Self-assessed skill level in {skill}",
+      "bottomNote": "The levels shown are personal estimates that evolve with practice."
+    },
+    "skillGroups": {
+      "frontend": {
+        "title": "Front-end",
+        "description": "Modern, responsive, and accessible web interfaces."
+      },
+      "backend": {
+        "title": "Back-end & Development",
+        "description": "Scripts, application logic, and service integration."
+      },
+      "blockchain": {
+        "title": "Blockchain",
+        "description": "Exploring blockchain technologies and smart contracts."
+      },
+      "tools": {
+        "title": "Tools & Design",
+        "description": "Development, design, and integration tools."
+      }
+    },
+    "skillItems": {
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "react": "React",
+      "nextjs": "Next.js",
+      "python": "Python",
+      "nodejs": "Node.js",
+      "supabase": "Supabase",
+      "postgresql": "PostgreSQL",
+      "solidity": "Solidity",
+      "vscode": "VS Code",
+      "git": "Git / GitHub",
+      "terminal": "Terminal / CLI",
+      "canva": "Canva",
+      "figma": "Figma / UI Design",
+      "framerMotion": "Framer Motion",
+      "resend": "Resend",
+      "vercel": "Vercel — Deployment"
+    }
   }
 }

@@ -1876,6 +1876,43 @@ textarea.formInput::-webkit-realizer {
   .mainModalButton:focus::before {
     background: var(--bg-gradient-yellow2);
   }
+  /* OFFER MODAL */
+  .mainOfferModalButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    right: 460px;
+    height: 59.5px;
+    z-index: 5;
+    padding: 20px 50px 20px 30px;
+    border-radius: 0 0 0 20px;
+    font-size: 13px;
+    color: var(--orange-yellow-crayola);
+    background: var(--border-gradient-onyx);
+    box-shadow: var(--shadow2);
+    transition: var(--transition1);
+  }
+  .mainOfferModalButton::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: inherit;
+    background: var(--bg-gradient-jet);
+    transition: var(--transition1);
+    z-index: -1;
+  }
+
+  .mainOfferModalButton:hover,
+  .mainOfferModalButton:focus {
+    background: var(--bg-gradient-yellow1);
+  }
+
+  .mainOfferModalButton:hover::before,
+  .mainOfferModalButton:focus::before {
+    background: var(--bg-gradient-yellow2);
+  }
   .sparkle {
     position: absolute;
     font-size: 14px;
@@ -1938,9 +1975,15 @@ textarea.formInput::-webkit-realizer {
   .mainModalButton {
     right: 460px;
   }
+  .mainOfferModalButton {
+    right: 460px;
+  }
 }
 @media (min-width: 1920px) {
   .mainModalButton {
+    right: 450px;
+  }
+  .mainOfferModalButton {
     right: 450px;
   }
 }
@@ -1948,10 +1991,16 @@ textarea.formInput::-webkit-realizer {
   .modalButton {
     right: 460px;
   }
+  .mainOfferModalButton {
+    right: 460px;
+  }
 }
 @media (min-width: 2240px) {
   .modalButton {
     right: 920px;
+  }
+  .mainOfferModalButton {
+    right: 460px;
   }
 }
 @media (min-width: 2560px) {

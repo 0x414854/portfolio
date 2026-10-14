@@ -1,0 +1,394 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  margin-top: 30px;
+  color: #f5f1e8;
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+/* Labels */
+
+.field label {
+  color: #f5f1e8;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* ========================================
+   CHAMPS TEXTE, LISTES ET ZONE DE MESSAGE
+======================================== */
+
+.field input,
+.field select,
+.field textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  padding: 14px 15px;
+
+  border: 1px solid #393630;
+  border-radius: 10px;
+
+  background-color: #101012;
+  color: #f5f1e8;
+
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.4;
+
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease;
+}
+
+/* Placeholders */
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #85817a;
+  opacity: 1;
+}
+
+/* ========================================
+   LISTES DÉROULANTES
+   Service, budget et délai
+======================================== */
+
+.field select {
+  appearance: none;
+  -webkit-appearance: none;
+
+  padding-right: 44px;
+
+  cursor: pointer;
+
+  /* Flèche personnalisée dorée */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23d8b56d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px;
+}
+
+/* Couleurs des options */
+
+.field select option {
+  background-color: #101012;
+  color: #f5f1e8;
+}
+
+/* Option par défaut désactivée, par exemple le service */
+
+.field select option:disabled {
+  color: #85817a;
+}
+
+/* ========================================
+   ZONE DE MESSAGE
+======================================== */
+
+.field textarea {
+  min-height: 160px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+/* ========================================
+   INTERACTIONS COMMUNES
+======================================== */
+
+.field input:hover,
+.field select:hover,
+.field textarea:hover {
+  border-color: #66583b;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: #d8b56d;
+  background-color: #141310;
+  box-shadow: 0 0 0 3px rgb(216 181 109 / 12%);
+}
+
+.field input:focus-visible,
+.field select:focus-visible,
+.field textarea:focus-visible {
+  outline: 2px solid #d8b56d;
+  outline-offset: 3px;
+}
+
+/* ========================================
+   CONSENTEMENT
+======================================== */
+
+.consentGroup {
+  width: 100%;
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  color: #aaa6a0;
+  font-size: 0.88rem;
+  line-height: 1.7;
+
+  cursor: pointer;
+}
+
+.consent input {
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+
+  accent-color: #d8b56d;
+  cursor: pointer;
+}
+
+.consent input:focus-visible {
+  outline: 2px solid #d8b56d;
+  outline-offset: 3px;
+}
+
+.consent a {
+  color: #d8b56d;
+  text-decoration: underline;
+  text-decoration-color: rgb(216 181 109 / 45%);
+  text-underline-offset: 3px;
+  transition:
+    color 180ms ease,
+    text-decoration-color 180ms ease;
+}
+
+.consent a:hover {
+  color: #f0d99d;
+  text-decoration-color: #f0d99d;
+}
+
+/* ========================================
+   BOUTON D'ENVOI
+======================================== */
+
+.submit {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 54px;
+  padding: 15px 22px;
+
+  border: 1px solid #d8b56d;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #e3c783, #c5a052);
+  color: #17130b;
+
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 750;
+  letter-spacing: 0.02em;
+
+  cursor: pointer;
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease,
+    opacity 180ms ease;
+}
+
+.submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgb(216 181 109 / 18%);
+  background: linear-gradient(135deg, #f0d99d, #d8b56d);
+}
+
+.submit:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.submit:focus-visible {
+  outline: 2px solid #f5f1e8;
+  outline-offset: 4px;
+}
+
+.submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ========================================
+   MESSAGES DE STATUT
+======================================== */
+
+/* ========================================
+   NOTIFICATION DE SUCCÈS — EFFET VERRE
+======================================== */
+
+.statusToast {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 18px;
+
+  border: 1px solid rgb(112 211 151 / 30%);
+  border-radius: 12px;
+
+  background: rgb(45 130 78 / 16%);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+
+  color: #b8f0c9;
+  font-size: 0.92rem;
+  line-height: 1.6;
+
+  box-shadow:
+    0 8px 32px rgb(0 0 0 / 12%),
+    inset 0 1px 0 rgb(255 255 255 / 5%);
+
+  animation: toastAppear 350ms ease-out both;
+}
+
+.statusToastSuccess {
+  border-color: rgb(112 211 151 / 30%);
+}
+
+.statusIcon {
+  display: inline-flex;
+  flex: 0 0 26px;
+  align-items: center;
+  justify-content: center;
+
+  width: 26px;
+  height: 26px;
+
+  border: 1px solid rgb(143 213 166 / 40%);
+  border-radius: 50%;
+
+  background: rgb(112 211 151 / 12%);
+  color: #8fd5a6;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+@keyframes toastAppear {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.required {
+  margin: -12px 0 0;
+  color: #85817a;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+/* ========================================
+   CHAMP ANTI-SPAM INVISIBLE
+======================================== */
+
+.honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ========================================
+   TABLETTES
+======================================== */
+
+@media (min-width: 640px) {
+  .fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .submit {
+    width: fit-content;
+    min-width: 220px;
+  }
+}
+
+/* ========================================
+   ORDINATEURS
+======================================== */
+
+@media (min-width: 960px) {
+  .form {
+    gap: 26px;
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .field input,
+  .field textarea {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .field select {
+    padding-right: 44px;
+    padding-left: 16px;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITÉ : ANIMATIONS RÉDUITES
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .field input,
+  .field select,
+  .field textarea,
+  .submit,
+  .consent a {
+    transition: none;
+  }
+
+  .submit:hover:not(:disabled) {
+    transform: none;
+  }
+  .statusToast {
+    animation: none;
+  }
+}

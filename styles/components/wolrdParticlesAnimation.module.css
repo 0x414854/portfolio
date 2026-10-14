@@ -1,0 +1,29 @@
+.globeContainer {
+  width: 100%;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+.globeContainer canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .globeContainer {
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .globeContainer {
+    height: 360px;
+  }
+}
+@media (min-width: 1280px) {
+  .globeContainer {
+    height: 420px;
+  }
+}

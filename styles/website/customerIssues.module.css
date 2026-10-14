@@ -1,0 +1,622 @@
+.section {
+  width: 100%;
+  color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ==============================
+   ZONE PRINCIPALE
+============================== */
+
+.visual {
+  position: relative;
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  background: transparent;
+  isolation: isolate;
+}
+
+.visual::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image: radial-gradient(
+    rgb(255 255 255 / 14%) 1px,
+    transparent 1px
+  );
+  background-size: 26px 26px;
+  content: "";
+  pointer-events: none;
+  opacity: 0.35;
+}
+
+/* ==============================
+   TEXTE CENTRAL
+============================== */
+
+.centerContent {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem;
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 1.5rem;
+  background: rgb(255 255 255 / 3%);
+  backdrop-filter: blur(12px);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 20px;
+  color: #d9c58e;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  line-height: 1.7;
+}
+
+.statusDot {
+  position: relative;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e7c15f;
+  box-shadow: 0 0 13px rgba(231, 193, 95, 0.65);
+}
+
+.statusDot::after {
+  position: absolute;
+  inset: -4px;
+  border: 1px solid rgba(231, 193, 95, 0.4);
+  border-radius: 50%;
+  content: "";
+  animation: dotPulse 2.5s ease-out infinite;
+}
+
+@keyframes dotPulse {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.8);
+  }
+
+  80%,
+  100% {
+    opacity: 0;
+    transform: scale(1.9);
+  }
+}
+.centerContent h2 {
+  margin: 0;
+  color: var(--white1);
+  font-size: clamp(2.5rem, 10vw, 4.5rem);
+  font-weight: 650;
+  letter-spacing: -0.065em;
+  line-height: 0.99;
+}
+
+.centerContent h2 span {
+  display: block;
+  margin-top: 0.12em;
+  color: var(--orange-yellow-crayola);
+}
+
+.intro {
+  margin: 1.25rem 0 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.prompt {
+  margin-top: 1.5rem;
+  color: #f9f9f9;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ==============================
+   BULLES : MOBILE
+============================== */
+
+.bubbles {
+  display: flex;
+  width: 90%;
+  max-width: 620px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem;
+}
+
+.bubble {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 1rem;
+  background: #171717;
+  color: #f5f5f5;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 12%);
+  transition:
+    background-color 350ms ease,
+    color 350ms ease,
+    border-color 350ms ease,
+    border-radius 400ms ease,
+    box-shadow 400ms ease,
+    transform 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bubbleQuestion {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.85rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.bubbleNumber {
+  flex-shrink: 0;
+  color: #a1a1aa;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.bubbleIcon {
+  display: grid;
+  width: 1.65rem;
+  height: 1.65rem;
+  flex-shrink: 0;
+  place-items: center;
+  margin-left: auto;
+  border: 1px solid rgb(255 255 255 / 35%);
+  border-radius: 50%;
+  color: inherit;
+  font-size: 1rem;
+  transition:
+    transform 300ms ease,
+    background-color 300ms ease,
+    color 300ms ease;
+}
+
+.bubbleDescription {
+  display: block;
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  color: #a1a1aa;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.7;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition:
+    max-height 450ms ease,
+    margin-top 350ms ease,
+    opacity 250ms ease,
+    transform 350ms ease,
+    color 250ms ease;
+}
+
+.bubble.active {
+  border-color: #f5f5f5;
+  border-radius: 1.25rem;
+  background: #f5f5f5;
+  color: #111111;
+  box-shadow: 0 16px 40px rgb(0 0 0 / 20%);
+}
+
+.bubble.active .bubbleNumber,
+.bubble.active .bubbleDescription {
+  color: #525252;
+}
+
+.bubble.active .bubbleDescription {
+  max-height: 240px;
+  margin-top: 0.8rem;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bubble.active .bubbleIcon {
+  transform: rotate(180deg);
+  border-color: #111;
+  background: #111;
+  color: #fff;
+}
+
+.bubble:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+/* Enveloppe des bulles sur mobile et tablette */
+.bubbleMotion {
+  width: 100%;
+  min-width: 0;
+}
+
+/* ==============================
+   TRANSITION
+============================== */
+
+.transition {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  gap: 1rem;
+  padding: 1.5rem;
+  margin: 0 auto;
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 1.5rem;
+  background: rgb(255 255 255 / 3%);
+}
+
+.transitionLabel {
+  color: var(--orange-yellow-crayola);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.transition p {
+  max-width: 760px;
+  margin: 0;
+  color: #f5f5f5;
+  font-size: clamp(1.2rem, 4vw, 1.8rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.4;
+}
+
+.cta {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.8rem 1.1rem;
+  border: 1px solid rgb(255 255 255 / 35%);
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 650;
+  text-decoration: none;
+  transition:
+    color 250ms ease,
+    background-color 250ms ease,
+    border-color 250ms ease,
+    transform 250ms ease;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  border-color: #fff;
+  background: #fff;
+  color: #111;
+}
+
+.cta span {
+  font-size: 1.1rem;
+}
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (min-width: 640px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .visual {
+    padding: 4rem 2rem;
+    border-radius: 2.5rem;
+  }
+
+  .centerContent {
+    padding: 2rem;
+  }
+
+  .bubbles {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .bubble {
+    flex: 1 1 45%;
+    max-width: 280px;
+  }
+
+  .transition {
+    padding: 2rem;
+  }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  .bubbleMotion {
+    flex: 1 1 45%;
+    max-width: 280px;
+  }
+
+  .bubble {
+    width: 100%;
+  }
+}
+
+/* ==============================
+   DESKTOP
+============================== */
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 3rem 2rem;
+  }
+
+  .container {
+    gap: 1.25rem;
+  }
+
+  .visual {
+    min-height: 740px;
+    padding: 4rem;
+    border-radius: 4rem;
+  }
+
+  .centerContent {
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+
+  .centerContent h2 {
+    font-size: clamp(3.3rem, 5vw, 5rem);
+  }
+
+  .intro {
+    font-size: 0.95rem;
+  }
+
+  .bubbles {
+    position: absolute;
+    z-index: 3;
+    inset: 0;
+    display: block;
+    width: auto;
+    max-width: none;
+    pointer-events: none;
+  }
+
+  /* Enveloppe : position et mouvement indépendants */
+  /* Enveloppe : position et animation flottante */
+  .bubbleMotion {
+    position: absolute;
+    width: min(300px, 30vw);
+    pointer-events: auto;
+
+    transform: translate(-50%, -50%);
+    animation: floatBubble 8s ease-in-out infinite;
+    animation-delay: var(--float-delay, 0s);
+
+    /* Évite les recalculs permanents inutiles */
+    will-change: transform;
+  }
+
+  .bubbleMotion:hover,
+  .bubbleMotion:focus-within {
+    animation-play-state: paused;
+  }
+
+  /* Bulle fermée */
+  .bubble {
+    display: flex;
+    width: 190px;
+    min-height: 54px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: stretch;
+    margin-inline: auto;
+    padding: 0.85rem 1rem;
+
+    border: 1px solid rgb(255 255 255 / 12%);
+    border-radius: 999px;
+    background: #171717;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 15%);
+
+    transform: scale(1);
+    transform-origin: center;
+    transition: all 50ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .bubble.active {
+    z-index: 5;
+    width: 100%;
+    border-color: #fff;
+    border-radius: 1.25rem;
+    background: #fff;
+    color: #111;
+    box-shadow: 0 16px 40px rgb(0 0 0 / 20%);
+  }
+
+  .bubbleQuestion {
+    gap: 0.5rem;
+    font-size: 0.78rem;
+  }
+
+  .bubbleNumber {
+    display: none;
+  }
+
+  .bubbleIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .bubbleDescription {
+    font-size: 0.8rem;
+  }
+
+  .bubble.active .bubbleDescription {
+    max-height: 240px;
+  }
+
+  /* Trajectoires indépendantes */
+  .topLeft {
+    top: 20%;
+    left: 15%;
+    --float-delay: -1s;
+  }
+
+  .topRight {
+    top: 29%;
+    left: 85%;
+    --float-delay: -4s;
+  }
+
+  .middleLeft {
+    top: 50%;
+    left: 12%;
+    --float-delay: -6s;
+  }
+
+  .middleRight {
+    top: 60%;
+    left: 88%;
+    --float-delay: -2.5s;
+  }
+
+  .bottomLeft {
+    top: 79%;
+    left: 23%;
+    --float-delay: -5s;
+  }
+  .transition {
+    width: 80%;
+  }
+}
+
+@keyframes floatBubble {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+
+  25% {
+    translate: 8px -10px;
+  }
+
+  50% {
+    translate: -4px -18px;
+  }
+
+  75% {
+    translate: -10px -5px;
+  }
+}
+
+.transition {
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+  padding: 2rem 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.transitionLabel {
+  flex-basis: 100%;
+}
+
+.transition p {
+  flex: 1 1 60%;
+}
+
+.cta {
+  flex-shrink: 0;
+}
+
+/* ==============================
+   LARGE DESKTOP
+============================== */
+
+@media (min-width: 1280px) {
+  .visual {
+    min-height: 800px;
+  }
+
+  .centerContent {
+    width: min(60%, 740px);
+    padding: 2.5rem;
+  }
+
+  .topLeft {
+    left: 14%;
+  }
+
+  .middleLeft {
+    left: 12%;
+  }
+
+  .bottomLeft {
+    left: 22%;
+  }
+
+  .topRight {
+    left: 86%;
+  }
+
+  .middleRight {
+    left: 88%;
+  }
+}
+
+/* ==============================
+   ACCESSIBILITÉ
+============================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .bubble,
+  .bubbleDescription,
+  .bubbleIcon,
+  .cta {
+    transition: none;
+  }
+  .bubbleMotion {
+    animation: none;
+    will-change: auto;
+  }
+}

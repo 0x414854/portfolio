@@ -108,6 +108,1235 @@
     },
     "RaffleModal": {
       "draw": "Tirage au sort"
+    },
+    "StarterOfferModal": {
+      "homepageButton": "Voir l'offre"
+    }
+  },
+  "Header": {
+    "logoSub": "BOOSTER VOTRE VISIBILITÉ",
+    "mobileMenuLabel": "EXPLORER",
+    "mobileLanguageLabel": "LANGUE DU SITE",
+    "mobileSocialLabel": "RETROUVONS-NOUS",
+    "mobileCTA": "Démarrer un projet",
+    "link_1": "Services",
+    "link_2": "Horaires & Contact",
+    "link_3": "Portfolio"
+  },
+  "Homepage": {
+    "Hero": {
+      "badge": "WEB DESIGN & DEVELOPMENT",
+      "title": "Un site web qui <highlight>fait grandir</highlight> votre entreprise.",
+      "description": "Nous créons des sites web modernes, rapides et professionnels pour vous aider à gagner en visibilité, attirer de nouveaux clients et développer votre activité.",
+      "ctaButtons": {
+        "button_1": "Découvrir nos offres",
+        "button_2": "Demander un devis"
+      },
+      "features": {
+        "feature_1": "Site professionnel",
+        "feature_2": "Adapté à tous les écrans",
+        "feature_3": "Livraison rapide",
+        "feature_4": "Conçu pour évoluer"
+      },
+      "mockup": {
+        "logo": "VOTRELOGO",
+        "nav": {
+          "link_1": "Accueil",
+          "link_2": "Services",
+          "link_3": "Contact"
+        },
+        "label": "EXPÉRIENCE NUMÉRIQUE",
+        "title": {
+          "1": "CONSTRUIRE.",
+          "2": "GRANDIR."
+        },
+        "subtitle": "Votre présence digitale commence ici.",
+        "ctaButton": "Commencer",
+        "stats": {
+          "stat_1": "Performance",
+          "stat_2": "Responsive",
+          "stat_3": "Croissance"
+        },
+        "floatingCard": {
+          "card_1": "Performance",
+          "card_2": "Visibilité",
+          "card_3": "Responsive"
+        }
+      }
+    },
+    "CustomerIssues": {
+      "problems": {
+        "question_1": "Vous n'avez pas de site ?",
+        "answer_1": "Vos futurs clients recherchent votre entreprise en ligne. Sans site professionnel, ils risquent de ne pas trouver facilement vos services et vos coordonnées.",
+        "question_2": "Votre site est vieillissant ?",
+        "answer_2": "Un site qui ne reflète plus votre activité peut nuire à votre image et donner une première impression qui ne correspond pas à la qualité de votre travail.",
+        "question_3": "Vous manquez de visibilité ?",
+        "answer_3": "Un site mal référencé peut rester invisible auprès de vos futurs clients. Une structure claire et un contenu optimisé aident à améliorer votre présence en ligne.",
+        "question_4": "Vous perdez du temps ?",
+        "answer_4": "Les tâches répétitives et les processus manuels prennent du temps. Des outils adaptés peuvent simplifier votre quotidien et automatiser certaines opérations.",
+        "question_5": "Vous recevez peu de demandes ?",
+        "answer_5": "Un site doit guider vos visiteurs vers une action claire : demander un devis, prendre rendez-vous ou vous contacter. Un parcours bien pensé facilite cette démarche."
+      },
+      "eyebrow": "VOTRE PRÉSENCE EN LIGNE",
+      "title": "Votre présence en ligne<tag> devrait travailler pour vous.</tag>",
+      "intro": "Votre site web devrait présenter votre activité, inspirer confiance, vous rendre visible et faciliter la prise de contact avec vos futurs clients.",
+      "prompt": "Une situation vous parle ?",
+      "transition": {
+        "label": "La solution",
+        "solution": "Nous créons des solutions digitales simples, modernes et adaptées à votre entreprise pour transformer ces problématiques en opportunités.",
+        "cta": "Découvrir nos solutions"
+      }
+    },
+    "Services": {
+      "automationVisual": {
+        "step_1": "Nouveau prospect",
+        "statusStep_1": "Reçu",
+        "step_2": "Automatisation",
+        "statusStep_2": "Actif",
+        "step_3": "Action effectuée",
+        "statusStep_3": "Terminé"
+      },
+      "services": {
+        "service_1": {
+          "category": "PRÉSENCE EN LIGNE",
+          "title": "Création de sites web",
+          "description": "Un site professionnel, rapide et élégant pour valoriser votre activité, inspirer confiance et transformer vos visiteurs en prospects.",
+          "features": {
+            "feature_1": "Design moderne et sur mesure",
+            "feature_2": "Expérience optimisée sur mobile",
+            "feature_3": "Performance et SEO de base",
+            "feature_4": "Parcours de contact optimisé"
+          },
+          "cta": "Découvrir nos offres"
+        },
+        "service_2": {
+          "category": "GAIN DE TEMPS",
+          "title": "Automatisation",
+          "description": "Libérez-vous des tâches répétitives grâce à des automatisations adaptées à votre entreprise. Moins de manuel, plus de temps pour l'essentiel.",
+          "features": {
+            "feature_1": "Gestion automatisée des prospects",
+            "feature_2": "Réponses et notifications automatiques",
+            "feature_3": "Connexion de vos outils",
+            "feature_4": "Automatisation de vos processus"
+          },
+          "cta": "Découvrir les automatisations"
+        }
+      },
+      "section": {
+        "eyebrow": "NOS EXPERTISES",
+        "title": "Des solutions pour<br></br><highlight>faire grandir votre activité.</highlight>",
+        "subtitle": "Une présence en ligne plus forte. Des tâches simplifiées. Des solutions pensées pour vous faire avancer.",
+        "priceLabel": "À partir de",
+        "bottomNote": "Des solutions adaptées à vos objectifs et à votre budget."
+      }
+    },
+    "WhyDev": {
+      "comparisons": {
+        "title_1": "Stratégie & conversion",
+        "description_1": "Des pages structurées autour de vos objectifs, avec des messages clairs et des appels à l’action réfléchis.",
+        "title_2": "Qualité technique",
+        "description_2": "Un code contrôlé, des performances optimisées et une expérience adaptée au mobile comme au desktop.",
+        "title_3": "Sécurité & fiabilité",
+        "description_3": "Des formulaires, dépendances et accès vérifiés selon les besoins de votre projet.",
+        "title_4": "Gestion de projet",
+        "description_4": "Un interlocuteur qui prend en charge les choix techniques, les tests et les corrections convenues.",
+        "title_5": "Identité sur mesure",
+        "description_5": "Un design et un contenu pensés pour votre activité, vos clients et votre positionnement.",
+        "title_6": "Évolution à long terme",
+        "description_6": "Une base maintenable, conçue pour faciliter les modifications et les futures fonctionnalités."
+      },
+      "aiLimits": {
+        "limit_1": "Un site souvent générique",
+        "limit_2": "Une stratégie de conversion à définir",
+        "limit_3": "Du code à contrôler et à tester",
+        "limit_4": "Une sécurité peu fiable",
+        "limit_5": "Des corrections à prendre en charge",
+        "limit_6": "Une maintenance à anticiper"
+      },
+      "devBenefits": {
+        "benefit_1": "Une expérience adaptée à votre cible",
+        "benefit_2": "Un parcours pensé pour convertir",
+        "benefit_3": "Des performances vérifiées",
+        "benefit_4": "Des contrôles de sécurité adaptés",
+        "benefit_5": "Des tests et corrections encadrés",
+        "benefit_6": "Une structure pensée pour évoluer"
+      },
+      "eyebrow": "AU-DELÀ DE LA GÉNÉRATION IA",
+      "title": "Un site qui existe.<br></br><highlight>Ou un site qui travaille pour vous.</highlight>",
+      "subtitle": "Générer un site est devenu accessible. Concevoir une expérience professionnelle, fiable et pensée pour votre activité demande une autre approche. Je transforme vos objectifs en un site personnalisé, testé et conçu pour évoluer avec votre entreprise.",
+      "comparisonCard": {
+        "card_ia": {
+          "label": "GÉNÉRATION IA NON VÉRIFIÉE",
+          "title": "Une base de départ.",
+          "description": "Rapide à produire, mais le résultat dépend des consignes, des vérifications et du travail restant à effectuer.",
+          "footer": "Le résultat reste à valider."
+        },
+        "card_dev": {
+          "label": "DÉVELOPPEMENT PROFESSIONNEL",
+          "title": "Un site pensé pour performer.",
+          "description": "RUne démarche structurée qui associe stratégie, conception, développement et vérifications avant la mise en ligne.",
+          "footer": "Chaque choix a un objectif."
+        }
+      },
+      "benefitsHeader": {
+        "eyebrow": "CE QUI FAIT LA DIFFÉRENCE",
+        "title": "Bien plus qu’un beau design.",
+        "description": "Les détails techniques et les décisions de conception font la différence entre un site simplement en ligne et un outil utile à votre entreprise."
+      }
+    },
+    "Process": {
+      "steps": {
+        "title_1": "Parlons de votre projet",
+        "description_1": "Nous échangeons sur votre activité, vos besoins et vos objectifs.",
+        "title_2": "Création de votre site",
+        "description_2": "Nous développons votre site et adaptons chaque détail à votre entreprise.",
+        "title_3": "Validation",
+        "description_3": "Vous validez le résultat et nous effectuons les derniers ajustements.",
+        "title_4": "Mise en ligne",
+        "description_4": "Votre site est accessible à vos futurs clients et prêt à développer votre activité."
+      },
+      "eyebrow": "NOTRE MÉTHODE",
+      "title": "Comment ça <highlight>fonctionne ?</highlight>",
+      "description": "Un projet réussi commence par une méthode claire. De notre premier échange à la mise en ligne, chaque étape est pensée pour vous accompagner simplement.",
+      "stepLabel": "ÉTAPE"
+    },
+    "MainOffer": {
+      "growVisual": {
+        "eyebrow": "PACK CROISSANCE",
+        "title_1": "Votre activité.",
+        "title_2": "Un nouveau potentiel.",
+        "dashboard": {
+          "label": "VOTRE PRÉSENCE EN LIGNE",
+          "strong": "Un système pensé pour convertir",
+          "status": "ACTIF",
+          "chartCaptions": {
+            "span_1": "VISIBILITÉ",
+            "span_2": "CONVERSION",
+            "span_3": "CROISSANCE"
+          },
+          "growSteps": {
+            "strong_1": "Être visible",
+            "small_1": "SEO & présence locale",
+            "strong_2": "Inspirer confiance",
+            "small_2": "Image professionnelle",
+            "strong_3": "Générer des demandes",
+            "small_3": "Parcours orienté conversion",
+            "strong_4": "haque détail compte.",
+            "small_4": "Une stratégie pensée pour votre activité."
+          }
+        }
+      },
+      "section": {
+        "features": {
+          "feature_1": "Jusqu’à 6 pages",
+          "feature_2": "Design professionnel",
+          "feature_3": "Adapté aux mobiles",
+          "feature_4": "SEO renforcé",
+          "feature_5": "Optimisation locale",
+          "feature_6": "Formulaire de demande",
+          "feature_7": "Intégration WhatsApp",
+          "feature_8": "Google Maps",
+          "feature_9": "FAQ intégrée",
+          "feature_10": "Optimisation de la conversion"
+        },
+        "eyebrow": "L’OFFRE POUR PASSER AU NIVEAU SUPÉRIEUR",
+        "title": "Le site web conçu pour<br></br><highlight>développer votre activité.</highlight>",
+        "subtitle": "Une présence en ligne professionnelle pour inspirer confiance, attirer les bons clients et transformer les visites en demandes.",
+        "popularBadge": "Offre la plus populaire",
+        "offer": {
+          "kicker": "L’OFFRE SIGNATURE",
+          "title": "PACK CROISSANCE",
+          "description": "Bien plus qu’un site vitrine : un outil pensé pour faire grandir votre entreprise.",
+          "priceLabel": "À partir de",
+          "priceNote": "Tarif ajusté selon votre projet",
+          "featuresTitle": "Tout pour développer votre présence en ligne",
+          "includedNumber": "10 inclusions",
+          "primaryCTA": "Découvrir l'offre",
+          "secondaryCTA": "Parlons de votre projet",
+          "reassurance": "Parlons de votre projet et de vos objectifs."
+        },
+        "visualLabel": "UNE PRÉSENCE QUI FAIT LA DIFFÉRENCE",
+        "footer": {
+          "strong_1": "Plus de visibilité",
+          "small_1": "Un site pensé pour le SEO",
+          "strong_2": "Plus de demandes",
+          "small_2": "Un parcours orienté conversion"
+        },
+        "vidualIndex_1": "CONÇU POUR LA CROISSANCE",
+        "vidualIndex_2": "2026 — WEB EXPERIENCE"
+      }
+    },
+    "WhyMe": {
+      "advantages": {
+        "title_1": "Rapides et modernes",
+        "description_1": "Une expérience fluide et réactive pour offrir à vos visiteurs un site agréable à utiliser.",
+        "title_2": "Adaptés à tous les écrans",
+        "description_2": "Un affichage soigné sur mobile, tablette et ordinateur, quelle que soit la taille de l'écran.",
+        "title_3": "Pensés pour votre activit",
+        "description_3": "Une structure claire qui valorise vos services et facilite la prise de contact.",
+        "title_4": "Prêts à évoluer",
+        "description_4": "Un site conçu pour accueillir de nouvelles pages et fonctionnalités au fil de votre croissance."
+      },
+      "eyebrow": "POURQUOI ME CHOISIR",
+      "title": "Des sites conçus pour <highlight>aujourd'hui et demain.</highlight>",
+      "description": "Un site ne doit pas seulement être esthétique. Il doit être rapide, accessible et pensé pour accompagner le développement de votre activité.",
+      "footerNote": "Une approche pensée pour durer."
+    },
+    "Maintenance": {
+      "plans": {
+        "plan_1": {
+          "name": "Essentiel",
+          "description": "L'essentiel pour garder votre site entretenu.",
+          "features": {
+            "feature_1": "Suivi technique",
+            "feature_2": "Maintenance du site",
+            "feature_3": "Assistance de base"
+          },
+          "label": "POUR RESTER SEREIN"
+        },
+        "plan_2": {
+          "name": "Évolution",
+          "description": "Votre site entretenu. Vos idées qui avancent.",
+          "features": {
+            "feature_1": "Maintenance et suivi technique",
+            "feature_2": "Modifications régulières",
+            "feature_3": "Accompagnement personnalisé",
+            "feature_4": "Un interlocuteur dédié"
+          },
+          "label": "LE PLUS CHOISI"
+        },
+        "plan_3": {
+          "name": "Premium",
+          "description": "Un accompagnement plus complet, dans la durée.",
+          "features": {
+            "feature_1": "Suivi technique renforcé",
+            "feature_2": "Modifications plus fréquentes",
+            "feature_3": "Accompagnement prioritaire"
+          },
+          "label": "POUR ALLER PLUS LOIN"
+        }
+      },
+      "eyebrow": "MAINTENANCE & ACCOMPAGNEMENT",
+      "title": "Votre site évolue. <highlight>On veille sur lui.</highlight>",
+      "description": "Un site performant ne s’arrête pas à sa mise en ligne. Nous restons à vos côtés pour l’entretenir, le faire évoluer et vous permettre de vous concentrer sur votre activité.",
+      "planLabel": "NOTRE RECOMMANDATION",
+      "period": "/ mois",
+      "footerNote": "Le bon équilibre entre suivi et évolution.",
+
+      "bottomNote": "Vous gérez votre activité. <strong>Nous veillons sur votre site.</strong>"
+    },
+    "ClientsBanner": {
+      "eyebrow": "ILS NOUS FONT CONFIANCE",
+      "title": "Des entreprises accompagnées dans le développement de leur <span>visibilité en ligne </span>",
+      "description": "De la création de votre site web à l’automatisation de vos processus, nous aidons les entreprises à construire une présence en ligne professionnelle, cohérente et performante.",
+      "logosLabel": "Entreprises qui nous font confiance"
+    },
+    "Reviews": {
+      "reviews": {
+        "quotes": {
+          "quote_1": "Franchement j’adore cette appli! Super pratique, surtout en complément d’une vision board classique. Je peux noter mes idées dès qu’elles me viennent, modifier mes objectifs à tout moment et suivre ma progression facilement. Tout reste toujours à portée de main, et voir la courbe ainsi que le nombre d’objectifs atteints, c’est hyper motivant! Simple, claire et vraiment utile au quotidien.",
+          "quote_2": "J'ai fait appel à M. Arthur Barraud pour refaire le site internet de notre atelier. Je suis extrêmement satisfaite du résultat qui a dépassé nos attentes. Conseils avisés et très professionnels. Rapidité de construction et de mise en ligne. Je recommande vivement cette toute jeune entreprise!",
+          "quote_3": "Une création de site web rapide, professionnelle et parfaitement maîtrisée. CDO Multiservices dispose désormais d’un site clair, moderne et efficace, conçu pour inspirer confiance et valoriser notre savoir-faire. Un travail de qualité livré dans des délais courts, avec un vrai sens du service et du détail.",
+          "quote_4": ""
+        },
+        "services": {
+          "website": "Création de site web"
+        }
+      },
+      "eyebrow": "LEURS MOTS, LEUR EXPÉRIENCE",
+      "mobileHint": "Faites défiler pour découvrir les avis"
+    },
+    "FAQ": {
+      "question_1": "Combien coûte la création d’un site web professionnel ?",
+      "answer_1": "Nos sites web professionnels commencent à partir de 500 €. Le tarif dépend de votre projet, du nombre de pages et des fonctionnalités souhaitées. Chaque site est conçu pour valoriser votre activité, renforcer votre crédibilité et transformer vos visiteurs en prospects. <br></br><br></br>Vous avez un projet en tête ? Contactez-nous pour obtenir un devis adapté à vos besoins et à votre budget.",
+
+      "question_2": "Combien de temps faut-il pour créer un site web ?",
+      "answer_2": "Le délai dépend de votre projet et de l’offre choisie. Notre offre Essentiel peut être livrée sous 5 jours ouvrés, tandis qu’un site web sur mesure nécessite généralement environ 2 semaines. Ces délais sont indicatifs et dépendent notamment de la réception de vos contenus et de la complexité du projet. <br></br><br></br>Nous définissons ensemble un calendrier clair pour vous permettre de lancer votre présence en ligne dans les meilleures conditions.",
+
+      "question_3": "Mon site web sera-t-il adapté aux mobiles et aux tablettes ?",
+      "answer_3": "Oui. Tous nos sites web sont conçus pour s’adapter aux mobiles, aux tablettes et aux ordinateurs. Le design responsive permet à vos visiteurs de naviguer facilement sur tous les écrans, avec une expérience fluide, une présentation soignée et un accès simple à vos informations. <br></br><br></br>Un site adapté aux mobiles améliore l’expérience utilisateur et contribue aux bonnes pratiques de référencement naturel sur Google.",
+
+      "question_4": "Le design de mon site sera-t-il adapté à mon entreprise ?",
+      "answer_4": "Oui. Nous concevons un site web personnalisé en fonction de votre activité, de votre identité visuelle et de votre clientèle cible. Les couleurs, la mise en page, les contenus et les appels à l’action sont pensés pour présenter vos services de manière claire et professionnelle. <br></br><br></br>L’objectif est de vous démarquer de vos concurrents, d’inspirer confiance dès la première visite et de faciliter la prise de contact avec vos futurs clients.",
+
+      "question_5": "Mon site web sera-t-il optimisé pour le référencement naturel (SEO) ?",
+      "answer_5": "Oui. Nous intégrons les fondamentaux du référencement naturel (SEO) dès la création de votre site web : structure claire des pages, titres adaptés, optimisation des contenus, performances techniques et compatibilité mobile. Selon votre projet, nous pouvons également travailler les éléments liés au référencement local pour améliorer votre visibilité auprès des clients de votre secteur. <br></br><br></br>Le SEO permet de poser des bases solides pour être mieux compris par les moteurs de recherche. Les résultats dépendent toutefois de nombreux facteurs et ne peuvent pas être garantis. Notre objectif est de vous aider à développer durablement votre visibilité en ligne.",
+
+      "question_6": "Puis-je faire évoluer mon site web avec de nouvelles fonctionnalités ?",
+      "answer_6": "Oui. Votre site est conçu pour pouvoir évoluer avec votre entreprise. Vous pourrez envisager l’ajout de nouvelles pages, de formulaires, de fonctionnalités spécifiques ou d’automatisations selon vos besoins et les possibilités techniques du projet. <br></br><br></br>Que vous souhaitiez développer vos services, améliorer votre parcours client ou simplifier certaines tâches, nous pouvons étudier les évolutions adaptées à vos objectifs. Vous disposez ainsi d’une base conçue pour accompagner votre croissance.",
+
+      "question_7": "Dois-je payer un abonnement pour mon site web ?",
+      "answer_7": "Non. La création de votre site web peut être facturée sans abonnement mensuel obligatoire pour la création elle-même. L’hébergement est inclus selon les conditions de votre offre. À partir du Pack Croissance, votre nom de domaine est également offert pendant la première année. Des frais peuvent s’appliquer à certains services tiers ou fonctionnalités spécifiques. <br></br><br></br>Si vous souhaitez être accompagné après la mise en ligne, nous proposons des solutions de maintenance en option. Nous vous expliquons les coûts prévus dès le départ afin que vous puissiez choisir une solution adaptée à votre budget.",
+      "question_8": "Mon site web sera-t-il sécurisé et pourrez-vous assurer sa maintenance ?",
+      "answer_8": "Nous appliquons des pratiques de développement adaptées pour contribuer à la sécurité et à la fiabilité de votre site web. Selon les technologies utilisées, cela peut inclure la configuration HTTPS, la vérification des dépendances et la sécurisation des formulaires. Aucun site ne peut toutefois être garanti totalement à l’abri des risques. <br></br><br></br>Après la mise en ligne, nous pouvons également vous accompagner avec des prestations de maintenance selon vos besoins : mises à jour, corrections de bugs et vérifications techniques. Vous pouvez ainsi bénéficier d’un suivi adapté pour préserver le bon fonctionnement de votre site dans la durée.",
+
+      "question_9": "L’hébergement et le nom de domaine sont-ils inclus dans votre offre ?",
+      "answer_9": "L’hébergement est inclus selon les conditions de votre offre. À partir du Pack Croissance, le nom de domaine est offert pendant la première année. Pour les autres offres, le nom de domaine est à prévoir en supplément. Nous pouvons nous charger de sa configuration et de la mise en ligne afin de simplifier les démarches techniques. <br></br><br></br>À l’issue de la première année, le renouvellement du nom de domaine peut entraîner des frais. Nous vous précisons les conditions applicables avant le lancement afin que vous sachiez exactement ce qui est inclus dans votre offre.",
+      "question_10": "Quelles tâches pouvez-vous automatiser dans mon entreprise ?",
+      "answer_10": "Nous créons des automatisations adaptées à votre activité pour réduire les tâches répétitives et vous faire gagner du temps. Selon vos besoins et les outils utilisés, cela peut inclure la gestion des nouveaux prospects, l’envoi de notifications automatiques, le suivi des demandes clients, la connexion de vos outils ou l’automatisation de certaines étapes de vos processus. <br></br><br></br>Chaque solution est étudiée en fonction de votre fonctionnement actuel et de vos objectifs. L’idée est de limiter les manipulations manuelles, de fluidifier votre organisation et de vous permettre de vous concentrer sur le développement de votre entreprise. <br></br><br></br>Vous souhaitez savoir ce qui pourrait être automatisé dans votre activité ? Contactez-nous pour étudier les possibilités adaptées à vos besoins."
+    },
+    "CTA": {
+      "eyebrow": "VOTRE PROJET COMMENCE ICI",
+      "title": "Votre activité mérite<br></br><highlight>un site à sa hauteur.</highlight>",
+      "description": "Vous avez une activité à développer, une idée à concrétiser ou une présence en ligne à améliorer ?<strong> Créons un site qui inspire confiance et donne envie de vous choisir.</strong>",
+      "cta_1": "Parlons de votre projet",
+      "cta_2": "Explorer mes services",
+      "bottomNote": "Un échange pour comprendre vos besoins, sans engagement.",
+      "footerQuestion": "UNE IDÉE ? UN PROJET ?",
+      "footerAnswer": "DONNONS-LUI VIE."
+    }
+  },
+  "Footer": {
+    "description": "Simplitech accompagne les entreprises avec des sites web modernes, la maintenance et l’automatisation de leurs processus.",
+    "servicesSection": {
+      "title": "Services",
+      "service_1": "Création de sites web",
+      "service_2": "Maintenance web",
+      "service_3": "Automatisation"
+    },
+    "compagnySection": {
+      "title": "Entreprise",
+      "link_1": "Contact",
+      "link_2": "Mentions légales",
+      "link_3": "Politique de confidentialité",
+      "link_4": "Conditions générales de vente"
+    },
+    "scheduleSection": {
+      "title": "Horaires",
+      "status": {
+        "open": "Actuellement ouvert",
+        "close": "Actuellement fermé"
+      },
+      "timeZoneLabel": "Heure locale — Brisbane",
+
+      "hours": {
+        "weekdays": "Lundi – Vendredi",
+        "weekend": "Samedi – Dimanche"
+      },
+      "today": "Aujourd’hui ",
+      "week": {
+        "monday": "Lundi",
+        "tuesday": "Mardi",
+        "wednesday": "Mercredi",
+        "thursday": "Jeudi",
+        "friday": "Vendredi",
+        "saturday": "Samedi",
+        "sunday": "Dimanche"
+      }
+    },
+    "copyright": "Simplitech. Tous droits réservés."
+  },
+  "ServicesPage": {
+    "plans": {
+      "plan_1": {
+        "name": "Essentiel",
+        "price": "500 €",
+        "pages": "Jusqu’à 3 pages",
+        "description": "Pour lancer une présence professionnelle en ligne.",
+        "features": {
+          "feature_1": "Design responsive",
+          "feature_2": "Formulaire de contact",
+          "feature_3": "Google Maps",
+          "feature_4": "SEO de base"
+        }
+      },
+      "plan_2": {
+        "name": "Croissance",
+        "price": "790 €",
+        "pages": "Jusqu’à 6 pages",
+        "description": "Pour développer votre visibilité et générer des contacts.",
+        "features": {
+          "feature_1": "Tout le nécessaire pour démarrer",
+          "feature_2": "SEO renforcé",
+          "feature_3": "Optimisation des conversions",
+          "feature_4": "WhatsApp et statistiques",
+          "feature_5": "Prise de rendez-vous et automatisation en option"
+        }
+      },
+      "plan_3": {
+        "name": "Business",
+        "price": "1 290 €",
+        "pages": "Jusqu’à 10 pages",
+        "description": "Pour une présence en ligne plus complète et personnalisée.",
+        "features": {
+          "feature_1": "Tout le nécessaire pour développer votre activité",
+          "feature_2": "Design sur mesure",
+          "feature_3": "SEO renforcé et statistiques",
+          "feature_4": "WhatsApp",
+          "feature_5": "Réservation et automatisation incluses",
+          "feature_6": "30 jours de support après livraison"
+        }
+      }
+    },
+    "eyebrow": "SIMPLITECH / SERVICES",
+    "title": "Le digital, au service<br></br>de votre <highlight>croissance.</highlight>",
+    "description": "Sites web, maintenance et automatisations : des solutions concrètes pour développer votre activité et simplifier votre quotidien.",
+    "web": {
+      "eyebrow": "01 — VOTRE PRÉSENCE EN LIGNE",
+      "title": "Création de <highlight>sites web.</highlight>",
+      "description": "Un site professionnel, rapide et pensé pour transformer vos visiteurs en clients.",
+      "plans": {
+        "popular": "RECOMMANDÉ",
+        "priceCaption": "Paiement unique",
+        "ctaDiscover": "Découvrir l’offre",
+        "ctaForm": "Parler de mon projet"
+      },
+      "bottomNote": "Chaque projet est différent. Les besoins spécifiques peuvent faire l’objet d’un devis adapté."
+    },
+    "maintenance": {
+      "browserURL": "votre-site.fr",
+      "eyebrow": "02 — TRANQUILLITÉ",
+      "title": "Maintenance <highlight>web.</highlight>",
+      "description": "Gardez un site sécurisé, à jour et fonctionnel, sans devoir gérer la technique vous-même.",
+      "price": "27 € - 97 €",
+      "period": "/ mois",
+      "cta": "Comparer les forfaits"
+    },
+    "automation": {
+      "flowCaption": "WORKFLOW AUTOMATISÉ",
+      "eyebrow": "03 — EFFICACITÉ",
+      "title": "Automatisations <highlight>sur mesure.</highlight>",
+      "description": "Connectez vos outils, réduisez les tâches répétitives et consacrez plus de temps à votre activité.",
+      "price": "Sur devis",
+      "cta": "Explorer les possibilités",
+      "bottomNote": "DES SOLUTIONS UTILES. DES RÉSULTATS CONCRETS."
+    }
+  },
+  "WebPage": {
+    "Essentiel": {
+      "backLink": "Tous les services",
+      "eyebrow": "OFFRE 01 — SITE WEB",
+      "title": "Site web <highlight>Essentiel</highlight>",
+      "description": "Une présence professionnelle en ligne pour lancer votre activité rapidement.",
+      "badges": {
+        "badge_1": "Livraison sous 5 jours ouvrés*",
+        "badge_2": "Design responsive"
+      },
+      "visual": {
+        "bubbles": {
+          "bubble_1": "Visibilité",
+          "bubble_2": "Nouveaux clients",
+          "bubble_3": "Crédibilité",
+          "bubble_4": "Contacts"
+        },
+        "centerLabel": "Votre site"
+      },
+      "features": {
+        "title": "Ce qui est inclus",
+        "feature_1": "Site web professionnel et moderne",
+        "feature_2": "Jusqu’à 3 pages personnalisées",
+        "feature_3": "Design adapté aux mobiles, tablettes et ordinateurs",
+        "feature_4": "Présentation de votre entreprise et de vos services",
+        "feature_5": "Coordonnées et horaires d’ouverture",
+        "feature_6": "Formulaire de contact",
+        "feature_7": "Boutons d’appel et de prise de contact",
+        "feature_8": "Intégration de Google Maps",
+        "feature_9": "Liens vers vos réseaux sociaux",
+        "feature_10": "Optimisation SEO de base",
+        "feature_11": "Mise en ligne du site"
+      },
+      "note": "* Délai indicatif à compter de la réception de tous les contenus nécessaires et de la validation du projet.",
+      "forLabel": "Idéal pour",
+      "tags": {
+        "tag_1": "Artisans",
+        "tag_2": "Indépendants",
+        "tag_3": "Commerces",
+        "tag_4": "Restaurants",
+        "tag_5": "Bars",
+        "tag_6": "Coiffeurs",
+        "tag_7": "Professionnels locaux"
+      },
+      "goalLabel": "L’objectif",
+      "goal": "Présenter votre activité clairement, rassurer vos visiteurs et faciliter la prise de contact.",
+      "priceLabel": "Tarif de l’offre",
+      "price": "500 €",
+      "priceCaption": "Prix de départ pour un site jusqu’à 3 pages.",
+      "cta": {
+        "title": "Prêt à lancer votre site ?",
+        "subtitle": "Parlons de votre projet.",
+        "cta": "Demander un devis"
+      }
+    },
+    "Croissance": {
+      "backLink": "Tous les services",
+      "eyebrow": "OFFRE 02 — SITE WEB",
+      "title": "Site web <highlight>Croissance</highlight>",
+      "description": "Une présence professionnelle en ligne pour lancer votre activité rapidement.",
+      "badges": {
+        "badge_1": "Livraison sous 5 jours ouvrés*",
+        "badge_2": "Design responsive"
+      },
+      "visual": {
+        "tags": {
+          "tag_1": "Nouveaux clients",
+          "tag_2": "Visibilité",
+          "tag_3": "Conversion",
+          "tag_4": "Prospects",
+          "tag_5": "Croissance",
+          "tag_6": "Rentabilité",
+          "tag_7": "Crédibilité",
+          "tag_8": "Opportunités",
+          "tag_9": "Performance",
+          "tag_10": "Acquisition",
+          "tag_11": "Confiance",
+          "tag_12": "Différenciation",
+          "tag_13": "Expansion",
+          "tag_14": "Référencement",
+          "tag_15": "Attractivité",
+          "tag_16": "Développement",
+          "tag_17": "Résultats",
+          "tag_18": "Compétitivité",
+          "tag_19": "Efficacité",
+          "tag_20": "Ambition",
+          "tag_21": "Impact",
+          "tag_22": "Excellence",
+          "tag_23": "Potentiel",
+          "tag_24": "Réussite",
+          "tag_25": "Chiffre d’affaires"
+        }
+      },
+      "features": {
+        "title": "Ce qui est inclus",
+        "feature_1": "Site web professionnel et moderne",
+        "feature_2": "Jusqu’à 6 pages personnalisées",
+        "feature_3": "Design adapté aux mobiles, tablettes et ordinateurs",
+        "feature_4": "Présentation de votre entreprise et de vos services",
+        "feature_5": "Coordonnées et horaires d’ouverture",
+        "feature_6": "Formulaire de contact",
+        "feature_7": "Boutons d’appel et de prise de contact",
+        "feature_8": "Intégration de Google Maps",
+        "feature_9": "Appels à l'action optimisés",
+        "feature_10": "Liens vers vos réseaux sociaux",
+        "feature_11": "Optimisation SEO renforcée",
+        "feature_12": "Intégration WhatsApp",
+        "feature_13": "Site Multilingue (Français & Anglais)",
+        "feature_14": "Optimisation pour la visibilité locale",
+        "feature_15": "Installation d'un outil de statistiques",
+        "feature_16": "Optimisation des performances",
+        "feature_17": "Intégration d'une FAQ",
+        "feature_18": "Structure pensée pour convertir les visiteurs",
+        "feature_19": "Mise en ligne du site",
+        "feature_20": "Structure pensée pour convertir les visiteurs"
+      },
+      "note": "* Délai indicatif à compter de la réception de tous les contenus nécessaires et de la validation du projet.",
+      "forLabel": "Idéal pour",
+      "tags": {
+        "tag_1": "Artisans",
+        "tag_2": "Indépendants",
+        "tag_3": "Auto-entrepreneurs",
+        "tag_4": "Coiffeurs",
+        "tag_5": "Commerces de proximité",
+        "tag_6": "Restaurants",
+        "tag_7": "Campings",
+        "tag_8": "Professionnels locaux",
+        "tag_9": "Jeunes entreprises"
+      },
+      "goalLabel": "L’objectif",
+      "goal": "Gagnez en visibilité, inspirez confiance et attirez de nouveaux clients grâce à un site conçu pour faire grandir votre activité.",
+      "priceLabel": "Tarif de l’offre",
+      "price": "790 €",
+      "priceCaption": "Prix de départ pour un site jusqu’à 6 pages.",
+      "cta": {
+        "title": "Prêt à lancer votre site ?",
+        "subtitle": "Parlons de votre projet.",
+        "cta": "Demander un devis"
+      }
+    },
+    "Business": {
+      "backLink": "Tous les services",
+      "eyebrow": "OFFRE 03 — SITE WEB",
+      "title": "Site web <highlight>Business</highlight>",
+      "description": "Une présence professionnelle en ligne pour lancer votre activité rapidement.",
+      "badges": {
+        "badge_1": "Livraison sous 5 jours ouvrés*",
+        "badge_2": "Design responsive"
+      },
+      "features": {
+        "title": "Ce qui est inclus",
+        "feature_1": "Site web professionnel et moderne",
+        "feature_2": "Jusqu’à 10 pages personnalisées",
+        "feature_3": "Design adapté aux mobiles, tablettes et ordinateurs",
+        "feature_4": "Présentation de votre entreprise et de vos services",
+        "feature_5": "Pages dédiées à vos différents services",
+        "feature_6": "Coordonnées et horaires d’ouverture",
+        "feature_7": "Formulaire de contact avancée",
+        "feature_8": "Boutons d’appel et de prise de contact",
+        "feature_9": "Intégration de Google Maps",
+        "feature_10": "Appels à l'action optimisés",
+        "feature_11": "Liens vers vos réseaux sociaux",
+        "feature_12": "Optimisation SEO avancée",
+        "feature_13": "Intégration WhatsApp",
+        "feature_14": "Site Multilingue (Français & Anglais + 1 langue)",
+        "feature_15": "Optimisation pour la visibilité locale",
+        "feature_16": "Installation d'un outil de statistiques",
+        "feature_17": "Optimisation des performances",
+        "feature_18": "Optimisation de l'expérience utilisateur",
+        "feature_19": "Intégration d'une FAQ",
+        "feature_20": "Structure pensée pour convertir les visiteurs",
+        "feature_21": "Mise en ligne du site",
+        "feature_22": "Support prioritaire pendant 30 jours"
+      },
+      "note": "* Délai indicatif à compter de la réception de tous les contenus nécessaires et de la validation du projet.",
+      "forLabel": "Idéal pour",
+      "tags": {
+        "tag_1": "PME",
+        "tag_2": "Entreprises du bâtiment",
+        "tag_3": "Auto-entrepreneurs",
+        "tag_4": "Agences immobilières",
+        "tag_5": "Commerces de proximité",
+        "tag_6": "Cabinets de conseil",
+        "tag_7": "Centres de bien-être",
+        "tag_8": "Organismes de formation",
+        "tag_9": "Entreprises de services"
+      },
+      "goalLabel": "L’objectif",
+      "goal": "Développez votre activité avec un site web complet et performant, conçu pour convertir davantage de visiteurs en clients, simplifier vos processus et accompagner durablement votre croissance.",
+      "priceLabel": "Tarif de l’offre",
+      "price": "1290 €",
+      "priceCaption": "Prix de départ pour un site jusqu’à 10 pages.",
+      "cta": {
+        "title": "Prêt à lancer votre site ?",
+        "subtitle": "Parlons de votre projet.",
+        "cta": "Demander un devis"
+      }
+    },
+    "Maintenance": {
+      "backLink": "Tous les services",
+      "hero": {
+        "eyebrow": "SIMPLITECH - MAINTENANCE & ACCOMPAGNEMENT",
+        "title": "Votre site mérite<br></br>de <highlight>durer.</highlight>",
+        "description": "Gardez un site fonctionnel, sécurisé et à jour. Choisissez le niveau d'accompagnement adapté à votre activité, sans mauvaise surprise.",
+        "actions": {
+          "plans": "Découvrir les forfaits",
+          "included": "Ce qui est inclus"
+        },
+        "trust": {
+          "item_1": "Tarifs mensuels clairs",
+          "item_2": "Suppléments validés avant intervention"
+        },
+        "visual": {
+          "site": "Votre site",
+          "status": "Entre de bonnes mains.",
+          "card_1_title": "Site surveillé",
+          "card_1_text": "Maintenance technique",
+          "card_2_title": "Prêt à évoluer",
+          "card_2_text": "Selon vos besoins"
+        }
+      },
+      "benefits": {
+        "item_1": {
+          "title": "Un site entretenu",
+          "text": "Pour limiter les problèmes techniques."
+        },
+        "item_2": {
+          "title": "Un budget maîtrisé",
+          "text": "Un forfait adapté à vos besoins."
+        },
+        "item_3": {
+          "title": "Un interlocuteur",
+          "text": "Pour vos demandes et vos évolutions."
+        }
+      },
+      "pricing": {
+        "eyebrow": "NOS FORFAITS",
+        "title": "Votre site, <highlight>à votre rythme.</highlight>",
+        "description": "De la maintenance technique à l'accompagnement régulier, choisissez la formule qui correspond à votre façon de travailler.",
+        "popular": "LE PLUS CHOISI",
+        "pricePeriod": "/ mois",
+        "priceNote": "Abonnement de maintenance",
+        "featuresTitle": "Votre forfait comprend",
+        "footnote": "Les évolutions importantes et les prestations hors forfait sont estimées séparément.",
+        "disclaimer": "Les prestations sont réalisées dans le périmètre défini au contrat. Les services tiers payants et les demandes supplémentaires peuvent faire l'objet d'une facturation distincte.",
+        "plans": {
+          "essentiel": {
+            "name": "Essentiel",
+            "price": "27",
+            "description": "L'essentiel pour garder votre site en bon état.",
+            "target": "Pour un site qui doit rester fiable.",
+            "cta": "Choisir Essentiel",
+            "features": {
+              "feature_1": "Hébergement du site",
+              "feature_2": "Certificat SSL / HTTPS",
+              "feature_3": "Surveillance du site",
+              "feature_4": "Sauvegardes régulières",
+              "feature_5": "Maintenance technique",
+              "feature_6": "Corrections de bugs couverts",
+              "feature_7": "Mises à jour techniques"
+            },
+            "excluded": {
+              "item_1": "Modifications de contenu",
+              "item_2": "Optimisation des performances incluse au forfait supérieur"
+            }
+          },
+          "evolution": {
+            "name": "Évolution",
+            "price": "57",
+            "description": "Un site entretenu et actualisé au fil de vos besoins.",
+            "target": "Pour une entreprise qui veut faire vivre son site.",
+            "cta": "Choisir Évolution",
+            "features": {
+              "feature_1": "Tout le forfait Essentiel",
+              "feature_2": "2 petites modifications par mois",
+              "feature_3": "Modification de textes et d'images fournies",
+              "feature_4": "Mise à jour des horaires et coordonnées",
+              "feature_5": "Modification des tarifs et services existants",
+              "feature_6": "Optimisation des performances",
+              "feature_7": "Support email prioritaire"
+            },
+            "excluded": {
+              "item_1": "Création de nouvelles pages",
+              "item_2": "Nouvelles fonctionnalités ou automatisations"
+            }
+          },
+          "premium": {
+            "name": "Premium",
+            "price": "97",
+            "description": "Un accompagnement régulier pour aller plus loin.",
+            "target": "Pour une entreprise qui veut un suivi renforcé.",
+            "cta": "Choisir Premium",
+            "features": {
+              "feature_1": "Tout le forfait Évolution",
+              "feature_2": "5 petites modifications par mois",
+              "feature_3": "Ajouts de contenu dans le périmètre convenu",
+              "feature_4": "Support prioritaire",
+              "feature_5": "Conseils d'amélioration",
+              "feature_6": "Suivi mensuel",
+              "feature_7": "Rapport mensuel simplifié"
+            },
+            "excluded": {
+              "item_1": "Refonte complète du site",
+              "item_2": "SEO avancé et campagnes publicitaires"
+            }
+          }
+        }
+      },
+      "scope": {
+        "eyebrow": "UNE OFFRE SANS AMBIGUÏTÉ",
+        "title": "Ce qui est inclus.<br></br><highlight>Et ce qui ne l'est pas.</highlight>",
+        "description": "La maintenance entretient votre site existant. Les nouveaux projets et les transformations importantes sont chiffrés à part.",
+        "included": {
+          "title": "Inclus selon votre forfait",
+          "subtitle": "Pour maintenir votre site en bon état.",
+          "items": {
+            "item_1": {
+              "title": "Maintenance technique",
+              "text": "Surveillance, mises à jour et entretien du site."
+            },
+            "item_2": {
+              "title": "Sécurité et sauvegardes",
+              "text": "HTTPS et sauvegardes selon les modalités du forfait."
+            },
+            "item_3": {
+              "title": "Corrections de bugs",
+              "text": "Correction des dysfonctionnements couverts dans le périmètre maintenu."
+            },
+            "item_4": {
+              "title": "Petites modifications",
+              "text": "Selon votre formule, dans la limite du quota mensuel."
+            }
+          },
+          "footnote": "Les modifications de contenu sont réservées aux forfaits Évolution et Premium, selon le quota mensuel."
+        },
+        "extra": {
+          "title": "Sur devis",
+          "subtitle": "Pour faire évoluer votre site en profondeur.",
+          "items": {
+            "item_1": {
+              "title": "Création d'une nouvelle page",
+              "text": "Nouvelle page de service, page de destination ou nouvelle structure."
+            },
+            "item_2": {
+              "title": "Nouvelle fonctionnalité",
+              "text": "Réservation, espace client ou fonctionnalité métier spécifique."
+            },
+            "item_3": {
+              "title": "Automatisation",
+              "text": "Connexion à un CRM, notifications avancées ou workflow personnalisé."
+            },
+            "item_4": {
+              "title": "Refonte du design",
+              "text": "Transformation importante d'une page ou refonte complète du site."
+            },
+            "item_5": {
+              "title": "Création de contenu",
+              "text": "Rédaction de textes, création de visuels ou production de photos."
+            },
+            "item_6": {
+              "title": "SEO avancé et publicité",
+              "text": "Stratégie SEO approfondie et gestion de campagnes Google ou Meta Ads."
+            }
+          },
+          "footnote": "Vous recevez une estimation et validez le budget avant le démarrage de la prestation."
+        },
+        "example": {
+          "title": "Une demande qui dépasse votre forfait ?",
+          "text": "Décrivez-nous votre besoin. Nous vous proposerons une solution adaptée et un tarif avant toute intervention.",
+          "cta": "Demander un devis"
+        }
+      },
+      "process": {
+        "eyebrow": "COMMENT ÇA FONCTIONNE",
+        "title": "Simple, de la demande<br></br><highlight>à la réalisation.</highlight>",
+        "steps": {
+          "step_1": {
+            "title": "Vous nous contactez",
+            "text": "Envoyez votre demande avec les détails et les éléments nécessaires à son traitement."
+          },
+          "step_2": {
+            "title": "Nous vérifions le périmètre",
+            "text": "Nous confirmons si la demande est comprise dans votre forfait ou si un devis est nécessaire."
+          },
+          "step_3": {
+            "title": "Nous réalisons l'intervention",
+            "text": "La demande est traitée selon les priorités et délais indicatifs de votre formule, après validation si nécessaire."
+          }
+        }
+      },
+      "faq": {
+        "eyebrow": "QUESTIONS FRÉQUENTES",
+        "title": "Besoin de<br></br><highlight>précisions ?</highlight>",
+        "description": "Les réponses aux questions les plus courantes sur nos forfaits de maintenance.",
+        "cta": "Poser une question",
+        "items": {
+          "faq_1": {
+            "question": "Puis-je changer de forfait ?",
+            "answer": "Vous pouvez demander à passer à une autre formule. Le changement prend effet selon les conditions prévues dans votre contrat."
+          },
+          "faq_2": {
+            "question": "Les modifications sont-elles illimitées ?",
+            "answer": "Non. Évolution comprend jusqu'à 2 petites modifications par mois et Premium jusqu'à 5. Les demandes non utilisées ne sont pas reportées. Une demande complexe peut nécessiter un devis."
+          },
+          "faq_3": {
+            "question": "Qu'est-ce qu'une petite modification ?",
+            "answer": "Il s'agit par exemple de modifier un texte existant, remplacer une image fournie ou actualiser des horaires. Une nouvelle page, une refonte ou une nouvelle fonctionnalité n'est pas une petite modification."
+          },
+          "faq_4": {
+            "question": "L'hébergement et le nom de domaine sont-ils compris ?",
+            "answer": "L'hébergement est prévu dans les forfaits présentés. Le nom de domaine, les services tiers payants et leurs renouvellements doivent être précisés dans le devis ou le contrat."
+          },
+          "faq_5": {
+            "question": "Que se passe-t-il si j'ai besoin d'une évolution importante ?",
+            "answer": "Vous décrivez votre besoin, puis vous recevez une estimation distincte avant le début des travaux. Aucune prestation supplémentaire n'est engagée sans validation."
+          }
+        }
+      },
+      "finalCta": {
+        "eyebrow": "VOTRE SITE, NOTRE SUIVI",
+        "title": "Concentrez-vous sur<br></br><highlight>votre activité.</highlight>",
+        "description": "Choisissez votre forfait de maintenance et gardez un site prêt à accompagner votre entreprise.",
+        "cta": "Choisir mon forfait",
+        "note": "Une question ? Parlons de votre projet."
+      }
+    },
+    "Automations": {
+      "eyebrow": "NOUVEAU PROJET",
+      "title": {
+        "line1": "Quelque chose",
+        "line2": "se",
+        "highlight": "prépare."
+      },
+      "description": {
+        "line1": "Je travaille sur quelque chose de nouveau.",
+        "line2": "Le projet sera disponible très bientôt."
+      },
+      "status": "EN COURS DE CRÉATION",
+      "footer": {
+        "conception": "CONCEPTION",
+        "development": "DÉVELOPPEMENT",
+        "soon": "BIENTÔT"
+      },
+      "projectLabel": "PROJECT_001"
+    }
+  },
+  "Contact": {
+    "hero": {
+      "eyebrow": "SIMPLITECH / CONTACT",
+      "title": "Parlons de votre <highlight>prochain projet.</highlight>",
+      "description": "Une question, une idée ou un besoin précis ? Présentez-moi votre projet. Je vous répondrai dans les meilleurs délais.",
+      "cta": "Envoyer un message"
+    },
+    "cards": {
+      "email": {
+        "label": "Échange direct",
+        "title": "Par e-mail",
+        "description": "Pour une demande de renseignement ou une première discussion.",
+        "linkLabel": "Écrire un e-mail",
+        "unavailable": "L’adresse e-mail sera bientôt disponible."
+      },
+      "phone": {
+        "label": "Téléphone",
+        "title": "Choisissez votre pays",
+        "description": "Deux numéros sont prévus pour faciliter les échanges.",
+        "unavailable": "Les coordonnées téléphoniques seront bientôt disponibles."
+      },
+      "location": {
+        "label": "Localisation",
+        "timezoneLabel": "Fuseau de référence :"
+      },
+      "socials": {
+        "label": "En ligne",
+        "title": "Retrouvez Simplitech",
+        "description": "Consultez mes profils et mes projets.",
+        "ariaLabel": "Visiter le profil {label} de Simplitech",
+        "unavailable": "Les liens sociaux seront bientôt disponibles."
+      }
+    },
+    "form": {
+      "eyebrow": "Votre message",
+      "title": "Décrivons votre projet.",
+      "description": "Quelques informations suffisent pour commencer. Le formulaire vous permet de détailler votre demande.",
+      "fields": {
+        "name": {
+          "label": "Nom complet *",
+          "placeholder": "John Doe"
+        },
+        "email": {
+          "label": "Adresse e-mail *",
+          "placeholder": "arthur.barraud@proton.me"
+        },
+        "phone": {
+          "label": "Téléphone *",
+          "placeholder": "+33660988623"
+        },
+        "service": {
+          "label": "Service souhaité *",
+          "placeholder": "Sélectionnez un service"
+        },
+        "budget": {
+          "label": "Budget estimé",
+          "options": {
+            "discuss": "À discuter",
+            "under1000": "Moins de 1 000 €",
+            "1000to5000": "1 000 € – 5 000 €",
+            "5000to10000": "5 000 € – 10 000 €",
+            "over10000": "Plus de 10 000 €"
+          }
+        },
+        "timeline": {
+          "label": "Délai souhaité",
+          "options": {
+            "define": "À définir",
+            "urgent": "Dès que possible",
+            "month": "Dans le mois",
+            "quarter": "Dans les 3 mois",
+            "flexible": "Flexible"
+          }
+        },
+        "message": {
+          "label": "Parlez-nous de votre projet *",
+          "placeholder": "Parlez-moi de votre entreprise, de vos objectifs..."
+        },
+        "website": {
+          "label": "Ne pas remplir ce champ"
+        }
+      },
+      "services": {
+        "web": {
+          "label": "Développement Web",
+          "options": {
+            "refonte": {
+              "label": "Refonte",
+              "value": "Refonte"
+            },
+            "essentiel": {
+              "label": "Essentiel",
+              "value": "Essentiel"
+            },
+            "croissance": {
+              "label": "Croissance",
+              "value": "Croissance"
+            },
+            "business": {
+              "label": "Business",
+              "value": "Business"
+            }
+          }
+        },
+        "automation": {
+          "label": "Automatisation",
+          "options": {
+            "simple": {
+              "label": "Automatisation simple",
+              "value": "Automatisation simple"
+            }
+          }
+        },
+        "maintenance": {
+          "label": "Maintenance",
+          "options": {
+            "essentiel": {
+              "label": "Essentiel",
+              "value": "Essentiel"
+            },
+            "evolution": {
+              "label": "Evolution",
+              "value": "Evolution"
+            },
+            "premium": {
+              "label": "Premium",
+              "value": "Premium"
+            }
+          }
+        },
+        "consulting": {
+          "label": "Conseil & Accompagnement",
+          "options": {
+            "refonte": {
+              "label": "Refonte",
+              "value": "Refonte"
+            }
+          }
+        },
+        "other": {
+          "label": "Autre",
+          "options": {
+            "other": {
+              "label": "Autre",
+              "value": "Autre"
+            }
+          }
+        }
+      },
+      "consentText": "J’accepte que mes informations soient utilisées pour traiter ma demande, conformément à la <privacyLink>politique de confidentialité</privacyLink>. *",
+      "submit": {
+        "label": "Envoyer le message",
+        "loading": "Envoi en cours…"
+      },
+      "status": {
+        "success": "Votre message a été envoyé avec succès.",
+        "error": "L’envoi a échoué. Vérifiez vos informations ou réessayez plus tard."
+      },
+      "requiredNote": "* Champs obligatoires",
+      "privacyNote": "Les informations transmises servent uniquement à traiter votre demande. Consultez la <privacyLink>politique de confidentialité</privacyLink>."
+    }
+  },
+  "Portfolio": {
+    "filters": {
+      "all": "Tous les projets",
+      "design": "Design",
+      "software": "Logiciels",
+      "dev": "Développement web",
+      "card": "Cartes de visite",
+      "ariaLabel": "Filtrer les projets",
+      "selectLabel": "Catégorie de projet"
+    },
+    "projects": {
+      "eyebrow": "SIMPLITECH / PROJETS",
+      "titleLine1": "Des idées transformées",
+      "titleLine2": "en réalisations concrètes.",
+      "description": "Sites web, outils numériques et créations graphiques : découvrez une sélection de projets de développement et de design.",
+      "viewCards": "Voir les cartes",
+      "discover": "Découvrir",
+      "technologiesLabel": "Technologies utilisées",
+      "openCard": "Afficher la carte de visite : {title}",
+      "openProject": "{action} : {title} (nouvel onglet)",
+      "resultsCount": "{count, plural, =0 {Aucun projet affiché} one {# projet affiché} other {# projets affichés}}"
+    },
+    "common": {
+      "visitSite": "Visiter le site"
+    },
+    "projectDetails": {
+      "mnemonic-shield": {
+        "title": "Mnemonic Shield",
+        "eyebrow": "PYTHON / SÉCURITÉ",
+        "description": "Un outil de sécurité conçu pour encoder une phrase mnémonique sous la forme d'un sigil cryptographique.",
+        "alt": "Aperçu de Mnemonic Shield, projet Python de sécurité cryptographique",
+        "linkLabel": "Visiter le site"
+      },
+      "bitcoin-price": {
+        "title": "Bitcoin Price",
+        "eyebrow": "HTML / CSS / JAVASCRIPT",
+        "description": "Une interface web dédiée à la consultation du prix du Bitcoin.",
+        "alt": "Capture d'écran du projet web Bitcoin Price",
+        "linkLabel": "Visiter le site"
+      },
+      "business-card": {
+        "title": "Arthur BARRAUD",
+        "eyebrow": "DESIGN / IDENTITÉ VISUELLE",
+        "description": "Une carte de visite professionnelle avec une présentation sobre et soignée.",
+        "alt": "Aperçu de la carte de visite professionnelle Arthur BARRAUD"
+      },
+      "business-card-dev": {
+        "title": "Arthur BARRAUD — Dev",
+        "eyebrow": "DESIGN / DÉVELOPPEMENT WEB",
+        "description": "Une variante de carte de visite dédiée à une identité de développeur web.",
+        "alt": "Aperçu de la carte de visite développeur Arthur BARRAUD"
+      },
+      "vice-versa": {
+        "title": "Vice Versa Atelier",
+        "eyebrow": "NEXT.JS / SITE WEB",
+        "description": "Un site web présentant l'univers et l'activité de Vice Versa Atelier.",
+        "alt": "Aperçu du site web Vice Versa Atelier"
+      },
+      "my-vision-board": {
+        "title": "MyVisionBoard",
+        "eyebrow": "NEXT.JS / APPLICATION WEB",
+        "description": "Une application web permettant d'organiser ses idées et de visualiser ses objectifs.",
+        "alt": "Aperçu de l'application web MyVisionBoard"
+      },
+      "cdo-multiservices": {
+        "title": "CDO Multiservices",
+        "eyebrow": "NEXT.JS / SITE VITRINE",
+        "description": "Un site vitrine pour présenter l'activité et les services de CDO Multiservices.",
+        "alt": "Aperçu du site vitrine CDO Multiservices"
+      },
+      "haumana-bien-etre": {
+        "title": "Haumana Bien-Être",
+        "eyebrow": "NEXT.JS / SITE WEB",
+        "description": "Un site web présentant l'activité et l'univers de Haumana Bien-Être.",
+        "alt": "Aperçu du site web Haumana Bien-Être"
+      }
+    },
+    "modal": {
+      "close": "Fermer la fenêtre",
+      "eyebrow": "APERÇU DU PROJET"
+    },
+    "skills": {
+      "eyebrow": "COMPÉTENCES",
+      "titleLine1": "Les compétences",
+      "titleLine2": "au service de vos projets.",
+      "description": "Les technologies et les outils que j'utilise pour concevoir des expériences web et des solutions numériques.",
+      "learning": "En apprentissage",
+      "levelLabel": "Niveau autoévalué en {skill}",
+      "bottomNote": "Les niveaux indiqués sont des estimations personnelles qui évoluent avec la pratique."
+    },
+    "skillGroups": {
+      "frontend": {
+        "title": "Front-end",
+        "description": "Des interfaces modernes, responsives et accessibles pour le web."
+      },
+      "backend": {
+        "title": "Back-end & développement",
+        "description": "Des scripts, de la logique applicative et l'intégration de services."
+      },
+      "blockchain": {
+        "title": "Blockchain",
+        "description": "Exploration des technologies blockchain et des contrats intelligents."
+      },
+      "tools": {
+        "title": "Outils & design",
+        "description": "Les outils de développement, de conception et d'intégration."
+      }
+    },
+    "skillItems": {
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "react": "React",
+      "nextjs": "Next.js",
+      "python": "Python",
+      "nodejs": "Node.js",
+      "supabase": "Supabase",
+      "postgresql": "PostgreSQL",
+      "solidity": "Solidity",
+      "vscode": "VS Code",
+      "git": "Git / GitHub",
+      "terminal": "Terminal / CLI",
+      "canva": "Canva",
+      "figma": "Figma / UI Design",
+      "framerMotion": "Framer Motion",
+      "resend": "Resend",
+      "vercel": "Vercel — déploiement"
     }
   }
 }

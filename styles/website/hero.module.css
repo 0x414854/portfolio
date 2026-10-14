@@ -1,0 +1,1049 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: auto;
+  overflow: hidden;
+  padding: 110px 0 90px;
+  color: #ffffff;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  /* overflow: hidden; */
+  pointer-events: none;
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+}
+
+.glow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.12;
+  z-index: 101;
+}
+
+.glowOne {
+  top: -150px;
+  right: -150px;
+  background: var(--orange-yellow-crayola);
+  animation: glowOne 12s ease-in-out infinite;
+}
+
+@keyframes glowOne {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(40px, 30px, 0);
+  }
+}
+
+.glowTwo {
+  animation: glowTwo 15s ease-in-out infinite;
+}
+
+@keyframes glowTwo {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(-30px, -40px, 0);
+  }
+}
+
+/* .glowTwo {
+  bottom: -180px;
+  left: -150px;
+
+  background: #2563eb;
+} */
+
+/* ============================= */
+/* CONTAINER */
+/* ============================= */
+
+.container {
+  position: relative;
+  width: min(92%, 600px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* ============================= */
+/* CONTENT */
+/* ============================= */
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ============================= */
+/* BADGE */
+/* ============================= */
+
+.badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 11px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: default;
+  overflow: hidden;
+}
+.badgeSweep {
+  position: absolute;
+
+  top: -100%;
+  left: -25%;
+
+  width: 100%;
+  height: 300%;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  filter: blur(8px);
+
+  transform: rotate(15deg);
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+.badgeIconWrapper {
+  position: relative;
+  z-index: 2;
+
+  width: 16px;
+  height: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.badgeIcon {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--orange-yellow-crayola);
+
+  font-size: 0.6rem;
+  line-height: 1;
+}
+
+.badgeText {
+  position: relative;
+  z-index: 2;
+}
+
+/* ============================= */
+/* TITLE */
+/* ============================= */
+
+.title {
+  max-width: 90%;
+
+  margin: 0;
+
+  font-size: 2.7rem;
+
+  line-height: 1;
+
+  letter-spacing: -0.055em;
+
+  font-weight: 700;
+}
+
+.highlight {
+  background: var(--text-gradient-yellow);
+
+  background-clip: text;
+
+  -webkit-background-clip: text;
+
+  color: transparent;
+  height: 48px;
+}
+
+/* ============================= */
+/* DESCRIPTION */
+/* ============================= */
+
+.description {
+  max-width: 600px;
+
+  margin: 24px 0 0;
+
+  font-size: 1rem;
+
+  line-height: 1.6;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+.actions {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  gap: 12px;
+
+  margin-top: 32px;
+}
+
+.primaryButton,
+.secondaryButton {
+  width: 100%;
+
+  min-height: 52px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 0 20px;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.primaryButton {
+  background: #ffffff;
+
+  color: #09090b;
+
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}
+
+.primaryButton:hover {
+  background: #e4e4e7;
+}
+
+.secondaryButton {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  background: rgba(255, 255, 255, 0.03);
+
+  color: #ffffff;
+}
+
+.secondaryButton:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+
+  background: rgba(255, 255, 255, 0.07);
+}
+
+/* ============================= */
+/* FEATURES */
+/* ============================= */
+
+.features {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+
+  margin-top: 36px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 0.9rem;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  cursor: default;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: rgba(167, 139, 250, 0.15);
+
+  color: var(--orange-yellow-crayola);
+
+  font-size: 0.75rem;
+}
+
+/* ============================= */
+/* VISUAL */
+/* ============================= */
+
+.visual {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 620px;
+
+  perspective: 2000px;
+
+  transform-style: preserve-3d;
+
+  align-self: center;
+}
+
+/* ============================= */
+/* BROWSER */
+/* ============================= */
+
+.browser {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 16px;
+
+  background: rgba(20, 20, 24, 0.9);
+
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+
+  backdrop-filter: blur(20px);
+}
+
+/* ============================= */
+/* BROWSER HEADER */
+/* ============================= */
+
+.browserHeader {
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 0 10px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.dots {
+  display: flex;
+
+  gap: 5px;
+}
+
+.dots span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* .addressBar {
+  flex: 1;
+  padding: 6px 8px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 0.55rem;
+  color: rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 4s steps(15, end) infinite;
+} */
+
+.addressBar {
+  flex: 1;
+  padding: 6px 8px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 0.55rem;
+  color: rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.addressBar::before {
+  content: "yourbusiness.com";
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 5s steps(15, end) infinite;
+}
+
+@keyframes typing {
+  0%,
+  10% {
+    width: 0;
+  }
+
+  45%,
+  70% {
+    width: 15ch;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+/* ============================= */
+/* BROWSER CONTENT */
+/* ============================= */
+
+.browserContent {
+  padding: 14px;
+}
+
+/* ============================= */
+/* MOCK NAV */
+/* ============================= */
+
+.mockNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mockLogo {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.mockLinks {
+  display: none;
+}
+.mockLink {
+  color: rgba(255, 255, 255, 0.45);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.mockLink:hover {
+  color: rgba(255, 255, 255, 1);
+  transition: all 0.3s ease;
+}
+
+/* ============================= */
+/* MOCK HERO */
+/* ============================= */
+
+.mockHero {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 30px 0;
+}
+
+.mockText {
+  width: 60%;
+}
+
+.mockLabel {
+  font-size: 0.5rem;
+  letter-spacing: 0.12em;
+  color: var(--orange-yellow-crayola);
+}
+
+.mockText h2 {
+  margin: 14px 0;
+
+  font-size: 2rem;
+
+  line-height: 0.9;
+
+  letter-spacing: -0.05em;
+}
+
+.mockText h2 span {
+  color: var(--orange-yellow-crayola);
+}
+
+.mockText p {
+  max-width: 180px;
+
+  margin: 0;
+
+  font-size: 0.65rem;
+
+  line-height: 1.6;
+
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.mockButton {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 9px 12px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #09090b;
+  font-size: 0.6rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.mockButton:hover,
+.mockButton:focus {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* ============================= */
+/* SHAPES */
+/* ============================= */
+
+.mockShape {
+  position: relative;
+
+  width: 95px;
+  height: 95px;
+
+  flex-shrink: 0;
+}
+
+.shapeCircle {
+  position: absolute;
+
+  width: 85px;
+  height: 85px;
+
+  top: 0;
+  right: 0;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    hsla(45, 100%, 72%, 0.772),
+    hsl(29, 97%, 61%)
+  );
+  filter: drop-shadow(0 15px 30px hsla(24, 100%, 67%, 0.772));
+  /* filter: drop-shadow(0 15px 30px rgba(124, 58, 237, 0.35)); */
+}
+
+.shapeSquare {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  bottom: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+/* ============================= */
+/* MOCK STATS */
+/* ============================= */
+
+.mockStats {
+  display: flex;
+
+  gap: 8px;
+}
+
+.mockStat {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+
+  padding: 10px;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  font-size: 0.55rem;
+
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.mockStat span {
+  font-size: 0.75rem;
+
+  color: var(--orange-yellow-crayola);
+
+  font-weight: 600;
+}
+
+/* ============================= */
+/* FLOATING CARDS */
+/* ============================= */
+
+.floatingCard {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(20, 20, 24, 0.75);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  cursor: default;
+}
+
+.cardIcon,
+.growthIcon,
+.deviceIcon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: rgba(167, 139, 250, 0.15);
+  font-size: 0.9rem;
+  color: var(--orange-yellow-crayola);
+}
+
+.cardLabel {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.floatingCard strong {
+  display: block;
+  font-size: 0.85rem;
+}
+
+/* Hidden on small screens */
+
+.performanceCard {
+  display: none;
+  animation: performanceFloat 5.5s ease-in-out infinite;
+}
+
+@keyframes performanceFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -12px, 0);
+  }
+}
+.growthCard {
+  display: none;
+  animation: growthFloat 6.8s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+/* .growthCard:hover {
+  transform: scale(1.4);
+  border: 1px solid white;
+  transition: all 0.3s ease; 
+} */
+
+@keyframes growthFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 10px, 0);
+  }
+}
+.responsiveCard {
+  display: none;
+  animation: responsiveFloat 7.2s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+@keyframes responsiveFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 8px, 0);
+  }
+}
+
+/* ============================= */
+/* REDUCED MOTION */
+/* ============================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero *,
+  .hero *::before,
+  .hero *::after {
+    animation-duration: 0.01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ========================================== */
+/* TABLET */
+/* 640px+ */
+/* ========================================== */
+
+@media (min-width: 640px) {
+  .hero {
+    padding: 130px 0 100px;
+  }
+
+  .container {
+    width: min(90%, 800px);
+    gap: 70px;
+  }
+
+  .title {
+    font-size: clamp(3rem, 8vw, 4.5rem);
+  }
+  .highlight {
+    height: 65px;
+  }
+
+  .description {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .actions {
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: auto;
+    min-height: 54px;
+    padding: 0 22px;
+  }
+
+  .features {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px 24px;
+    margin-top: 42px;
+  }
+
+  .browser {
+    border-radius: 20px;
+  }
+
+  .browserHeader {
+    height: 48px;
+    gap: 20px;
+    padding: 0 16px;
+  }
+
+  .dots {
+    gap: 6px;
+  }
+
+  .dots span {
+    width: 8px;
+    height: 8px;
+  }
+
+  .addressBar {
+    max-width: 250px;
+    padding: 7px 12px;
+    font-size: 0.65rem;
+  }
+
+  .browserContent {
+    padding: 24px;
+  }
+
+  .mockLogo {
+    font-size: 0.7rem;
+  }
+
+  .mockLinks {
+    display: flex;
+    gap: 16px;
+    font-size: 0.65rem;
+  }
+
+  .mockHero {
+    min-height: 310px;
+    gap: 30px;
+    padding: 40px 0;
+  }
+
+  .mockText {
+    width: 55%;
+  }
+
+  .mockLabel {
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+  }
+
+  .mockText h2 {
+    margin: 16px 0;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+  }
+
+  .mockText p {
+    max-width: 220px;
+    font-size: 0.75rem;
+  }
+
+  .mockButton {
+    margin-top: 22px;
+    padding: 10px 14px;
+    font-size: 0.7rem;
+  }
+
+  .mockShape {
+    width: 150px;
+    height: 150px;
+  }
+
+  .shapeCircle {
+    width: 125px;
+    height: 125px;
+  }
+
+  .shapeSquare {
+    width: 65px;
+    height: 65px;
+    border-radius: 14px;
+  }
+
+  .mockStats {
+    gap: 12px;
+  }
+
+  .mockStat {
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 0.65rem;
+  }
+
+  .mockStat span {
+    font-size: 0.9rem;
+  }
+
+  /* Floating cards return */
+
+  .performanceCard,
+  .growthCard,
+  .responsiveCard {
+    display: flex;
+  }
+
+  .performanceCard {
+    top: -10px;
+    left: 445px;
+  }
+
+  .growthCard {
+    left: 240px;
+    bottom: 260px;
+  }
+  .responsiveCard {
+    left: 340px;
+    bottom: -40px;
+  }
+}
+
+/* ========================================== */
+/* DESKTOP */
+/* 1024px+ */
+/* ========================================== */
+
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 100vh;
+
+    padding: 120px 0 80px;
+  }
+
+  .grid {
+    background-size: 60px 60px;
+  }
+
+  .glow {
+    width: 500px;
+    height: 500px;
+
+    filter: blur(120px);
+  }
+
+  .glowOne {
+    top: -200px;
+    right: -100px;
+  }
+
+  .glowTwo {
+    bottom: -250px;
+    left: -150px;
+  }
+
+  .container {
+    width: min(1200px, 90%);
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 80px;
+  }
+
+  .content {
+    width: 50%;
+  }
+
+  .visual {
+    width: 50%;
+
+    max-width: 620px;
+  }
+
+  .title {
+    font-size: clamp(3.5rem, 5vw, 5.5rem);
+  }
+  .highlight {
+    height: 70px;
+  }
+
+  .performanceCard {
+    top: -18%;
+    left: 250px;
+  }
+
+  .growthCard {
+    left: -150px;
+    bottom: 60%;
+  }
+
+  .responsiveCard {
+    left: 19%;
+    bottom: -40px;
+  }
+}
+
+/* ========================================== */
+/* LARGE DESKTOP */
+/* 1280px+ */
+/* ========================================== */
+
+@media (min-width: 1280px) {
+  .hero {
+    padding-top: 10rem;
+  }
+  .container {
+    gap: 100px;
+  }
+
+  .title {
+    font-size: 5.5rem;
+  }
+  .highlight {
+    height: 94px;
+  }
+
+  .mockText h2 {
+    font-size: 3.6rem;
+  }
+
+  .mockShape {
+    width: 180px;
+    height: 180px;
+  }
+
+  .shapeCircle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .shapeSquare {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 18px;
+  }
+}

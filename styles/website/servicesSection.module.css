@@ -1,0 +1,1047 @@
+/* =========================================
+   SERVICES SECTION
+   Mobile-first / Dark premium
+========================================= */
+
+.servicesSection {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 4rem 0;
+  color: var(--white1);
+}
+
+.servicesSection *,
+.servicesSection *::before,
+.servicesSection *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.sectionHeader {
+  max-width: 760px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 20px;
+  color: #d9c58e;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  line-height: 1.7;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 22px;
+  color: #d8b36a;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.19em;
+}
+
+.statusDot {
+  position: relative;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e7c15f;
+  box-shadow: 0 0 13px rgba(231, 193, 95, 0.65);
+}
+
+.statusDot::after {
+  position: absolute;
+  inset: -4px;
+  border: 1px solid rgba(231, 193, 95, 0.4);
+  border-radius: 50%;
+  content: "";
+  animation: dotPulse 2.5s ease-out infinite;
+}
+
+@keyframes dotPulse {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.8);
+  }
+
+  80%,
+  100% {
+    opacity: 0;
+    transform: scale(1.9);
+  }
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: clamp(2rem, 7vw, 3.8rem);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.055em;
+}
+
+.sectionTitle span {
+  background: var(--text-gradient-yellow);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sectionDescription {
+  max-width: 530px;
+  margin: 1.25rem auto 0;
+  color: var(--white1);
+  font-size: 0.9rem;
+  line-height: 1.85;
+  opacity: 0.62;
+}
+
+.servicesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.serviceCard {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 1.15rem;
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: 22px;
+  background:
+    radial-gradient(ellipse at 85% 18%, rgb(226 194 106 / 6%), transparent 38%),
+    rgb(255 255 255 / 2%);
+  transition:
+    border-color 300ms ease,
+    background-color 300ms ease,
+    transform 300ms ease;
+}
+
+.serviceCard::before {
+  position: absolute;
+  top: 0;
+  left: 12%;
+  width: 76%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(234 205 120 / 45%),
+    transparent
+  );
+  content: "";
+  opacity: 0.65;
+}
+
+.serviceCard:hover {
+  border-color: rgb(234 205 120 / 28%);
+  background-color: rgb(255 255 255 / 3%);
+}
+
+.cardTop {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.serviceNumber {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--white1);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  opacity: 0.65;
+}
+
+.numberLine {
+  width: 20px;
+  height: 1px;
+  background: var(--text-gradient-yellow);
+}
+
+.cardArrow {
+  display: flex;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 50%;
+  color: var(--white1);
+  font-size: 1rem;
+  transition:
+    color 250ms ease,
+    background-color 250ms ease,
+    transform 250ms ease,
+    border-color 250ms ease;
+}
+
+.serviceCard:hover .cardArrow {
+  transform: translate(2px, -2px);
+  border-color: rgb(234 205 120 / 40%);
+  background: rgb(234 205 120 / 8%);
+  color: #ebcb78;
+}
+
+.visual {
+  position: relative;
+  display: flex;
+  height: 205px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 1.25rem 0 1.6rem;
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 7%);
+  border-radius: 15px;
+  background: rgb(0 0 0 / 13%);
+}
+
+.webVisual {
+  background:
+    radial-gradient(circle at 75% 35%, rgb(231 199 111 / 10%), transparent 40%),
+    rgb(255 255 255 / 2%);
+}
+
+.browser {
+  position: relative;
+  width: 83%;
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 15%);
+  border-radius: 9px;
+  background: #171717;
+  box-shadow: 0 18px 50px rgb(0 0 0 / 28%);
+  transform: perspective(900px) rotateX(2deg);
+  transition: transform 450ms ease;
+}
+
+.serviceCard:hover .browser {
+  transform: perspective(900px) rotateX(0deg) translateY(-3px);
+}
+
+.browserTop {
+  display: flex;
+  height: 22px;
+  align-items: center;
+  gap: 4px;
+  padding-inline: 8px;
+  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  background: rgb(255 255 255 / 3%);
+}
+
+.browserTop > span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 25%);
+}
+
+.browserAddress {
+  width: 38%;
+  height: 7px;
+  margin-left: 9px;
+  border-radius: 3px;
+  background: rgb(255 255 255 / 7%);
+}
+
+.browserBody {
+  padding: 10px;
+}
+
+.mockNav {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 17px;
+}
+
+.mockNav > span:not(.mockLogo) {
+  width: 15px;
+  height: 3px;
+  margin-left: auto;
+  border-radius: 4px;
+  background: rgb(255 255 255 / 19%);
+}
+
+.mockNav > span + span:not(.mockLogo) {
+  margin-left: 0;
+}
+
+.mockLogo {
+  width: 25px;
+  height: 7px;
+  margin-right: auto;
+  border-radius: 2px;
+  background: var(--text-gradient-yellow);
+}
+
+.mockHero {
+  display: flex;
+  min-height: 75px;
+  align-items: center;
+  gap: 8px;
+}
+
+.mockCopy {
+  display: flex;
+  width: 55%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.mockEyebrow {
+  width: 30%;
+  height: 3px;
+  border-radius: 3px;
+  background: #e6c66e;
+}
+
+.mockHeading,
+.mockHeadingShort {
+  width: 100%;
+  height: 7px;
+  border-radius: 2px;
+  background: rgb(255 255 255 / 85%);
+}
+
+.mockHeadingShort {
+  width: 68%;
+}
+
+.mockDescription {
+  width: 83%;
+  height: 3px;
+  margin-top: 2px;
+  border-radius: 2px;
+  background: rgb(255 255 255 / 22%);
+}
+
+.mockButton {
+  width: 42px;
+  height: 12px;
+  margin-top: 3px;
+  border-radius: 3px;
+  background: linear-gradient(100deg, #d9b95b, #f5df9c);
+}
+
+.mockArtwork {
+  position: relative;
+  display: flex;
+  width: 45%;
+  height: 78px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 8%);
+  border-radius: 5px;
+  background: linear-gradient(
+    140deg,
+    rgb(228 194 102 / 13%),
+    rgb(255 255 255 / 2%)
+  );
+}
+
+.artCircle {
+  position: absolute;
+  top: 8px;
+  right: 9px;
+  width: 43px;
+  height: 43px;
+  border: 1px solid rgb(239 210 133 / 40%);
+  border-radius: 50%;
+  background: rgb(229 193 96 / 12%);
+}
+
+.artShape {
+  position: absolute;
+  bottom: -11px;
+  left: 7px;
+  width: 65px;
+  height: 48px;
+  border: 1px solid rgb(255 255 255 / 15%);
+  border-radius: 50% 50% 0 0;
+  background: linear-gradient(
+    135deg,
+    rgb(234 205 120 / 25%),
+    rgb(234 205 120 / 2%)
+  );
+  transform: rotate(-15deg);
+}
+
+.artDot {
+  position: absolute;
+  top: 22px;
+  left: 18px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #e9cb7b;
+  box-shadow: 0 0 12px rgb(234 205 120 / 70%);
+}
+
+.mockBottom {
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.mockBottom span {
+  height: 15px;
+  flex: 1;
+  border: 1px solid rgb(255 255 255 / 7%);
+  border-radius: 3px;
+  background: rgb(255 255 255 / 3%);
+}
+
+.floatingBadge {
+  position: absolute;
+  right: 4%;
+  bottom: 12%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 8px;
+  background: rgb(23 23 23 / 95%);
+  color: var(--white1);
+  font-size: 0.58rem;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+  animation: badgeFloat 4s ease-in-out infinite;
+}
+
+.automationVisual {
+  background:
+    radial-gradient(circle at 50% 50%, rgb(232 200 111 / 8%), transparent 58%),
+    rgb(255 255 255 / 2%);
+}
+
+.flowGrid {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgb(255 255 255 / 13%) 0.7px,
+    transparent 0.7px
+  );
+  background-size: 16px 16px;
+  opacity: 0.35;
+}
+
+.flowNode {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  width: 76%;
+  min-height: 42px;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 9px;
+  border: 1px solid rgb(255 255 255 / 13%);
+  border-radius: 8px;
+  background: rgb(26 26 26 / 94%);
+  box-shadow: 0 7px 22px rgb(0 0 0 / 18%);
+}
+
+.nodeStart {
+  top: 12%;
+  left: 7%;
+}
+
+.nodeMiddle {
+  top: 39%;
+  right: 7%;
+}
+
+.nodeEnd {
+  bottom: 12%;
+  left: 7%;
+}
+
+.nodeIcon {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(234 205 120 / 25%);
+  border-radius: 6px;
+  background: rgb(234 205 120 / 8%);
+  color: #e9cb7b;
+  font-size: 0.55rem;
+  font-weight: 600;
+}
+
+.nodeText {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  align-items: center;
+  gap: 5px;
+  color: var(--white1);
+  font-size: 0.63rem;
+  white-space: nowrap;
+}
+
+.nodeText i {
+  width: 4px;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #e9cb7b;
+}
+
+.nodeStatus {
+  color: var(--white1);
+  font-size: 0.5rem;
+  opacity: 0.45;
+}
+
+.flowLine {
+  position: absolute;
+  z-index: 0;
+  width: 1px;
+  height: 26px;
+  background: linear-gradient(
+    180deg,
+    rgb(234 205 120 / 65%),
+    rgb(234 205 120 / 10%)
+  );
+}
+
+.flowLine span {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #e9cb7b;
+  box-shadow: 0 0 10px rgb(234 205 120 / 70%);
+  animation: flowPulse 2.5s ease-in-out infinite;
+}
+
+.lineOne {
+  top: 27%;
+  left: 30%;
+  transform: rotate(-12deg);
+}
+
+.lineTwo {
+  top: 55%;
+  right: 30%;
+  transform: rotate(-12deg);
+}
+
+.lineTwo span {
+  animation-delay: 1.2s;
+}
+
+.automationOrb {
+  position: absolute;
+  top: 42%;
+  left: 17%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #e9cb7b;
+  box-shadow: 0 0 15px rgb(234 205 120 / 55%);
+  animation: orbPulse 3s ease-in-out infinite;
+}
+
+.cardContent {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.serviceTitle {
+  margin: 0;
+  font-size: clamp(1.45rem, 5vw, 1.9rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.25;
+}
+
+.serviceDescription {
+  margin: 0.85rem 0 1.25rem;
+  color: var(--white1);
+  font-size: 0.85rem;
+  line-height: 1.85;
+  opacity: 0.65;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0 0 1.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.featureList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  color: var(--white1);
+  font-size: 0.79rem;
+  line-height: 1.55;
+  opacity: 0.82;
+}
+
+.check {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+  border: 1px solid rgb(234 205 120 / 25%);
+  border-radius: 50%;
+  color: #e9cb7b;
+  font-size: 0.65rem;
+}
+
+/* =========================================
+   PRICE + CTA
+========================================= */
+
+.cardBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.1rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgb(255 255 255 / 10%);
+}
+
+.priceBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.priceLabel {
+  color: var(--white1);
+  font-size: 0.7rem;
+  opacity: 0.5;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  gap: 0.3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 1.2;
+}
+
+.price span {
+  color: #e9cb7b;
+}
+
+.serviceCta {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgb(234 205 120 / 28%);
+  border-radius: 9px;
+  background: linear-gradient(
+    110deg,
+    rgb(234 205 120 / 10%),
+    rgb(234 205 120 / 3%)
+  );
+  color: var(--white1);
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    background-color 250ms ease,
+    border-color 250ms ease,
+    transform 250ms ease;
+}
+
+.serviceCta:hover {
+  transform: translateY(-2px);
+  border-color: rgb(234 205 120 / 60%);
+  background: rgb(234 205 120 / 12%);
+}
+
+.ctaArrow {
+  display: flex;
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgb(234 205 120 / 12%);
+  color: #e9cb7b;
+  transition: transform 250ms ease;
+}
+
+.serviceCta:hover .ctaArrow {
+  transform: translateX(3px);
+}
+
+/* =========================================
+   BOTTOM NOTE
+========================================= */
+
+.bottomNote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  margin: 1.5rem 0 0;
+  color: var(--white1);
+  font-size: 0.7rem;
+  line-height: 1.7;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #e9cb7b;
+  box-shadow: 0 0 9px rgb(234 205 120 / 35%);
+}
+
+/* =========================================
+   MICRO-ANIMATIONS
+========================================= */
+
+@keyframes badgeFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes flowPulse {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 22px;
+    opacity: 0;
+  }
+}
+
+@keyframes orbPulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (min-width: 600px) {
+  .servicesSection {
+    padding: 5rem 0;
+  }
+
+  .container {
+    padding-inline: 2rem;
+  }
+
+  .sectionHeader {
+    margin-bottom: 3rem;
+  }
+
+  .sectionDescription {
+    font-size: 0.95rem;
+  }
+
+  .servicesGrid {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 1.15rem;
+  }
+
+  .serviceCard {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 1.25rem;
+    border-radius: 20px;
+  }
+
+  .visual {
+    height: 185px;
+  }
+
+  .flowNode {
+    width: 86%;
+  }
+
+  .nodeStart,
+  .nodeEnd {
+    left: 4%;
+  }
+
+  .nodeMiddle {
+    right: 4%;
+  }
+
+  .nodeText {
+    font-size: 0.58rem;
+  }
+
+  .nodeStatus {
+    display: none;
+  }
+
+  .serviceTitle {
+    font-size: 1.45rem;
+  }
+
+  .serviceDescription {
+    font-size: 0.8rem;
+  }
+
+  .featureList li {
+    font-size: 0.74rem;
+  }
+
+  .cardBottom {
+    gap: 1rem;
+  }
+}
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 900px) {
+  .servicesSection {
+    padding: 6rem 0;
+  }
+
+  .container {
+    padding-inline: 2.5rem;
+  }
+
+  .sectionHeader {
+    margin-bottom: 3.5rem;
+  }
+
+  .sectionDescription {
+    margin-top: 1.5rem;
+  }
+
+  .servicesGrid {
+    gap: 1.5rem;
+  }
+
+  .serviceCard {
+    padding: 1.75rem;
+    border-radius: 24px;
+  }
+
+  .visual {
+    height: 235px;
+    margin: 1.5rem 0 1.75rem;
+    border-radius: 17px;
+  }
+
+  .browser {
+    width: 76%;
+  }
+
+  .browserBody {
+    padding: 14px;
+  }
+
+  .mockHero {
+    min-height: 95px;
+  }
+
+  .mockArtwork {
+    height: 95px;
+  }
+
+  .flowNode {
+    width: 76%;
+    min-height: 46px;
+    padding: 8px 11px;
+  }
+
+  .nodeStart,
+  .nodeEnd {
+    left: 7%;
+  }
+
+  .nodeMiddle {
+    right: 7%;
+  }
+
+  .nodeText {
+    font-size: 0.65rem;
+  }
+
+  .nodeStatus {
+    display: inline;
+  }
+
+  .serviceTitle {
+    font-size: 1.8rem;
+  }
+
+  .serviceDescription {
+    max-width: 480px;
+    font-size: 0.88rem;
+  }
+
+  .featureList {
+    gap: 0.85rem;
+    margin-bottom: 2rem;
+  }
+
+  .featureList li {
+    font-size: 0.8rem;
+  }
+
+  .cardBottom {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .price {
+    font-size: 2.2rem;
+  }
+
+  .serviceCta {
+    flex: 0 1 auto;
+    max-width: 65%;
+    font-size: 0.75rem;
+  }
+
+  .bottomNote {
+    margin-top: 2rem;
+  }
+}
+
+/* =========================================
+   LARGE SCREENS
+========================================= */
+
+@media (min-width: 1200px) {
+  .servicesGrid {
+    gap: 1.75rem;
+  }
+
+  .serviceCard {
+    padding: 2rem;
+  }
+
+  .visual {
+    height: 255px;
+  }
+
+  .serviceTitle {
+    font-size: 2rem;
+  }
+
+  .serviceDescription {
+    font-size: 0.9rem;
+  }
+
+  .featureList li {
+    font-size: 0.82rem;
+  }
+
+  .serviceCta {
+    padding-inline: 1.1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .serviceCard,
+  .cardArrow,
+  .browser,
+  .serviceCta,
+  .ctaArrow,
+  .floatingBadge,
+  .flowLine span,
+  .automationOrb {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .serviceCard:hover .browser,
+  .serviceCard:hover .cardArrow,
+  .serviceCta:hover,
+  .serviceCta:hover .ctaArrow {
+    transform: none;
+  }
+}

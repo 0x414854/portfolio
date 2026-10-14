@@ -1,4 +1,4 @@
-import ServicePage from "@/app/components/servicePage";
+import ServicePage from "@/app/[locale]/components/servicePage";
 import ImageT from "@/public/projects/bitcoinPrice.png";
 
 export default function ConceptionWeb() {

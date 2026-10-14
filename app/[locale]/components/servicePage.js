@@ -2,7 +2,7 @@
 
 import styles from "@/styles/page/servicePage.module.css";
 import Image from "next/image";
-import FAQ from "@/app/components/faq";
+import FAQ from "@/app/[locale]/components/website/faq";
 import { motion } from "framer-motion";
 
 export default function ServicePage({

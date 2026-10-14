@@ -1,0 +1,255 @@
+.page {
+  --accent: var(--orange-yellow-crayola, #ffad4d);
+
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  min-height: 100svh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 32px 22px;
+  background: #0b0b0b;
+  color: #f5f5f5;
+}
+
+.page::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.035) 0.7px,
+    transparent 0.7px
+  );
+  background-size: 5px 5px;
+  content: "";
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.glow {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: min(100vw, 650px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 138, 0, 0.09) 0%,
+    rgba(255, 138, 0, 0.035) 35%,
+    transparent 70%
+  );
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: breathe 6s ease-in-out infinite;
+}
+
+.content {
+  width: 100%;
+  max-width: 760px;
+  text-align: center;
+  animation: appear 0.8s ease-out both;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 28px;
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+}
+
+.eyebrowLine {
+  width: 22px;
+  height: 1px;
+  background: var(--accent);
+  opacity: 0.8;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2.65rem, 10vw, 5.6rem);
+  font-weight: 600;
+  letter-spacing: -0.075em;
+  line-height: 1.04;
+}
+
+.highlight {
+  background: linear-gradient(100deg, #ff8a00 0%, #ffad4d 45%, #ffd166 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.description {
+  max-width: 440px;
+  margin: 24px auto 0;
+  color: #929292;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 38px;
+  padding: 11px 15px;
+  border: 1px solid rgba(255, 173, 77, 0.17);
+  border-radius: 4px;
+  background: rgba(255, 138, 0, 0.045);
+  color: #d7d0c8;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #ff9b32;
+  box-shadow: 0 0 12px rgba(255, 138, 0, 0.7);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.progress {
+  width: min(100%, 170px);
+  height: 2px;
+  margin: 26px auto 0;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #242424;
+}
+
+.progressBar {
+  display: block;
+  width: 38%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #ff8a00, #ffd166);
+  animation: loading 3s ease-in-out infinite alternate;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 42px;
+  color: #555;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+}
+
+.footerSeparator {
+  color: #a56a2a;
+}
+
+.cornerLabel {
+  position: absolute;
+  right: 22px;
+  bottom: 20px;
+  color: #414141;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 0.65;
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 12px rgba(255, 138, 0, 0.7);
+  }
+
+  50% {
+    opacity: 0.45;
+    box-shadow: 0 0 4px rgba(255, 138, 0, 0.3);
+  }
+}
+
+@keyframes loading {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(165%);
+  }
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding: 48px;
+  }
+
+  .eyebrow {
+    margin-bottom: 34px;
+    font-size: 11px;
+  }
+
+  .description {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+
+  .status {
+    margin-top: 44px;
+    font-size: 10px;
+  }
+
+  .footer {
+    margin-top: 50px;
+    font-size: 9px;
+  }
+
+  .cornerLabel {
+    right: 32px;
+    bottom: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content,
+  .glow,
+  .statusDot,
+  .progressBar {
+    animation: none;
+  }
+}
