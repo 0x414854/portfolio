@@ -29,7 +29,8 @@ const nextConfig = {
         source: "/:path*",
         headers: [
           {
-            key: "Content-Security-Policy-Report-Only", //SEULEMENT EN TEST POUR VERIFIER LES DOMAINES NECESSAIRE
+            key: "Content-Security-Policy",
+            //key: "Content-Security-Policy-Report-Only", //SEULEMENT EN TEST POUR VERIFIER LES DOMAINES NECESSAIRE
             value: csp,
           },
           {
