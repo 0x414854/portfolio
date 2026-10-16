@@ -1,5 +1,5 @@
 import "./globals.css";
-import IonIconsLoader from "@/app/lib/ionIconLoader";
+// import IonIconsLoader from "@/app/lib/ionIconLoader";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -74,7 +74,7 @@ export default async function RootLayout({ children, params }) {
   setRequestLocale(locale);
   return (
     <html lang={locale}>
-      <IonIconsLoader />
+      {/* <IonIconsLoader /> */}
       <body>
         {/* Google Analytics */}
         <Script
