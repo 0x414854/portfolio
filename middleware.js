@@ -12,7 +12,7 @@ export function middleware(req) {
     pathname.startsWith(`/${locale}`),
   );
 
-  // 2. Si PAS de locale → détection automatique
+  // 2. Si aucune locale n'est présente, détecter la langue
   if (!hasLocale) {
     const acceptLanguage = req.headers.get("accept-language");
 
@@ -27,13 +27,39 @@ export function middleware(req) {
     const url = req.nextUrl.clone();
     url.pathname = `/${locale}${pathname}`;
 
-    return NextResponse.redirect(url);
+    const response = NextResponse.redirect(url);
+
+    // Configurer le cookie de locale si nécessaire
+    const existingLocaleCookie = req.cookies.get("NEXT_LOCALE");
+
+    if (existingLocaleCookie) {
+      response.cookies.set("NEXT_LOCALE", existingLocaleCookie.value, {
+        secure: true,
+        httpOnly: true,
+        sameSite: "lax",
+        path: "/",
+      });
+    }
+
+    return response;
   }
 
-  // 3. Appliquer next-intl (UNE FOIS que la locale est bonne)
+  // 3. Appliquer next-intl
   const response = intlMiddleware(req);
 
-  // 4. Protection admin (compatible avec /fr/admin, /en/admin, etc.)
+  // Ajouter les attributs de sécurité au cookie NEXT_LOCALE
+  const localeCookie = response.cookies.get("NEXT_LOCALE");
+
+  if (localeCookie) {
+    response.cookies.set("NEXT_LOCALE", localeCookie.value, {
+      secure: true,
+      httpOnly: true,
+      sameSite: "lax",
+      path: "/",
+    });
+  }
+
+  // 4. Protection admin
   const segments = pathname.split("/");
   const isAdminRoute = segments.includes("admin");
 
@@ -42,10 +68,8 @@ export function middleware(req) {
 
     if (!session) {
       const url = req.nextUrl.clone();
-
-      // 👉 redirection propre avec locale conservée
       const currentLocale = segments[1];
-      url.pathname = `/${currentLocale}/admin`; // ou /login
+      url.pathname = `/${currentLocale}/admin`;
 
       return NextResponse.redirect(url);
     }
