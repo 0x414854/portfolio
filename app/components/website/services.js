@@ -147,7 +147,7 @@ export default function ServicesSection() {
         t("services.service_2.features.feature_3"),
         t("services.service_2.features.feature_4"),
       ],
-      href: "/services",
+      href: "/services/automatisations",
       cta: t("services.service_2.cta"),
     },
   ];

@@ -111,7 +111,11 @@ export default function ModalEssentiel({ onClose }) {
             <span>Parlons de votre projet.</span>
           </div>
 
-          <a className={styles.ctaButton} href="/contact" onClick={onClose}>
+          <a
+            className={styles.ctaButton}
+            href="/horaire-et-contact"
+            onClick={onClose}
+          >
             Demander un devis <span aria-hidden="true">↗</span>
           </a>
         </footer>

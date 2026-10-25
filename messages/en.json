@@ -1336,5 +1336,253 @@
       "resend": "Resend",
       "vercel": "Vercel — Deployment"
     }
+  },
+  "LegalNotices": {
+    "metadata": {
+      "title": "Legal Notice | Simplitech",
+      "description": "Read Simplitech’s legal notice, including information about the website publisher, hosting provider, intellectual property and regulatory disclosures."
+    },
+    "hero": {
+      "eyebrow": "LEGAL INFORMATION",
+      "title": "Legal",
+      "titleAccent": "notice.",
+      "intro": "Find information here about the publisher of the {company} website, its hosting provider and the terms governing the use of its content.",
+      "updated": "Last updated: {date}"
+    },
+    "navigation": {
+      "tocAriaLabel": "Legal notice table of contents",
+      "tocTitle": "On this page"
+    },
+    "fields": {
+      "fullName": "Full name",
+      "tradeName": "Trading name",
+      "legalStatus": "Legal structure",
+      "businessAddress": "Business address",
+      "siren": "SIREN number",
+      "siret": "SIRET number",
+      "vatNumber": "Intra-community VAT number",
+      "email": "Email",
+      "phone": "Phone",
+      "publicationDirector": "Publication director",
+      "host": "Hosting provider",
+      "address": "Address",
+      "website": "Website",
+      "contact": "Contact"
+    },
+    "sections": {
+      "publisher": {
+        "title": "Website publisher",
+        "intro": "This website is published by the sole proprietorship operating under the trading name {company}."
+      },
+      "hosting": {
+        "title": "Hosting",
+        "intro": "The website is hosted by the following company:"
+      },
+      "purpose": {
+        "title": "Purpose of the website",
+        "content": "The Simplitech website presents the business activities, services and solutions offered by the business. It also enables visitors to contact the business and submit quotation requests."
+      },
+      "intellectualProperty": {
+        "title": "Intellectual property",
+        "paragraph1": "The website’s content, including text, graphic elements, logos, images and layout elements, is protected by applicable intellectual property laws, subject to any rights held by third parties.",
+        "paragraph2": "Any reproduction, representation or use of this content without the prior authorisation of the relevant rights holder is prohibited, except where permitted by law."
+      },
+      "liability": {
+        "title": "Liability",
+        "content": "Simplitech endeavours to publish accurate and up-to-date information. However, the business does not guarantee that all information is free from errors or always up to date. Users are encouraged to verify any relevant information before making decisions based on it."
+      },
+      "externalLinks": {
+        "title": "External links",
+        "content": "The website may contain links to third-party websites. Simplitech has no control over these websites and cannot be held responsible for their content, availability or practices."
+      },
+      "personalData": {
+        "title": "Personal data",
+        "paragraph1": "Information submitted through contact forms or quotation request forms may be used to respond to enquiries and manage ongoing business communications.",
+        "paragraph2": "Detailed information about the data collected, the purposes and legal bases of processing, retention periods, recipients and individuals’ rights is provided in our privacy policy.",
+        "privacyLink": "Read the privacy policy",
+        "contactIntro": "For any questions concerning personal data:"
+      },
+      "cookies": {
+        "title": "Cookies and tracking technologies",
+        "content": "The website may use cookies or other tracking technologies that are necessary for its operation or serve other purposes, depending on the tools actually installed. Where required by law, visitors’ consent is obtained before the relevant tracking technologies are placed. Information about the tools actually used and how to manage preferences must be accessible through the website."
+      },
+      "applicableLaw": {
+        "title": "Applicable law",
+        "content": "This legal notice is governed by French law, subject to any mandatory applicable rules. In the event of a dispute, the applicable rules on jurisdiction determine the competent court."
+      }
+    },
+    "footer": {
+      "question": "Have a question about the website?",
+      "contactLink": "Contact us"
+    }
+  },
+  "PrivacyPolicy": {
+    "metadata": {
+      "title": "Privacy Policy | Simplitech",
+      "description": "Learn how Simplitech collects, uses, stores and protects personal data submitted through its website and forms."
+    },
+    "hero": {
+      "eyebrow": "PRIVACY & PERSONAL DATA",
+      "title": "Privacy",
+      "titleAccent": "policy.",
+      "intro": "Transparency is essential. This page explains how {company} processes personal data when you visit the website or submit an enquiry to us.",
+      "updated": "{date}"
+    },
+    "navigation": {
+      "tocAriaLabel": "Privacy policy table of contents",
+      "tocTitle": "On this page"
+    },
+    "fields": {
+      "controller": "Data controller",
+      "address": "Business address",
+      "dataContact": "Data protection contact"
+    },
+    "sections": {
+      "controller": {
+        "title": "Who is responsible for your data?",
+        "intro": "The controller responsible for the personal data processing described in this policy is the sole proprietor operating under the trading name {company}.",
+        "legalIntro": "Legal information about the website publisher is available on the",
+        "legalLink": "Legal Notice"
+      },
+      "data": {
+        "title": "What data do we collect?",
+        "intro": "The data collected depends on the information you voluntarily provide in forms or share during your communications with Simplitech.",
+        "items": {
+          "identity": {
+            "label": "Identification data:",
+            "text": "first and last name."
+          },
+          "contact": {
+            "label": "Contact details:",
+            "text": "email address, telephone number if requested, and any other contact details you choose to provide."
+          },
+          "project": {
+            "label": "Project information:",
+            "text": "purpose of the enquiry, stated requirements, project description, budget or timeframe, where these details are requested."
+          },
+          "exchanges": {
+            "label": "Communications:",
+            "text": "messages sent and replies required to follow up on your enquiry."
+          },
+          "technical": {
+            "label": "Technical data:",
+            "text": "certain technical connection information or security logs may be processed by the hosting provider or technical services used, depending on their configuration."
+          }
+        },
+        "warning": "Do not submit sensitive data or confidential information that is not necessary to handle your enquiry."
+      },
+      "purposes": {
+        "title": "Why do we use your data?",
+        "intro": "Data is processed for the following purposes:",
+        "items": {
+          "contact": "to receive and respond to your contact messages;",
+          "quote": "to understand your requirements and prepare a response or quotation;",
+          "followUp": "to communicate with you and follow up on your enquiry;",
+          "contract": "to take the pre-contractual steps you request and, if you accept a proposal, to prepare for or fulfil a contractual relationship;",
+          "security": "to ensure the security, proper operation and maintenance of the website, where technical data is processed for these purposes;",
+          "legal": "to comply with legal obligations and protect Simplitech's rights in the event of a dispute, where necessary."
+        },
+        "outro": "Data must not be reused for a purpose incompatible with the purpose for which it was collected. Any further use requiring separate information or a distinct legal basis will be subject to the appropriate measures."
+      },
+      "legalBases": {
+        "title": "What are the legal bases for processing?",
+        "intro": "Depending on the processing activity concerned, data is processed on one of the following legal bases:",
+        "items": {
+          "precontractual": {
+            "label": "Pre-contractual measures:",
+            "text": "when you request a quotation or wish to discuss a potential service, the necessary data is processed to respond to your request."
+          },
+          "legitimateInterest": {
+            "label": "Legitimate interests:",
+            "text": "certain data may be processed to respond to a general enquiry, ensure website security, prevent abuse or handle a complaint, after assessing your rights and interests."
+          },
+          "legalObligation": {
+            "label": "Legal obligation:",
+            "text": "where legislation requires certain information to be retained or disclosed."
+          },
+          "consent": {
+            "label": "Consent:",
+            "text": "where required, particularly for certain non-essential cookies or tracking technologies, or for other uses that require your agreement."
+          }
+        },
+        "outro": "You may refuse to provide certain information. However, if that information is necessary to respond to your enquiry or prepare a quotation, your refusal may prevent us from processing your request."
+      },
+      "retention": {
+        "title": "How long do we retain your data?",
+        "intro": "Data is retained only for a period appropriate to its purpose, subject to applicable legal obligations.",
+        "contactTitle": "Contact enquiries and quotation requests",
+        "clientTitle": "Clients and contractual documents",
+        "clientText": "If an enquiry results in a service engagement, certain data may be retained throughout the contractual relationship and then archived for the periods required by legal, accounting or tax obligations and to establish, exercise or defend legal claims. Retention periods vary depending on the document concerned.",
+        "technicalTitle": "Technical data and logs",
+        "technicalText": "Retention periods depend on the hosting provider, security tools and actual configuration. They should be defined according to security requirements and applicable obligations.",
+        "outro": "At the end of the applicable retention period, data is deleted or anonymised unless further retention is necessary or required by law."
+      },
+      "recipients": {
+        "title": "Who can access your data?",
+        "intro": "Data is accessible only to those who need it for the purposes described in this policy.",
+        "items": {
+          "company": {
+            "label": "Simplitech:",
+            "text": "to process enquiries, communicate with you and manage business follow-up."
+          },
+          "providers": {
+            "label": "Technical service providers:",
+            "text": "the providers actually used for hosting, form submission, email communications, website maintenance or security, to the extent necessary for their respective tasks."
+          },
+          "authorities": {
+            "label": "Competent authorities:",
+            "text": "where required by a legal obligation or an enforceable decision."
+          }
+        },
+        "outro": "The relevant service providers must be identified according to the website's actual configuration. Data is not sold to third parties.",
+        "confirmationLabel": "Recipients to be confirmed:"
+      },
+      "transfers": {
+        "title": "Hosting and transfers outside the European Union",
+        "paragraph1": "The website is hosted by Vercel. Depending on the technical configuration, the services enabled and the associated providers, certain technical data or data submitted through the website may be processed in countries outside the European Union, including the United States.",
+        "paragraph2": "Where personal data is transferred outside the European Economic Area, the transfer must rely on a mechanism compliant with the GDPR, such as an applicable adequacy decision or appropriate contractual safeguards, depending on the transfer and the provider concerned.",
+        "paragraph3": "The specific arrangements must be verified against the contracts, deployment settings and privacy documentation of the providers actually used. General information about the hosting provider is available in the",
+        "legalLink": "Legal Notice"
+      },
+      "rights": {
+        "title": "What are your rights?",
+        "intro": "Subject to the conditions and limitations set out in applicable regulations, you may request:",
+        "items": {
+          "access": "access to your personal data;",
+          "rectification": "rectification of inaccurate or incomplete data;",
+          "erasure": "erasure of your data where the relevant conditions are met;",
+          "restriction": "restriction of certain processing activities;",
+          "objection": "objection to processing based on legitimate interests, on grounds relating to your particular situation;",
+          "portability": "data portability where this right applies;",
+          "withdrawal": "withdrawal of your consent at any time where processing is based on consent, without affecting the lawfulness of processing carried out before consent was withdrawn."
+        },
+        "contactIntro": "To exercise your rights, email",
+        "contactOutro": "and specify your request. Additional information may be requested where necessary to verify your identity in a proportionate manner.",
+        "responseTime": "A response is generally provided within one month. This period may be extended under the conditions set out in the GDPR, particularly in the case of complex or numerous requests.",
+        "complaintIntro": "If, after contacting us, you believe your rights have not been respected, you may lodge a complaint with the French Data Protection Authority (Commission nationale de l’informatique et des libertés, CNIL) via",
+        "cnilLink": "its official website"
+      },
+      "security": {
+        "title": "Data security",
+        "content": "Simplitech implements technical and organisational measures appropriate to its activities to protect data against loss, alteration, disclosure or unauthorised access. As no transmission or storage system can guarantee absolute security, the measures adopted are proportionate to the risks and the tools actually used."
+      },
+      "cookies": {
+        "title": "Cookies and other tracking technologies",
+        "paragraph1": "Cookies and other tracking technologies may be used to provide certain features, remember preferences, protect the website or measure its audience. The tools actually used must be verified before this policy is published.",
+        "paragraph2": "Tracking technologies that are strictly necessary for the requested service may be subject to different rules from those applicable to non-essential tracking technologies. Where consent is required, the relevant technologies must not be placed before consent has been obtained.",
+        "paragraph3": "If the website uses a consent management tool, you will be able to change your choices through the cookie management mechanism provided on the website. This mechanism must actually be installed and functional before it is described as available."
+      },
+      "changes": {
+        "title": "Changes to this policy",
+        "content": "This policy may be updated to reflect changes in processing activities, the tools used or applicable obligations. The date of the latest update appears at the top of this page. Where a substantial change requires specific notification, affected individuals will be informed through appropriate means."
+      }
+    },
+    "footer": {
+      "title": "Questions about your personal data?",
+      "text": "Contact Simplitech to exercise your rights or obtain further information about how your data is processed.",
+      "contactLink": "Contact us",
+      "legalIntro": "For information about the website publisher and hosting provider, see the",
+      "legalLink": "Legal Notice."
+    }
   }
 }

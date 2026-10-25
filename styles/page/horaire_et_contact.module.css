@@ -467,6 +467,8 @@
 }
 
 .privacyNote {
+  display: inline-flex;
+  gap: 4px;
   margin: 24px 0 0;
   padding-top: 18px;
   border-top: 1px solid var(--contact-border);

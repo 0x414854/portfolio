@@ -257,7 +257,7 @@ export default function MainOfferSection() {
                 {/* <span aria-hidden="true">↗</span> */}
               </Link>
 
-              <Link href="/contact#formulaire" className={styles.offerCta}>
+              <Link href="/horaire-et-contact#form" className={styles.offerCta}>
                 <span>{t("section.offer.secondaryCTA")}</span>
                 {/* <span className={styles.ctaArrow} aria-hidden="true">
                   ↗

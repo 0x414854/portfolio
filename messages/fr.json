@@ -1060,7 +1060,7 @@
         "label": "Échange direct",
         "title": "Par e-mail",
         "description": "Pour une demande de renseignement ou une première discussion.",
-        "linkLabel": "Écrire un e-mail",
+        "linkLabel": "arthur.barraud@gmail.com",
         "unavailable": "L’adresse e-mail sera bientôt disponible."
       },
       "phone": {
@@ -1087,19 +1087,19 @@
       "description": "Quelques informations suffisent pour commencer. Le formulaire vous permet de détailler votre demande.",
       "fields": {
         "name": {
-          "label": "Nom complet *",
+          "label": "* Nom complet",
           "placeholder": "John Doe"
         },
         "email": {
-          "label": "Adresse e-mail *",
+          "label": "* Adresse e-mail",
           "placeholder": "arthur.barraud@proton.me"
         },
         "phone": {
-          "label": "Téléphone *",
+          "label": "* Téléphone",
           "placeholder": "+33660988623"
         },
         "service": {
-          "label": "Service souhaité *",
+          "label": "* Service souhaité",
           "placeholder": "Sélectionnez un service"
         },
         "budget": {
@@ -1123,7 +1123,7 @@
           }
         },
         "message": {
-          "label": "Parlez-nous de votre projet *",
+          "label": "* Parlez-nous de votre projet",
           "placeholder": "Parlez-moi de votre entreprise, de vos objectifs..."
         },
         "website": {
@@ -1197,7 +1197,7 @@
           }
         }
       },
-      "consentText": "J’accepte que mes informations soient utilisées pour traiter ma demande, conformément à la <privacyLink>politique de confidentialité</privacyLink>. *",
+      "consentText": "* J’accepte que mes informations soient utilisées pour traiter ma demande, conformément à la <privacyLink>politique de confidentialité</privacyLink>.",
       "submit": {
         "label": "Envoyer le message",
         "loading": "Envoi en cours…"
@@ -1337,6 +1337,254 @@
       "framerMotion": "Framer Motion",
       "resend": "Resend",
       "vercel": "Vercel — déploiement"
+    }
+  },
+  "LegalNotices": {
+    "metadata": {
+      "title": "Mentions légales | Simplitech",
+      "description": "Consultez les mentions légales du site Simplitech : éditeur, hébergement, propriété intellectuelle et informations réglementaires."
+    },
+    "hero": {
+      "eyebrow": "INFORMATIONS JURIDIQUES",
+      "title": "Mentions",
+      "titleAccent": "légales.",
+      "intro": "Retrouvez ici les informations relatives à l’éditeur du site {company}, à son hébergement et aux conditions générales d’utilisation de ses contenus.",
+      "updated": "Dernière mise à jour : {date}"
+    },
+    "navigation": {
+      "tocAriaLabel": "Sommaire des mentions légales",
+      "tocTitle": "Sur cette page"
+    },
+    "fields": {
+      "fullName": "Nom et prénom",
+      "tradeName": "Nom commercial",
+      "legalStatus": "Statut juridique",
+      "businessAddress": "Adresse professionnelle",
+      "siren": "SIREN",
+      "siret": "SIRET",
+      "vatNumber": "Numéro de TVA intracommunautaire",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "publicationDirector": "Directeur de la publication",
+      "host": "Hébergeur",
+      "address": "Adresse",
+      "website": "Site web",
+      "contact": "Contact"
+    },
+    "sections": {
+      "publisher": {
+        "title": "Éditeur du site",
+        "intro": "Le présent site est édité par l’entreprise individuelle exerçant sous le nom commercial {company}."
+      },
+      "hosting": {
+        "title": "Hébergement",
+        "intro": "Le site est hébergé par la société suivante :"
+      },
+      "purpose": {
+        "title": "Objet du site",
+        "content": "Le site Simplitech présente les activités, les services et les prestations proposés par l’entreprise. Il permet également aux visiteurs de contacter l’entreprise et de transmettre des demandes de devis."
+      },
+      "intellectualProperty": {
+        "title": "Propriété intellectuelle",
+        "paragraph1": "Les contenus du site, notamment les textes, éléments graphiques, logos, visuels et éléments de mise en page, sont protégés par les dispositions applicables en matière de propriété intellectuelle, sous réserve des droits détenus par des tiers.",
+        "paragraph2": "Toute reproduction, représentation ou exploitation de ces contenus sans autorisation préalable du titulaire des droits concernés est interdite, sauf exceptions prévues par la loi."
+      },
+      "liability": {
+        "title": "Responsabilité",
+        "content": "Simplitech s’efforce de publier des informations exactes et à jour. Toutefois, l’entreprise ne garantit pas que toutes les informations soient exemptes d’erreurs ou toujours actualisées. L’utilisateur est invité à vérifier les informations utiles avant de prendre une décision sur leur fondement."
+      },
+      "externalLinks": {
+        "title": "Liens externes",
+        "content": "Le site peut contenir des liens vers des sites tiers. Simplitech n’exerce pas de contrôle sur ces sites et ne peut être tenu responsable de leurs contenus, de leur disponibilité ou de leurs pratiques."
+      },
+      "personalData": {
+        "title": "Données personnelles",
+        "paragraph1": "Les informations transmises par l’intermédiaire des formulaires de contact ou de demande de devis peuvent être utilisées pour répondre aux demandes reçues et assurer le suivi des échanges commerciaux.",
+        "paragraph2": "Les informations détaillées concernant les données collectées, les finalités et bases légales des traitements, les durées de conservation, les destinataires et les droits des personnes sont présentées dans notre politique de confidentialité.",
+        "privacyLink": "Consulter la politique de confidentialité",
+        "contactIntro": "Pour toute question concernant les données personnelles :"
+      },
+      "cookies": {
+        "title": "Cookies et traceurs",
+        "content": "Le site peut utiliser des cookies ou autres traceurs nécessaires à son fonctionnement ou répondant à d’autres finalités, selon les outils effectivement installés. Lorsque la réglementation l’exige, le consentement des visiteurs est recueilli avant le dépôt des traceurs concernés. Les informations relatives aux outils réellement utilisés et aux modalités de gestion des préférences doivent être accessibles depuis le site."
+      },
+      "applicableLaw": {
+        "title": "Droit applicable",
+        "content": "Les présentes mentions légales sont soumises au droit français, sous réserve des règles impératives applicables. En cas de différend, les règles de compétence juridictionnelle applicables déterminent la juridiction compétente."
+      }
+    },
+    "footer": {
+      "question": "Une question concernant le site ?",
+      "contactLink": "Nous contacter"
+    }
+  },
+  "PrivacyPolicy": {
+    "metadata": {
+      "title": "Politique de confidentialité | Simplitech",
+      "description": "Découvrez comment Simplitech collecte, utilise, conserve et protège les données personnelles transmises via son site et ses formulaires."
+    },
+    "hero": {
+      "eyebrow": "CONFIDENTIALITÉ & DONNÉES PERSONNELLES",
+      "title": "Politique de",
+      "titleAccent": "confidentialité.",
+      "intro": "La transparence est essentielle. Cette page explique comment {company} traite les données personnelles lorsque vous consultez le site ou nous adressez une demande.",
+      "updated": "{date}"
+    },
+    "navigation": {
+      "tocAriaLabel": "Sommaire de la politique de confidentialité",
+      "tocTitle": "Sur cette page"
+    },
+    "fields": {
+      "controller": "Responsable du traitement",
+      "address": "Adresse professionnelle",
+      "dataContact": "Contact relatif aux données"
+    },
+    "sections": {
+      "controller": {
+        "title": "Qui est responsable de vos données ?",
+        "intro": "Le responsable des traitements de données personnelles décrits dans cette politique est l’entrepreneur individuel exerçant sous le nom commercial {company}.",
+        "legalIntro": "Les informations légales relatives à l’éditeur du site sont disponibles sur la page",
+        "legalLink": "Mentions légales"
+      },
+      "data": {
+        "title": "Quelles données sont collectées ?",
+        "intro": "Les données collectées dépendent des informations que vous renseignez volontairement dans les formulaires ou que vous transmettez lors de vos échanges avec Simplitech.",
+        "items": {
+          "identity": {
+            "label": "Données d’identification :",
+            "text": "nom et prénom."
+          },
+          "contact": {
+            "label": "Coordonnées :",
+            "text": "adresse e-mail, numéro de téléphone si demandé, et toute autre coordonnée que vous choisissez de communiquer."
+          },
+          "project": {
+            "label": "Informations sur votre projet :",
+            "text": "objet de la demande, besoins exprimés, description du projet, budget ou délai si ces éléments sont demandés."
+          },
+          "exchanges": {
+            "label": "Contenu des échanges :",
+            "text": "messages envoyés et réponses nécessaires au suivi de la demande."
+          },
+          "technical": {
+            "label": "Données techniques :",
+            "text": "certaines informations techniques de connexion ou journaux de sécurité peuvent être traités par l’hébergement ou les services techniques utilisés, selon leur configuration."
+          }
+        },
+        "warning": "Ne transmettez pas de données sensibles ni d’informations confidentielles qui ne sont pas nécessaires au traitement de votre demande."
+      },
+      "purposes": {
+        "title": "Pourquoi utilisons-nous vos données ?",
+        "intro": "Les données sont traitées pour les finalités suivantes :",
+        "items": {
+          "contact": "recevoir et traiter vos messages de contact ;",
+          "quote": "comprendre votre besoin et préparer une réponse ou un devis ;",
+          "followUp": "échanger avec vous et assurer le suivi de votre demande ;",
+          "contract": "prendre les mesures précontractuelles demandées par vos soins et, si vous donnez suite à une proposition, préparer ou exécuter une relation contractuelle ;",
+          "security": "assurer la sécurité, le bon fonctionnement et la maintenance du site, lorsque des données techniques sont traitées à cette fin ;",
+          "legal": "répondre aux obligations légales et préserver les droits d’Simplitech en cas de différend, lorsque cela est nécessaire."
+        },
+        "outro": "Les données ne doivent pas être réutilisées pour une finalité incompatible avec celle pour laquelle elles ont été collectées. Toute utilisation supplémentaire nécessitant une information ou une base légale distincte fera l’objet des mesures appropriées."
+      },
+      "legalBases": {
+        "title": "Quelles sont les bases légales ?",
+        "intro": "Selon le traitement concerné, les données sont utilisées sur l’une des bases légales suivantes :",
+        "items": {
+          "precontractual": {
+            "label": "Mesures précontractuelles :",
+            "text": "lorsque vous demandez un devis ou souhaitez engager des échanges en vue d’une prestation, les données nécessaires sont traitées pour donner suite à votre demande."
+          },
+          "legitimateInterest": {
+            "label": "Intérêt légitime :",
+            "text": "certaines données peuvent être traitées pour répondre à un message général, assurer la sécurité du site, prévenir les abus ou gérer une réclamation, après appréciation de vos droits et intérêts."
+          },
+          "legalObligation": {
+            "label": "Obligation légale :",
+            "text": "lorsque des textes imposent de conserver ou de communiquer certaines informations."
+          },
+          "consent": {
+            "label": "Consentement :",
+            "text": "lorsque celui-ci est requis, notamment pour certains cookies ou traceurs non essentiels, ou pour une autre utilisation qui nécessite votre accord."
+          }
+        },
+        "outro": "Vous pouvez refuser de fournir certaines informations. Toutefois, si elles sont nécessaires pour répondre à votre demande ou préparer un devis, ce refus peut empêcher son traitement."
+      },
+      "retention": {
+        "title": "Combien de temps conservons-nous les données ?",
+        "intro": "Les données sont conservées uniquement pendant une durée adaptée à leur finalité, sous réserve des obligations légales applicables.",
+        "contactTitle": "Contact et demande de devis",
+        "clientTitle": "Client et documents contractuels",
+        "clientText": "Si la demande aboutit à une prestation, certaines données peuvent être conservées pendant la relation contractuelle puis archivées pour la durée imposée par les obligations légales, comptables ou fiscales et pour la défense des droits en justice. Les durées varient selon le document concerné.",
+        "technicalTitle": "Données techniques et journaux",
+        "technicalText": "Leur durée dépend de l’hébergeur, des outils de sécurité et de la configuration effective. Elle doit être définie en fonction des besoins de sécurité et des obligations applicables.",
+        "outro": "À l’issue de la période applicable, les données sont supprimées ou anonymisées, sauf si une conservation supplémentaire est nécessaire ou imposée par la loi."
+      },
+      "recipients": {
+        "title": "Qui peut accéder aux données ?",
+        "intro": "Les données sont accessibles aux seules personnes qui en ont besoin pour les finalités décrites dans cette politique.",
+        "items": {
+          "company": {
+            "label": "Simplitech :",
+            "text": "pour traiter les demandes, communiquer avec vous et assurer le suivi commercial."
+          },
+          "providers": {
+            "label": "Prestataires techniques :",
+            "text": "les fournisseurs effectivement utilisés pour l’hébergement, la transmission des formulaires, la messagerie, la maintenance ou la sécurité du site, dans la limite de leurs missions."
+          },
+          "authorities": {
+            "label": "Autorités compétentes :",
+            "text": "lorsqu’une obligation légale ou une décision exécutoire l’impose."
+          }
+        },
+        "outro": "Les prestataires concernés doivent être identifiés selon la configuration réelle du site. Les données ne sont pas vendues à des tiers.",
+        "confirmationLabel": "Destinataires à confirmer :"
+      },
+      "transfers": {
+        "title": "Hébergement et transferts hors de l’Union européenne",
+        "paragraph1": "Le site est hébergé par Vercel. Selon la configuration technique, les services activés et les prestataires associés, certaines données techniques ou données transmises par le site peuvent être traitées depuis des pays situés hors de l’Union européenne, notamment les États-Unis.",
+        "paragraph2": "Lorsqu’un transfert de données personnelles hors de l’Espace économique européen a lieu, il doit reposer sur un mécanisme conforme au RGPD, par exemple une décision d’adéquation applicable ou des garanties contractuelles appropriées, selon le transfert et le prestataire concernés.",
+        "paragraph3": "Les modalités précises doivent être vérifiées dans les contrats, paramètres de déploiement et documents de confidentialité des fournisseurs effectivement utilisés. Les informations générales sur l’hébergeur figurent dans les",
+        "legalLink": "mentions légales"
+      },
+      "rights": {
+        "title": "Quels sont vos droits ?",
+        "intro": "Dans les conditions et limites prévues par la réglementation, vous pouvez notamment demander :",
+        "items": {
+          "access": "l’accès aux données personnelles vous concernant ;",
+          "rectification": "la rectification des données inexactes ou incomplètes ;",
+          "erasure": "l’effacement des données lorsque les conditions sont réunies ;",
+          "restriction": "la limitation de certains traitements ;",
+          "objection": "l’opposition à un traitement fondé sur l’intérêt légitime, pour des raisons tenant à votre situation particulière ;",
+          "portability": "la portabilité des données lorsque ce droit est applicable ;",
+          "withdrawal": "le retrait de votre consentement à tout moment lorsque le traitement repose sur celui-ci, sans remettre en cause la licéité du traitement antérieur au retrait."
+        },
+        "contactIntro": "Pour exercer vos droits, écrivez à",
+        "contactOutro": "en précisant votre demande. Des informations complémentaires peuvent être demandées si cela est nécessaire pour vérifier votre identité, de manière proportionnée.",
+        "responseTime": "Une réponse est en principe apportée dans un délai d’un mois. Ce délai peut être prolongé dans les conditions prévues par le RGPD, notamment en cas de demande complexe ou de demandes nombreuses.",
+        "complaintIntro": "Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la Commission nationale de l’informatique et des libertés (CNIL) via",
+        "cnilLink": "son site officiel"
+      },
+      "security": {
+        "title": "Sécurité des données",
+        "content": "Simplitech met en œuvre, dans la mesure adaptée à ses activités, des mesures techniques et organisationnelles destinées à protéger les données contre la perte, l’altération, la divulgation ou l’accès non autorisé. Aucun système de transmission ou de stockage ne pouvant garantir une sécurité absolue, les mesures sont adaptées aux risques et aux outils effectivement utilisés."
+      },
+      "cookies": {
+        "title": "Cookies et autres traceurs",
+        "paragraph1": "Des cookies ou autres traceurs peuvent être utilisés pour assurer certaines fonctionnalités, mémoriser des préférences, protéger le site ou mesurer son audience. Les outils réellement utilisés doivent être vérifiés avant publication de cette politique.",
+        "paragraph2": "Les traceurs strictement nécessaires au service demandé peuvent être soumis à un régime différent de celui des traceurs non essentiels. Lorsque le consentement est requis, les traceurs concernés ne doivent pas être déposés avant son obtention.",
+        "paragraph3": "Si le site utilise un outil de gestion du consentement, vous pourrez modifier vos choix à partir du mécanisme de gestion des cookies mis à disposition sur le site. Ce mécanisme doit être réellement installé et fonctionnel pour être mentionné comme disponible."
+      },
+      "changes": {
+        "title": "Modification de la politique",
+        "content": "Cette politique peut être mise à jour pour refléter une évolution des traitements, des outils utilisés ou des obligations applicables. La date de dernière mise à jour figure en haut de cette page. En cas de changement substantiel nécessitant une information spécifique, les personnes concernées seront informées selon les modalités appropriées."
+      }
+    },
+    "footer": {
+      "title": "Une question sur vos données personnelles ?",
+      "text": "Contactez Simplitech pour exercer vos droits ou obtenir des précisions sur un traitement.",
+      "contactLink": "Nous contacter",
+      "legalIntro": "Pour les informations concernant l’éditeur et l’hébergement, consultez les",
+      "legalLink": "mentions légales ."
     }
   }
 }

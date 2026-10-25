@@ -294,7 +294,7 @@ export default function Header() {
           })}
 
           <Link
-            href="/contact"
+            href="/horaire-et-contact"
             className={styles.mobileCta}
             onClick={closeMenu}
           >

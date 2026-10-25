@@ -3,7 +3,7 @@
 import styles from "@/styles/components/footer/footer.module.css";
 
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
@@ -272,7 +272,7 @@ export default function Footer() {
 
           <ul className={styles.linkList}>
             <li>
-              <Link href="/services/web">{t("servicesSection.service_1")}</Link>
+              <Link href="/services">{t("servicesSection.service_1")}</Link>
             </li>
 
             <li>
@@ -282,7 +282,7 @@ export default function Footer() {
             </li>
 
             <li>
-              <Link href="/services/automatisation">
+              <Link href="/services/automatisations">
                 {t("servicesSection.service_3")}
               </Link>
             </li>
@@ -308,16 +308,16 @@ export default function Footer() {
             </li>
 
             <li>
-              <Link href="/politique-confidentialite">
+              <Link href="/politique-de-confidentialite">
                 {t("compagnySection.link_3")}
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link href="/conditions-generales-vente">
                 {t("compagnySection.link_4")}
               </Link>
-            </li>
+            </li> */}
           </ul>
 
           <p className={styles.abn}>ABN : {FOOTER_CONFIG.abn}</p>

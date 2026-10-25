@@ -327,7 +327,7 @@ export default function WhyDeveloperSection() {
             </p>
           </div>
 
-          <Link href="/contact" className={styles.ctaButton}>
+          <Link href="/horaire-et-contact" className={styles.ctaButton}>
             Parlons de votre projet
             <Icon name="arrow" size={17} />
           </Link>
